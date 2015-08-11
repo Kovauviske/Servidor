@@ -1,7 +1,7 @@
 /*
 	File: fn_repairTruck.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Main functionality for toolkits, to be revised in later version.
 */
@@ -15,7 +15,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 	{
 		life_action_inUse = true;
 		_displayName = getText(configFile >> "CfgVehicles" >> (typeOf _veh) >> "displayName");
-		_upp = format["Repariere %1",_displayName];
+		_upp = format["Reparando %1",_displayName];
 		//Setup our progress bar.
 		disableSerialization;
 		5 cutRsc ["life_progress","PLAIN"];
@@ -25,7 +25,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 		_pgText ctrlSetText format["%2 (1%1)...","%",_upp];
 		_progress progressSetPosition 0.01;
 		_cP = 0.01;
-		
+
 		while{true} do
 		{
 			if(animationState player != "AinvPknlMstpSnonWnonDnon_medic4") then {
@@ -41,14 +41,14 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 			if(player != vehicle player) exitWith {_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
 			if(life_interrupted) exitWith {_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
 		};
-		
+
 		life_action_inUse = false;
 		5 cutText ["","PLAIN"];
 		player playActionNow "stop";
-		if(life_interrupted) exitWith {life_interrupted = false; titleText["Action cancelled","PLAIN"]; life_action_inUse = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
-		if(player != vehicle player) exitWith {titleText["You must be outside of the vehicle to fix it. Sorry that this prevents you from exploiting the system, well not really.","PLAIN"];_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
+		if(life_interrupted) exitWith {life_interrupted = false; titleText["Ação cancelada","PLAIN"]; life_action_inUse = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
+		if(player != vehicle player) exitWith {titleText["Você deve estar fora do veículo para consertá-lo.","PLAIN"];_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
 		_veh setDamage 0;
-		titleText["Du hast das Fahrzeug erfolgreich repariert.","PLAIN"];
+		titleText["Você reparou com sucesso o veículo.","PLAIN"];
 	};
 };
 _ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];

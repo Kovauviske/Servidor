@@ -1,7 +1,7 @@
 /*
 	File: fn_restrainAction.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Retrains the target.
 */
@@ -13,9 +13,9 @@ if((_unit getVariable "restrained")) exitWith {};
 if(side _unit == west) exitWith {};
 if(player == _unit) exitWith {};
 if (side player == civilian) then {
-	if(life_inv_zipties < 1) exitWith { hint "Du hast keine Kabelbinder bei dir !"; };
+	if(life_inv_zipties < 1) exitWith { hint "Você não tem algema com você!"; };
 	life_inv_zipties = life_inv_zipties - 1;
-	hint "Du hast den Zivilisten festgenommen...";
+	hint "Você prendeu os civis ...";
 };
 if(!isPlayer _unit) exitWith {};
 

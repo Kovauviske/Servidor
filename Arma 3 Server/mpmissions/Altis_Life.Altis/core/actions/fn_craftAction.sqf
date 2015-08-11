@@ -51,7 +51,7 @@ _newItem = _item;
 _itemInfo = [_newItem] call life_fnc_fetchCfgDetails;
 _itemName = _itemInfo select 1;
 
-_upp = format["Crafting %1",_itemName];
+_upp = format["Crafitadando %1",_itemName];
 
 
 

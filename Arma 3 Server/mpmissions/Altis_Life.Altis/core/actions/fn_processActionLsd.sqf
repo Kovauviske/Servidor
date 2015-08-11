@@ -49,7 +49,7 @@ life_is_processing = true;
 
 if(_hasLicense) then
 {
-    titleText["Dieser Rohstoff ist schwer zu behandeln ! Sie sollten sich Sch�tzen !","PLAIN"];
+    titleText["Esta matéria-prima é difícil de encontrar! Você deve valorizar!","PLAIN"];
     while{true} do
     {
         sleep 0.05;
@@ -60,12 +60,12 @@ if(_hasLicense) then
         if(player distance _vendor > 10) exitWith {};
     };
 
-    if(player distance _vendor > 10) exitWith {hint "Du musst mindestens 10 Meter daneben stehen."; 5 cutText ["","PLAIN"]; life_is_processing = false;};
+    if(player distance _vendor > 10) exitWith {hint "Você tem que ficar pelo menos a 10 metros."; 5 cutText ["","PLAIN"]; life_is_processing = false;};
     if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};
     if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;};
     5 cutText ["","PLAIN"];
 
-    titleText[format["Du hast %1 zu %2 umgewandelt.",_oldVal,_itemName],"PLAIN"];
+    titleText[format["Você transformou %1 para %2.",_oldVal,_itemName],"PLAIN"];
 
     life_is_processing = false;
 
@@ -73,6 +73,6 @@ if(_hasLicense) then
     else
 {
 
-    hint "Du ben�tigst eine Lizenz daf�r! Oder willst du Sterben ?";
+    hint "Você quer tem uma licença? ou você quer morrer?";
     life_is_processing = false;
-};    
+};

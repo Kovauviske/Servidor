@@ -1,7 +1,7 @@
 /*
 	File: fn_gather.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Main functionality for gathering.
 */
@@ -39,7 +39,7 @@ switch(true) do {
 if(vehicle player != player) exitWith {};
 
 _diff = [_gather,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
-if(_diff == 0) exitWith {hint "Inventar Voll"};
+if(_diff == 0) exitWith {hint "Inventario cheio"};
 life_action_inUse = true;
 for "_i" from 0 to 2 do
 {
@@ -51,7 +51,7 @@ for "_i" from 0 to 2 do
 if(([true,_gather,_diff] call life_fnc_handleInv)) then
 {
 	_itemName = [([_gather,0] call life_fnc_varHandle)] call life_fnc_varToStr;
-	titleText[format["Du hast %1 %2x erfarmt.",_itemName,_diff],"PLAIN"];
+	titleText[format["Você colegou %2 %1",_itemName,_diff],"PLAIN"];
 };
 
 life_action_inUse = false;
