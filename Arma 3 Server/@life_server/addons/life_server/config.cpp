@@ -112,6 +112,14 @@ class CfgFunctions
 			class getPrices {};
 			class ajustprices {};
 		};
+
+				class AS
+		{
+			file = "\life_server\AS_AdminMenu";
+			class receiver {};
+			class config {};
+			class getActions {};
+		};
 		
 		class Smartphone
 		{
