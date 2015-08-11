@@ -13,17 +13,17 @@ playSound "welcome";
 
 _onScreenTime = 2;
 
-_role1 = "Willkommen bei";
-_role1names = ["S E A L D R O P"];
-_role2 = "Server Inhaber";
-_role2names = ["ADMIN_NAMEN"];
+_role1 = "Seja bem vindo!";
+_role1names = ["Servidor OS Delicias"];
+_role2 = "Administradores";
+_role2names = ["Vinicius e Jailson"];
 _role3 = "Map Edit by";
-_role3names = ["TheTotenkopf"];
+_role3names = ["Kovauviske e Jailson"];
 _role4 = "Offizieller TeamSpeak";
-_role4names = ["TS_NAME"];
-_role8 = "Offizielles Forum";
-_role8names = ["FORUM_NAME"];
- _role9 = "Server Restarts";
+_role4names = ["EM BREVE"];
+_role8 = "Forum Oficial";
+_role8names = ["Em breve"];
+ _role9 = "Restart do servidor";
 _role9names = ["0,6,9,12,15,18,21"];
 
 {
