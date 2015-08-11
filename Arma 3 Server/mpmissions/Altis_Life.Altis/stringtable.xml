@@ -2017,7 +2017,7 @@
 			<German>&lt;t color='#FF0000'&gt;&lt;t size='2'&gt;Fahrzeuginfo&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;&lt;t color='#FFD700'&gt;&lt;t size='1.5'&gt;Besitzer&lt;/t&gt;&lt;/t&gt;&lt;br/&gt; %1</German>
 			<French>&lt;t color='#FF0000'&gt;&lt;t size='2'&gt;Vehicle Info&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;&lt;t color='#FFD700'&gt;&lt;t size='1.5'&gt;Owners&lt;/t&gt;&lt;/t&gt;&lt;br/&gt; %1</French>
 			<Italian>&lt;t color='#FF0000'&gt;&lt;t size='2'&gt;Vehicle Info&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;&lt;t color='#FFD700'&gt;&lt;t size='1.5'&gt;Owners&lt;/t&gt;&lt;/t&gt;&lt;br/&gt; %1</Italian>
-			<Portuguese>&lt;t color='#FF0000'&gt;&lt;t size='2'&gt;Vehicle Info&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;&lt;t color='#FFD700'&gt;&lt;t size='1.5'&gt;Owners&lt;/t&gt;&lt;/t&gt;&lt;br/&gt; %1</Portuguese>
+			<Portuguese>&lt;t color='#FF0000'&gt;&lt;t size='2'&gt;Informações do Veiculo&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;&lt;t color='#FFD700'&gt;&lt;t size='1.5'&gt;Donos&lt;/t&gt;&lt;/t&gt;&lt;br/&gt; %1</Portuguese>
  		</Key>
  		<Key ID="STR_NOTF_CannotSearchPerson">
 			<Original>Cannot search that person.</Original>
@@ -2025,7 +2025,7 @@
 			<German>Diese Person kann nicht durchsucht werden.</German>
 			<French>Cannot search that person.</French>
 			<Italian>Cannot search that person.</Italian>
-			<Portuguese>Cannot search that person.</Portuguese>
+			<Portuguese>Não é possível procurar eesa pessoa.</Portuguese>
 		</Key>
 		<Key ID="STR_NOTF_Repairing">
  			<Original>Repairing %1</Original>
@@ -2033,7 +2033,7 @@
 			<German>Wird repariert %1</German>
 			<French>Repairing %1</French>
 			<Italian>Repairing %1</Italian>
-			<Portuguese>Repairing %1</Portuguese>
+			<Portuguese>Reparando %1</Portuguese>
  		</Key>
  		<Key ID="STR_NOTF_RepairingInVehicle">
  			<Original>You must be outside of the vehicle to fix it. Sorry that this prevents you from exploiting the system, well not really.</Original>
@@ -2041,7 +2041,7 @@
 			<German>Du musst außerhalb des Fahrzeuges sein, um es zu reparieren. Entschuldigung, aber das soll verhindern, dass du das System missbrauchst, naja, nicht wirklich.</German>
 			<French>You must be outside of the vehicle to fix it. Sorry that this prevents you from exploiting the system, well not really.</French>
 			<Italian>You must be outside of the vehicle to fix it. Sorry that this prevents you from exploiting the system, well not really.</Italian>
-			<Portuguese>You must be outside of the vehicle to fix it. Sorry that this prevents you from exploiting the system, well not really.</Portuguese>
+			<Portuguese>YVocê deve estar fora do veículo para consertá-lo.</Portuguese>
  		</Key>
  		<Key ID="STR_NOTF_RepairedVehicle">
  			<Original>You have repaired that vehicle.</Original>
@@ -2049,19 +2049,19 @@
 			<German>Du hast dieses Fahrzeug repariert.</German>
 			<French>You have repaired that vehicle.</French>
 			<Italian>You have repaired that vehicle.</Italian>
-			<Portuguese>You have repaired that vehicle.</Portuguese>
+			<Portuguese>Você reparou o veículo.</Portuguese>
  		</Key>
  		<Key ID="STR_NOTF_Gather_Success">
 			<Original>You have gathered %2 %1(s)</Original>
-			<English>You have gathered %2 %1(s)</English>
+			<English>Você pegou %2 %1(s)</English>
 		</Key>
 		<Key ID="STR_NOTF_GatherVeh">
 			<Original>You can't gather from inside a car!</Original>
-			<English>You can't gather from inside a car!</English>
+			<English>Você não pode olhar o inventario do casso</English>
 		</Key>
 		<Key ID="STR_NOTF_NoLootingPerson">
 			<Original>You are not allowed to loot dead bodies</Original>
-			<English>You are not allowed to loot dead bodies</English>
+			<English>Você não tem permissão para olhar cadáveres</English>
 		</Key>
 	</Package>
 	<Package name="Jail_Strings">
@@ -2161,6 +2161,7 @@
 			<German>Du hast deinen Waffenschein wegen Mordes verloren.</German>
 			<French>Vous avez perdu votre permis d'armes à feu pour homicide involontaire.</French>
 			<Italian>Hai perso il tuo Porto d'Armi a causa di un omicidio</Italian>
+			<Portuguese>Você perdeu sua licença de armas de fogo por homicídio culposo.</Portuguese>
 		</Key>
 		<Key ID="STR_Civ_RobFail">
 			<Original>They didn't have any cash...</Original>
@@ -2612,7 +2613,7 @@
 			<German>Aufsatz Platz belegt!</German>
 			<French>Fente de fixation pris!</French>
 			<Italian>Slot Accessorio preso!</Italian>
-			<Portuguese>Attachment slot taken!</Portuguese>
+			<Portuguese>Acessorio Colocado!</Portuguese>
 		</Key>
 		<Key ID="STR_MISC_Weapon">
 			<Original>Weapon</Original>
@@ -2684,7 +2685,7 @@
 			<German>Sirene AN</German>
 			<French>Sirenes On</French>
 			<Italian>Sirene accese</Italian>
-			<Portuguese>Sirene On</Portuguese>
+			<Portuguese>Sirene Ligada</Portuguese>
 		</Key>
 		<Key ID="STR_MISC_SirensOFF">
 			<Original>Sirens Off</Original>
@@ -2692,7 +2693,7 @@
 			<German>Sirene AUS</German>
 			<French>Sirenes Off</French>
 			<Italian>Sirene spente</Italian>
-			<Portuguese>Sirene Off</Portuguese>
+			<Portuguese>Sirene Desligada</Portuguese>
 		</Key>
 		<Key ID="STR_MISC_NoStorageWarn">
 			<Original>You need to install storage containers to have storing capabilities!</Original>
@@ -3449,7 +3450,7 @@
 			<German>Nagelband</German>
 			<French>Herse</French>
 			<Italian>Striscia Chiodata</Italian>
-			<Portuguese>Spike Strip</Portuguese>
+			<Portuguese>Faixa de pregos</Portuguese>
 		</Key>
 	</Package>
 	<Package name="Life_License">
@@ -3877,7 +3878,7 @@
 			<German>Du musst zuerst einen Gegenstand auswählen!</German>
 			<French>You need to select an item first!</French>
 			<Italian>You need to select an item first!</Italian>
-			<Portuguese>You need to select an item first!</Portuguese>
+			<Portuguese>Você precisa selecionar um item primeiro!</Portuguese>
 		</Key>
 		<Key ID="STR_ISTR_RedGullEffect">
 			<Original>You can now run farther for 3 minutes</Original>
@@ -3885,7 +3886,7 @@
 			<German>Du kannst jetzt für 3 Minuten weiterlaufen</German>
 			<French>You can now run farther for 3 minutes</French>
 			<Italian>You can now run farther for 3 minutes</Italian>
-			<Portuguese>You can now run farther for 3 minutes</Portuguese>
+			<Portuguese>Agora você pode correr mais longe por 3 minutos</Portuguese>
 		</Key>
 		<Key ID="STR_ISTR_SpikesDeployment">
 			<Original>You already have a Spike Strip active in deployment</Original>
@@ -3893,7 +3894,7 @@
 			<German>Du stellst bereits ein Nagelband auf</German>
 			<French>You already have a Spike Strip active in deployment</French>
 			<Italian>You already have a Spike Strip active in deployment</Italian>
-			<Portuguese>You already have a Spike Strip active in deployment</Portuguese>
+			<Portuguese>Você já tem uma faixa de prego aqui</Portuguese>
 		</Key>
 		<Key ID="STR_ISTR_RefuelInVehicle">
 			<Original>You can't refuel the vehicle while in it!</Original>
@@ -3901,7 +3902,7 @@
 			<German>Du kannst ein Fahrzeug nicht betanken während du dich darin befindest!</German>
 			<French>You can't refuel the vehicle while in it!</French>
 			<Italian>You can't refuel the vehicle while in it!</Italian>
-			<Portuguese>You can't refuel the vehicle while in it!</Portuguese>
+			<Portuguese>Você não pode reabastecer o veículo enquanto estiver nele!</Portuguese>
 		</Key>
 		<Key ID="STR_ISTR_NotUsable">
 			<Original>This item isn't usable.</Original>
@@ -3909,7 +3910,7 @@
 			<German>Dieser Gegenstand ist nicht benutzbar.</German>
 			<French>This item isn't usable.</French>
 			<Italian>This item isn't usable.</Italian>
-			<Portuguese>This item isn't usable.</Portuguese>
+			<Portuguese>Este item não é utilizável.</Portuguese>
 		</Key>
 	</Package>
 		<Package name="Process_Action">
@@ -4257,7 +4258,7 @@
 			<German>Ins Fahrzeug setzen</German>
 			<French>Embarquer</French>
 			<Italian>Metti nel Veicolo</Italian>
-			<Portuguese>Colocar no Veículo</Portuguese>
+			<Portuguese>Colocar na Viatura</Portuguese>
 		</Key>
 		<Key ID="STR_pInAct_Unrestrain">
 			<Original>Un-Restrain</Original>
@@ -4313,7 +4314,7 @@
 			<German>Ins Gefängnis stecken</German>
 			<French>Envoyer en prison</French>
 			<Italian>Arresta</Italian>
-			<Portuguese>Enviar p/ Prisão</Portuguese>
+			<Portuguese>CADEIA</Portuguese>
 		</Key>
 		<Key ID="STR_pInAct_Repair">
 			<Original>Repair Door</Original>
@@ -4388,12 +4389,12 @@
 			<Portuguese>Guardar Veículo</Portuguese>
 		</Key>
 		<Key ID="STR_pInAct_RemoveWeapons">
-			<Original>Waffen nehmen</Original>
-			<German>Waffen nehmen</German>
+			<Original>Pegar armas</Original>
+			<German>Pegar armas</German>
 		</Key>
 		<Key ID="STR_pInAct_Breathalyzer">
-			<Original>Alkohol Test</Original>
-			<German>Alkohol Test</German>
+			<Original>Teste Alcolico</Original>
+			<German>Teste Alcolico</German>
 		</Key>
 		<Key ID="STR_pInAct_SellHouse">
 			<Original>Sell House</Original>
@@ -5088,85 +5089,85 @@
 	</Package>
 		<Package name="Support_Menu">
 		<Key ID="STR_PM_SupportMenu">
-			<Original>Supporter Menü</Original>
+			<Original>Menu de Suporte</Original>
 		</Key>
 	</Package>
 	<Package name="Admin_Menu">
 		<Key ID="STR_Admin_Spectate">
-			<Original>Zuschauen</Original>
+			<Original>Assistir</Original>
 		</Key>
 		<Key ID="STR_Admin_Teleport">
-			<Original>Teleport</Original>
+			<Original>Teleportar</Original>
 		</Key>
 		<Key ID="STR_Admin_TpHere">
-			<Original>TP Here</Original>
+			<Original>TP AQUI</Original>
 		</Key>
 	</Package>
 		<Package name="Smartphone">
 		<Key ID="STR_PM_Smartphone">
-			<Original>Telefon</Original>
+			<Original>Telefone</Original>
 		</Key>
 		<Key ID="STR_SMARTPHONE_TITLE">
-			<Original>Telefon SMS</Original>
+			<Original>Telefone SMS</Original>
 		</Key>
 		<Key ID="STR_SMARTPHONE_PLAYERLISTTITLE">
-			<Original>Spielerliste</Original>
+			<Original>Lista de jogadores</Original>
 		</Key>
 		<Key ID="STR_SMARTPHONE_MESSAGETITLE">
-			<Original>Nachrichten  | VON | WANN</Original>
+			<Original>Notícias | DE | QUANDO</Original>
 		</Key>
 		<Key ID="STR_SMARTPHONE_RANDOMTITLE">
-			<Original>Nachricht zum lesen auswählen</Original>
+			<Original>Escolha mensagem para ler</Original>
 		</Key>
 		<Key ID="STR_SMARTPHONE_SCHREIBEN">
-			<Original>Schreiben</Original>
+			<Original>Escrever</Original>
 		</Key>
 		<Key ID="STR_SMARTPHONE_NOTRUF">
-			<Original>Notruf</Original>
+			<Original>Chamar Samu</Original>
 		</Key>
 		<Key ID="STR_SMARTPHONE_Absenden">
-			<Original>Absenden</Original>
+			<Original>Enviar</Original>
 		</Key>
 		<Key ID="STR_SMARTPHONE_NACHRICHTTITLE">
-			<Original>Nachricht an:</Original>
+			<Original>mensagem para:</Original>
 		</Key>
 		<Key ID="STR_SMARTPHONE_Notruftitle">
-			<Original>Kostenloser Notruf Dienst</Original>
+			<Original>Serviço de emergência gratuito</Original>
 		</Key>
 		<Key ID="STR_pInAct_RevokeLicense">
-			<Orignal>Revoke Licenses</Orignal>
+			<Orignal>Tirar Licenças</Orignal>
 		</Key>
 		<Key ID="STR_Civ_RevokeLicense_Driver">
-			<Original>Your Drivers License has been REVOKED by the Police!</Original>
+			<Original>Sua carteira de motorista foi apreendida pela Polícia!</Original>
 		</Key>
 		<Key ID="STR_Civ_RevokeLicense_Truck">
-			<Original>Your Truck License has been REVOKED by the Police!</Original>
+			<Original>A sua licença do caminhão foi apreendida pela Polícia !</Original>
 		</Key>
 		<Key ID="STR_Civ_RevokeLicense_Pilot">
-			<Original>Your Pilot License has been REVOKED by the Police!</Original>
+			<Original>Sua licença de Piloto foi apreendido pela Polícia !</Original>
 		</Key>
 		<Key ID="STR_Civ_RevokeLicense_Boating">
-			<Original>Your Boating License has been REVOKED by the Police!</Original>
+			<Original>Sua Licença de barco foi apreendida pela Polícia !</Original>
 		</Key>
 		<Key ID="STR_Civ_RevokeLicense_Diving">
-			<Original>Your Diving License has been REVOKED by the Police!</Original>
+			<Original>A sua licença de mergulho foi apreendida pela Polícia !</Original>
 		</Key>
 		<Key ID="STR_Civ_RevokeLicense_Taxi">
-			<Original>Your Taxi License has been REVOKED by the Police!</Original>
+			<Original>Sua licença de Taxi foi apreendida pela Polícia !</Original>
 		</Key>
 		<Key ID="STR_Civ_RevokeLicense_AllMotor">
-			<Original>Your Motor Vehicle Licenses have been REVOKED by the Police!</Original>
+			<Original>Suas licenças de Veículos Automotores foram apreendidos pela Polícia !</Original>
 		</Key>
 		<Key ID="STR_Civ_RevokeLicense_Firearm">
-			<Original>Your Firearms License has been REVOKED by the Police!</Original>
+			<Original>Sua licença de armas foi apreendido pela Polícia !</Original>
 		</Key>
 		</Package>
 		<Key ID="STR_Civ_LicenseRemove_1a">
-			<Original>Durch Deine wiederholte Überschreitung der Geschwindigkeit, wurde Dir dein Führerschein entzogen.</Original>
+			<Original>Por causa de exceder varias vezes a velocidade, sua carteira de motorista foi apreendida.</Original>
 		</Key> 
 		<key ID="STR_pInAct_rob">
-			<Original>Ausrauben</Original>
-			<German>Ausrauben</German>
+			<Original>Roubar</Original>
+			<German>Roubar</German>
 		</Key>
 		<Package name="Craft">
 	<Key ID="STR_CRAFT_Title">
@@ -5175,7 +5176,7 @@
 		<German>Bauen</German>
 		<French>Menu de Crafting</French>
 		<Italian>Crafting Menu</Italian>
-		<Portuguese>Crafting Menu</Portuguese>
+		<Portuguese>Menu de criação</Portuguese>
 	</Key>
 	<Key ID="STR_PM_CraftStats">
 		<Original>Object to craft</Original>
@@ -5183,7 +5184,7 @@
  		<German>Objekt nach herstellung</German>
 		<French>Objet à crafter</French>
 		<Italian>Object to craft</Italian>
-		<Portuguese>Object to craft</Portuguese>
+		<Portuguese>Objeto para criar</Portuguese>
 	</Key>
 	<Key ID="STR_PM_CraftMaterials">
 		<Original>Materials needed</Original>
@@ -5191,7 +5192,7 @@
  		<German>Benötigte Gegenstände</German>
 		<French>Materiaux requis</French>
 		<Italian>Materials needed</Italian>
-		<Portuguese>Materials needed</Portuguese>
+		<Portuguese>Receita</Portuguese>
 	</Key>
 	<Key ID="STR_CRAFT_Button">
 		<Original>Craft !</Original>
@@ -5199,7 +5200,7 @@
  		<German>Herstellen</German>
 		<French>Craft !</French>
 		<Italian>Craft !</Italian>
-		<Portuguese>Craft !</Portuguese>
+		<Portuguese>Fazer !</Portuguese>
 	</Key>
 	<Key ID="STR_PM_NoMaterial">
 		<Original>You do not have all the required materials !</Original>
@@ -5207,7 +5208,7 @@
  		<German>Du hast nicht alle benötigten Materialien !</German>
 		<French>Vous n'avez pas tous les matériaux requis !</French>
 		<Italian>You do not have all the required materials !</Italian>
-		<Portuguese>You do not have all the required materials !</Portuguese>
+		<Portuguese>Você não tem todos os materiais necessários !</Portuguese>
 	</Key>
 	<Key ID="STR_CRAFT_Process">
 		<Original>You have crafted : %1</Original>
@@ -5215,7 +5216,7 @@
 		<German>Du hast folgenden Gegenstand hergestellt : %1</German>
 		<French>Vous avez crafté : %1</French>
 		<Italian>You have crafted : %1</Italian>
-		<Portuguese>You have crafted : %1</Portuguese>
+		<Portuguese>Você fez : %1</Portuguese>
 	</Key>
 	</Package>
 </Project>
