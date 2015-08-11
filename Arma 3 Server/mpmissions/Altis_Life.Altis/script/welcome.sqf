@@ -14,12 +14,12 @@ playSound "welcome";
 _onScreenTime = 2;
 
 _role1 = "Seja bem vindo!";
-_role1names = ["Servidor OS Delicias"];
+_role1names = ["F.T.I Altis Life BRASL"];
 _role2 = "Administradores";
-_role2names = ["Vinicius e Jailson"];
+_role2names = ["Kovauviske e AbsolutZ"];
 _role3 = "Map Edit by";
-_role3names = ["Kovauviske e Jailson"];
-_role4 = "Offizieller TeamSpeak";
+_role3names = ["AbsolutZ"];
+_role4 = "Raidcall";
 _role4names = ["EM BREVE"];
 _role8 = "Forum Oficial";
 _role8names = ["Em breve"];
