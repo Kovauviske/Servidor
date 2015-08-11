@@ -1,7 +1,7 @@
 /*
 	File: fn_jailMe.sqf
 	Author Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Once word is received by the server the rest of the jail execution is completed.
 */
@@ -18,7 +18,7 @@ if(count _ret > 0) then { life_bail_amount = (_ret select 3); } else { life_bail
 _esc = false;
 _bail = false;
 
-if(_time <= 0) then { _time = time + (15 * 60); hintC "Please Report to Admin: JAIL_FALLBACK_15, time is zero!"; };
+if(_time <= 0) then { _time = time + (15 * 60); hintC "Porfavor Reporte ao ADMIN: JAIL_FALLBACK_15, Tempo é zero!"; };
 
 [_bad,_time] spawn
 {
@@ -46,29 +46,29 @@ while {true} do
 		_countDown = if(round (_time - time) > 60) then {format["%1 minute(s)",round(round(_time - time) / 60)]} else {format["%1 second(s)",round(_time - time)]};
 		if(isNil "life_canpay_bail") then
 		{
-			hintSilent format["Time Remaining:\n %1\n\nCan pay Bail: %3\nBail Amount: $%2",_countDown,[life_bail_amount] call life_fnc_numberText];
+			hintSilent format["Tempo Restante:\n %1\n\nPode pagar fiança: %3\nPreço da Fiança: $%2",_countDown,[life_bail_amount] call life_fnc_numberText];
 		}
 		else
 		{
-			hintSilent format["Time Remaining:\n %1\n",_countDown];
+			hintSilent format["Tempo restante:\n %1\n",_countDown];
 		};
-		
+
 	};
-	
+
 	if(player distance (getMarkerPos "jail_marker") > 180) exitWith
 	{
 		_esc = true;
 	};
-	
+
 	if(life_bail_paid) exitWith
 	{
 		_bail = true;
 	};
-	
+
 	if((round(_time - time)) < 1) exitWith {hint ""};
 	if(!alive player && ((round(_time - time)) > 0)) exitWith
 	{
-	
+
 	};
 	sleep 1;
 };
@@ -86,7 +86,7 @@ switch (true) do
 		[[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
 		[5] call SOCK_fnc_updatePartial;
 	};
-	
+
 	case (_esc) :
 	{
 		life_is_arrested = false;
@@ -95,7 +95,7 @@ switch (true) do
 		[[getPlayerUID player,profileName,"901"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 		[5] call SOCK_fnc_updatePartial;
 	};
-	
+
 	case (alive player && !_esc && !_bail) :
 	{
 		life_is_arrested = false;
