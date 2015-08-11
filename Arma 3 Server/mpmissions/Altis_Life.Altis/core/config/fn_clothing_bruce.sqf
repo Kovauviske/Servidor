@@ -1,7 +1,7 @@
 /*
 	File: fn_clothing_bruce.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Master configuration file for Bruce's Outback Outfits.
 */
@@ -10,7 +10,7 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
-ctrlSetText[3103,"Bruce's Outback Outfits"];
+ctrlSetText[3103,"Loja de Roupas"];
 
 switch (_filter) do
 {
@@ -38,7 +38,7 @@ switch (_filter) do
 		["U_C_Poor_2","Hello Kitty",3500]
 		];
 	};
-	
+
 	//Hats
 	case 1:
 	{
@@ -66,7 +66,7 @@ switch (_filter) do
 			["H_Cap_tan",nil,150]
 		];
 	};
-	
+
 	//Glasses
 	case 2:
 	{
@@ -86,14 +86,14 @@ switch (_filter) do
 			["G_Combat",nil,55]
 		];
 	};
-	
+
 	//Vest
 	case 3:
 	{
 		[
 		];
 	};
-	
+
 	//Backpacks
 	case 4:
 	{

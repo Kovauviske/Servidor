@@ -10,7 +10,7 @@ private["_filter","_ret"];
 _filter = [_this,0,0,[0]] call BIS_fnc_param;
 
 //Shop Title Name
-ctrlSetText[3103,"Arzt Bekleidungsshop"];
+ctrlSetText[3103,"Loja de Roupas de Medicos"];
 
 _ret = [];
 switch (_filter) do
@@ -18,13 +18,13 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-		_ret = 
+		_ret =
 		[
-			["U_O_OfficerUniform_ocamo","Artztuniform",500],
+			["U_O_OfficerUniform_ocamo","Roupa de Medico",500],
 			["U_B_HeliPilotCoveralls","ADAC Uniform",500]
 		];
 	};
-	
+
 	//Hats
 	case 1:
 	{
@@ -34,11 +34,11 @@ switch (_filter) do
 			["H_Cap_marshal",nil,50]
 		];
 	};
-	
+
 	//Glasses
 	case 2:
 	{
-		_ret = 
+		_ret =
 		[
 			["G_Shades_Black",nil,25],
 			["G_Shades_Blue",nil,20],
@@ -51,15 +51,15 @@ switch (_filter) do
 			["G_Lowprofile",nil,30]
 		];
 	};
-	
+
 	//Vest
 	case 3:
 	{
 		_ret =
-		[	
+		[
 		];
 	};
-	
+
 	//Backpacks
 	case 4:
 	{
