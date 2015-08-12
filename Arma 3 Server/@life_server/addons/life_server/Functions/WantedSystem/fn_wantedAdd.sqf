@@ -34,7 +34,7 @@ switch(_type) do
 	case "459": {_type = ["Roubo a Residencia",20000]};
 	case "390": {_type = ["Dirigir Bebado",15000]};
 	case "919": {_type = ["Traficante de Orgão",50000]};
-    case "485": {_type = ["Tried to lockpick handcuffs",2500]};
+    case "485": {_type = ["Tentou arromar algemas",2500]};
     case "486": {_type = ["Lockpicked handcuffs",5000]};
 
 	case "1": {_type = ["Dirigir sem licença",15000]};
@@ -75,7 +75,7 @@ switch(_type) do
     case "36": {_type = ["Voar abaixo de 150m acima da cidade",20000]};
     case "37": {_type = ["Fuga Da Prisão",20000]};
     case "38": {_type = ["Voar sem licença de vôo",50000]};
-    case "39": {_type = ["Dauerhaftes hupen",7500]};
+    case "39": {_type = ["Buzinar com frequencia",7500]};
     case "40": {_type = ["Comércio de bens exóticos",50000]};
 	case "41": {_type = ["Atingindo cerca de um posto avançado",25000]};
 	case "42": {_type = ["Manipulação de Itens ilicitos",25000]};
