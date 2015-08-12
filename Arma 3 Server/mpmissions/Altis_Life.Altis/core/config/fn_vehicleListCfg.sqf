@@ -146,12 +146,11 @@ switch (_shop) do
 			_return set[count _return,
 			["C_Hatchback_01_sport_F",35000]];
 		};
-		if (__GETC__(life_coplevel) > 4) then
+		if (__GETC__(life_coplevel) > 5) then
 		{
 			_return set[count _return,
 			["B_MRAP_01_F",250000]];
 		};
-		if (__GETC__(life_coplevel) > 5) then
 	};
 
 	case "civ_air_1":

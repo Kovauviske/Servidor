@@ -31,10 +31,9 @@ switch (_filter) do
 		};
         if(__GETC__(life_coplevel) > 4) then
         {
-			_ret set[count _ret,["U_B_GhillieSuit","Roupa de camuflagem",1000]];
 			_ret set[count _ret,["U_B_CombatUniform_mcam","Policia Civil",550]];
         };
-		if(__GETC__(life_coplevel) > 6) then
+		if(__GETC__(life_coplevel) == 6) then
         {
 			_ret set[count _ret,["U_B_CombatUniform_mcam_worn","BOPE",1750]];
         };
