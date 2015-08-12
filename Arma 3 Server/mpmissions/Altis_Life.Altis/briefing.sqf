@@ -29,7 +29,7 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-	
+
 	player createDiaryRecord["changelog",
 		[
 			"Custom Change Log",
@@ -41,7 +41,7 @@ player createDiarySubject ["controls","Controls"];
 
 		player createDiaryRecord ["serverrules",
 		[
-			"Exploits", 
+			"Exploits",
 				"
 				Cometer algum dos altos abaixo resultará em banimento. <br/>
 
@@ -53,7 +53,7 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-	
+
 	player createDiaryRecord["safezones",
 		[
 			"Safe Zones",
@@ -67,24 +67,24 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-					
-	
+
+
 	player createDiaryRecord ["serverrules",
 		[
-			"Delitos passiveis de ban", 
+			"Delitos passiveis de ban",
 				"
 				Considere este o seu primeiro e único aviso.<br/><br/>
-				
+
 				1. Hacking<br/>
 				2. Cheating<br/>
 				3. Exploiting (Ver a aba de 'Exploits')<br/>
 				"
 		]
 	];
-	
+
 	player createDiaryRecord ["serverrules",
 		[
-			"Cop Interação", 
+			"Cop Interação",
 				"
 				Itens desta lista pode resultar em seu afastamento do servidor e / ou proibição, com base no critério administradores. <br/>
 
@@ -94,10 +94,10 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-	
+
 	player createDiaryRecord ["serverrules",
 		[
-			"Barcos", 
+			"Barcos",
 				"
 				Itens desta lista pode resultar em seu afastamento do servidor e / ou proibição, com base no critério administradores. <br/>
 
@@ -107,10 +107,10 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-	
+
 	player createDiaryRecord ["serverrules",
 		[
-			"Aviação", 
+			"Aviação",
 				"
 				Itens desta lista pode resultar em seu afastamento do servidor e / ou proibição, com base no critério administradores. <br/>
 
@@ -120,10 +120,10 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-	
+
 	player createDiaryRecord ["serverrules",
 		[
-			"Veículos", 
+			"Veículos",
 				"
 				Itens desta lista pode resultar em seu afastamento do servidor e / ou proibição, com base no critério administradores. <br/>
 
@@ -136,10 +136,10 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-	
+
 	player createDiaryRecord ["serverrules",
 		[
-			"Regras de comunicação", 
+			"Regras de comunicação",
 				"
 				Itens desta lista pode resultar em seu afastamento do servidor e / ou proibição, com base no critério administradores. <br/>
 
@@ -150,10 +150,10 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-	
+
 	player createDiaryRecord ["serverrules",
 		[
-			"Random Deathmatching (RDM)", 
+			"Random Deathmatching (RDM)",
 				"
 				Itens desta lista pode resultar em seu afastamento do servidor e / ou proibição, com base no critério administradores. <br/>
 
@@ -170,7 +170,7 @@ player createDiarySubject ["controls","Controls"];
 	];
 	player createDiaryRecord ["serverrules",
 		[
-			"Regras de vida nova", 
+			"Regras de vida nova",
 				"
 				A Regra de Vida Nova se aplica a policiais e civis/rebeldes. <br/>
 
@@ -187,7 +187,7 @@ player createDiarySubject ["controls","Controls"];
 
 	player createDiaryRecord ["serverrules",
 		[
-			"Não seja idiota!", 
+			"Não seja idiota!",
 				"
 				Causar outros grief, interromper roleplay, a lista continua. <br/>
 				Basta não ser um idiota, ok? <br/>
@@ -195,13 +195,13 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-	
+
 // Police Section
 	player createDiaryRecord ["policerules",
 		[
 			"Negociação de crises (sequestros)",
 				"
-				Negociação de crise deve ser tratado por um cop online que tenha o posto superior aos demais. 
+				Negociação de crise deve ser tratado por um cop online que tenha o posto superior aos demais.
 				"
 		]
 	];
@@ -217,7 +217,7 @@ player createDiarySubject ["controls","Controls"];
 				5. A polícia pode não disparar cegamente para dentro do prédio. <br/>
 				6. A polícia deve evacuar os civis da área durante um assalto. <br/>
 				7. Qualquer civil que faz ativamente com tentativa de bloquear a polícia de entrar na reserva pode ser tratado como um cúmplice. <br/>
-				8. Os agentes de supervisão podem contratar pessoas ou contratar um grupo de pessoas para trabalhar como guardas de segurança para o banco. Consulte a seção "Contratante" para obter mais informações. <br/>
+				8. Os agentes de supervisão podem contratar pessoas ou contratar um grupo de pessoas para trabalhar como guardas de segurança para o banco. Consulte a seção Contratante para obter mais informações. <br/>
 				"
 		]
 	];
@@ -228,7 +228,7 @@ player createDiarySubject ["controls","Controls"];
 				1. Helicóptero pode pousar dentro dos limites das cidades seguras sem autorização do oficial de mais alto ranking online. (Exceções listadas abaixo.) <br/>
 				Kavala: O heliporto do hospital (037.129) ou área de pouso (031.128) <br/>.
 				Athira: O campo de esportes (138.185) <br/>.
-			
+
 				2. Os helicópteros não podem pousar em estradas. <br/>
 				3. A polícia pode proibir temporariamente o desembarque no mas não pode permanecer fechada por um longo período de tempo. <br/>
 				4. Os helicópteros não podem voar abaixo de 150m sobre a cidade sem autorização. <br/>
@@ -236,10 +236,10 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-	
+
 	player createDiaryRecord ["policerules",
 		[
-			"Áreas ilegais", 
+			"Áreas ilegais",
 				"
 				1. Não entrar em uma área ilegal a menos que seja parte de uma perseguição. <br/>
 				2. Se você perseguir alguém em uma área ilegal, pedir reforços. <br/>
@@ -247,10 +247,10 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-	
+
 	player createDiaryRecord ["policerules",
 		[
-			"Patrulhando", 
+			"Patrulhando",
 				"
 				1. A polícia pode patrulhar estradas e cidades à procura de veículos abandonados e atividades criminosas. <br/>
 				2. Patrulhas pode ser feito a pé dentro de uma cidade, ou em um veículo quando fora. <br/>
@@ -258,10 +258,10 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-	
+
 	player createDiaryRecord ["policerules",
 		[
-			"Checkpoints", 
+			"Checkpoints",
 				"
 				Policiais são incentivados a pontos de verificação adicionais em áreas estratégicas para ajudar a combater as atividades ilegais e promover a segurança na estrada. <br/>
 
@@ -284,10 +284,10 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-	
+
 	player createDiaryRecord ["policerules",
 		[
-			"Veículos", 
+			"Veículos",
 				"
 				1. Os veículos no estacionamento, ou razoavelmente estacionado em outro lugar deve ser deixado no local. <br/>
 				2. Os veículos que olhar abandonado, quebrado, sem condutor, pode ser apreendido. <br/>
@@ -302,7 +302,7 @@ player createDiarySubject ["controls","Controls"];
 
 	player createDiaryRecord ["policerules",
 		[
-			"Excesso de velocidade", 
+			"Excesso de velocidade",
 				"
 				As seguintes velocidades estão a ser aplicadas pela força policial Altis para a segurança absoluta dos cidadãos de Kavala e todos que viajam para além da cidade. <br/>
 
@@ -315,10 +315,10 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-	
+
 	player createDiaryRecord ["policerules",
 		[
-			"Protocolo de cidades", 
+			"Protocolo de cidades",
 				"
 			1. Os funcionários podem patrulhar as principais cidades -. Kavala, Athira, Pyrgos e Sofia <br/>
 			2. Os oficiais podem parar naos lojas de carro para certificar-se não há carros que precisam ser apreendidos. <br/>
@@ -329,7 +329,7 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-	
+
 	player createDiaryRecord ["policerules",
 		[
 			"Prender e multar",
@@ -342,7 +342,7 @@ player createDiarySubject ["controls","Controls"];
 
 
 				Multar um civil é considerado um aviso para o civil. Se ele quebra uma lei, mas não representam uma ameaça para ninguém, você pode multar civil. <br/>
-		
+
 				1. As multas devem ser um preço razoável. <br/>
 				2. Os preços das multas deve ser baseado pelos crimes cometidos. <br/>
 				3. A recusa a pagar uma multa é motivo para a prisão. <br/>
@@ -354,10 +354,10 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-		
+
 	player createDiaryRecord ["policerules",
 		[
-			"Armas", 
+			"Armas",
 				"
 				Um policial nunca é permitido fornecer armas a civis. Isto fará você ser removido da coorporação. <br/>
 
@@ -376,7 +376,7 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-	
+
 	player createDiaryRecord ["policerules",
 		[
 			"Uso de força não-letal",
@@ -412,7 +412,7 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-	
+
 	player createDiaryRecord ["policerules",
 		[
 			"Cadeia de comando",
@@ -431,7 +431,7 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-	
+
 	player createDiaryRecord ["policerules",
 		[
 			"Uso de força letal",
@@ -442,7 +442,7 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-	
+
 	player createDiaryRecord ["policerules",
 		[
 			"Regras de Teamspeak",
@@ -452,9 +452,9 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-	
-	
-	
+
+
+
 // Illegal Items Section
 	player createDiaryRecord ["illegalitems",
 		[
@@ -501,10 +501,10 @@ player createDiarySubject ["controls","Controls"];
 				"
 				Um civil na posse da seguinte está sujeita às conseqüências, conforme definido na posse ilegal de arma de fogo uma lei. <br/>
 
-				1. MX Series <br/> 
-				2. Katiba Series <br/> 
-				3. TRG Series <br/> 
-				4. Mk.20 Series <br/> 
+				1. MX Series <br/>
+				2. Katiba Series <br/>
+				3. TRG Series <br/>
+				4. Mk.20 Series <br/>
 				5. Mk.18 ABR <br/>
 				6. SDAR Rifle <br/>
 				7. Sting SMG <br/>
@@ -537,7 +537,7 @@ player createDiarySubject ["controls","Controls"];
 		]
 	];
 
-	
+
 // Controls Section
 
 	player createDiaryRecord ["controls",
