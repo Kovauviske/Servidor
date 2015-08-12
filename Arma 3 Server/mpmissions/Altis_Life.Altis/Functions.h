@@ -297,6 +297,7 @@ class Life_Client_Core
 		class emptyFuel {};
 		class fatigueReset {};
 		class introCam {};
+		class fadeSound {};
 	};
 
 	class Network

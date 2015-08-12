@@ -2,7 +2,7 @@
 /*
 	File: fn_keyHandler.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Main key handler for event 'keyDown'
 */
@@ -34,7 +34,7 @@ if(life_action_inUse) exitWith {
 if(count (actionKeys "User10") != 0 && {(inputAction "User10" > 0)}) exitWith {
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	if(!life_action_inUse) then {
-		[] spawn 
+		[] spawn
 		{
 			private["_handle"];
 			_handle = [] spawn life_fnc_actionKeyHandler;
@@ -54,22 +54,22 @@ switch (_code) do
 		if(_shift && {animationState player != "AovrPercMrunSrasWrflDf"} && {isTouchingGround player} && {stance player == "STAND"} && {speed player > 2} && {!life_is_arrested} && {(velocity player) select 2 < 2.5} && {time - jumpActionTime > 1.5}) then {
 			jumpActionTime = time; //Update the time.
 			[player,true] spawn life_fnc_jumpFnc; //Local execution
-			[[player,false],"life_fnc_jumpFnc",nil,FALSE] call life_fnc_MP; //Global execution 
+			[[player,false],"life_fnc_jumpFnc",nil,FALSE] call life_fnc_MP; //Global execution
 			_handled = true;
 		};
 	};
-	
+
 	//Map Key
 	case _mapKey:
 	{
-		switch (playerSide) do 
+		switch (playerSide) do
 		{
 			case west: {if(!visibleMap) then {[] spawn life_fnc_copMarkers;}};
 			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
 			case civilian: {if(!visibleMap) then {[] spawn life_fnc_gangMarkers;}};
 		};
 	};
-	
+
 	//Surrender... shift + g
 	case 34:
 	{
@@ -89,7 +89,7 @@ switch (_code) do
 			};
 		};
 	};
-	
+
 	//Holster / recall weapon.
 	case 35:
 	{
@@ -98,19 +98,19 @@ switch (_code) do
 			player action ["SwitchWeapon", player, player, 100];
 			player switchcamera cameraView;
 		};
-		
+
 		if(!_shift && _ctrlKey && !isNil "life_curWep_h" && {(life_curWep_h != "")}) then {
 			if(life_curWep_h in [primaryWeapon player,secondaryWeapon player,handgunWeapon player]) then {
 				player selectWeapon life_curWep_h;
 			};
 		};
 	};
-	
+
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	case _interactionKey:
 	{
 		if(!life_action_inUse) then {
-			[] spawn 
+			[] spawn
 			{
 				private["_handle"];
 				_handle = [] spawn life_fnc_actionKeyHandler;
@@ -119,7 +119,7 @@ switch (_code) do
 			};
 		};
 	};
-	
+
 	//Knock out - Shift + T
 	case 47:
 	{
@@ -132,7 +132,7 @@ switch (_code) do
 			};
 		};
 	};
-	
+
 	//Restraining (Shift + R)
 	case 19:
 	{
@@ -167,9 +167,9 @@ switch (_code) do
 			};
 		};
 	};
-	
+
 	//L Key?
-	case 38: 
+	case 38:
 	{
 		//If cop run checks for turning lights on.
 		if(_shift && playerSide in [west,independent]) then {
@@ -184,10 +184,10 @@ switch (_code) do
 				};
 			};
 		};
-		
+
 		if(!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
 	};
-	
+
 	//Z Player Menu
 	case 21:
 	{
@@ -196,7 +196,7 @@ switch (_code) do
 			[] call life_fnc_p_openMenu;
 		};
 	};
-	
+
 	//F Key
 	case 33:
 	{
@@ -228,7 +228,7 @@ switch (_code) do
 			};
 		};
 	};
-	
+
 	//Ö Key
 	case 39:
 	{
@@ -259,7 +259,7 @@ switch (_code) do
 			};
 		};
 	};
-	
+
 	//Shift+O Zipties
 	case 24:
 	{
@@ -277,7 +277,7 @@ switch (_code) do
 			};
 		};
 	};
-	
+
 	//U Key
 	case 22:
 	{
@@ -287,7 +287,7 @@ switch (_code) do
 			} else {
 				_veh = vehicle player;
 			};
-			
+
 			if(_veh isKindOf "House_F" && playerSide == civilian) then {
 				if(_veh in life_vehicles && player distance _veh < 8) then {
 					_door = [_veh] call life_fnc_nearestDoor;
@@ -319,7 +319,7 @@ switch (_code) do
 							_veh lock 2;
 						} else {
 							[[_veh,2],"life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
-						};	
+						};
 						systemChat "Du hast Dein Fahrzeug abgeschlossen.";
 						[[_veh],"life_fnc_UnLockCarSound",nil,true] spawn life_fnc_MP;
 					};
@@ -327,7 +327,7 @@ switch (_code) do
 			};
 		};
 	};
-	
+
 	//EMP Konsole - K
     case 37:
     {
@@ -336,7 +336,7 @@ switch (_code) do
             [] call life_fnc_openEmpMenu; [_this] call life_fnc_isEmpOperator;
         };
     };
-	
+
 	//Pickaxe - Q
 	case 41:
 	{
@@ -355,7 +355,7 @@ switch (_code) do
 			} foreach life_inv_items;
 		}
 	};
-	
+
 	//SmartPhone  Shift + 1
 	case 2:
 	{
@@ -368,7 +368,7 @@ switch (_code) do
 			};
 		};
 	};
-	
+
 	//Wanted List Shift + 2
 	case 3:
 	{
@@ -382,7 +382,7 @@ switch (_code) do
 			};
 		};
 	};
-	
+
 	//Wanted List Shift + 3
 	case 4:
 	{
@@ -407,10 +407,10 @@ switch (_code) do
 
 	//Ü Nagelbänder
 	case 26:
-	{	
+	{
 		if(vehicle player != player) exitWith {hint "Du kannst nicht in einem Fahrzeug Nagelbänder auslegen.."};
 		if(playerSide == west) then {
-		
+
 		if(!isNull life_spikestrip) exitWith {hint "Du hast bereits ein Nagelband gelegt"};
 		if(([false,"spikeStrip",1] call life_fnc_handleInv)) then
 		{
@@ -419,7 +419,7 @@ switch (_code) do
 
 		};
 	};
-	
+
 	case 59: // F1
 	{
 		if(__GETC__(life_adminlevel) > 1) exitWith {hint "AdminLogin erfolgreich"};
@@ -435,7 +435,7 @@ switch (_code) do
 		hintc "Diese Taste wurde vom System blockiert";
 		_handled = false;
 	};
-			
+
 	case 61: // F3
 	{
 		if(__GETC__(life_adminlevel) > 1) exitWith {hint "AdminLogin erfolgreich"};
@@ -443,7 +443,7 @@ switch (_code) do
 		_handled = false;
 	};
 
-	case 62: // F4 
+	case 62: // F4
 	{
 		if(__GETC__(life_adminlevel) > 1) exitWith {hint "AdminLogin erfolgreich"};
 		closeDialog 0;
@@ -457,7 +457,7 @@ switch (_code) do
 		_handled = false;
 	};
 
-	case 64: //F6 key 
+	case 64: //F6 key
 	{
 		if(__GETC__(life_adminlevel) > 1) exitWith {hint "AdminLogin erfolgreich"};
 		closeDialog 0;
@@ -471,32 +471,41 @@ switch (_code) do
 		_handled = false;
 	};
 
-	case 66: //F8 key 
-	{
-		if(__GETC__(life_adminlevel) > 1) exitWith {hint "AdminLogin erfolgreich"};
-		closeDialog 0;
-		_handled = false;
-	};
-	
-	case 67: //F9 key 
+	case 66: //F8 key
 	{
 		if(__GETC__(life_adminlevel) > 1) exitWith {hint "AdminLogin erfolgreich"};
 		closeDialog 0;
 		_handled = false;
 	};
 
-	case 68: //10 key 
+	case 67: //F9 key
 	{
 		if(__GETC__(life_adminlevel) > 1) exitWith {hint "AdminLogin erfolgreich"};
 		closeDialog 0;
 		_handled = false;
 	};
-	
+
+	case 68: //10 key
+	{
+		if(__GETC__(life_adminlevel) > 1) exitWith {hint "AdminLogin erfolgreich"};
+		closeDialog 0;
+		_handled = false;
+	};
+
 	case 211: //DELETE key
 	{
 		if(__GETC__(life_adminlevel) > 1) exitWith {hint "AdminLogin erfolgreich"};
 		closeDialog 0;
 		_handled = false;
+	};
+
+	case 25:
+	{
+	    if(_shift) then
+		{
+		    [] call life_fnc_fadeSound;
+			_handled = true;
+		};
 	};
 };
 _handled;
