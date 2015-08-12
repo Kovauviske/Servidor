@@ -1,7 +1,7 @@
 /*
 	File: fn_vehicleWeightCfg.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Master configuration for vehicle weight.
 */
@@ -24,19 +24,19 @@ switch (_className) do
 	case "C_Boat_Civil_01_F": {85};
 	case "C_Boat_Civil_01_police_F": {85};
 	case "C_Boat_Civil_01_rescue_F": {85};
-	case "B_Truck_01_box_F": {600};
+	case "B_Truck_01_box_F": {900};
 	case "B_Truck_01_transport_F": {400};
 	case "B_MRAP_01_F": {100};
 	case "O_MRAP_02_F": {100};
 	case "I_MRAP_03_F": {100};
-	case "B_Heli_Light_01_F": {90};
-	case "O_Heli_Light_02_unarmed_F": {500};
-	case "I_Heli_Transport_02_F": {500};
+	case "B_Heli_Light_01_F": {110};
+	case "O_Heli_Light_02_unarmed_F": {300};
+	case "I_Heli_Transport_02_F": {200};
 	case "C_Rubberboat": {45};
 	case "O_Boat_Armed_01_hmg_F": {75};
 	case "B_G_Boat_Transport_01_F": {45};
 	case "B_Boat_Transport_01_F": {45};
-	case "O_Heli_Light_02_F": {500};
+	case "O_Heli_Light_02_F": {300};
 	case "I_Heli_light_03_unarmed_F": {150};
 	case "O_Truck_03_transport_F": {400};
 	case "O_Truck_03_covered_F": {200};
@@ -48,6 +48,6 @@ switch (_className) do
 	case "B_supplyCrate_F": {250};
 	case "C_Van_01_fuel_F": {100};
 	case "B_Truck_01_covered_F": {500};
-	case "B_Truck_01_ammo_F": {550};
+	case "B_Truck_01_ammo_F": {650};
 	default {-1};
 };
