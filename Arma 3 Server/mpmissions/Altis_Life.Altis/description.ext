@@ -66,13 +66,13 @@ class CfgSounds
 	class car_lock
 	{
 		name = "car_lock";
-		sound[] = {"\sounds\car_lock.ogg", 1.0, 1};
+		sound[] = {"\sounds\car_lock.ogg", 0.5, 1};
 		titles[] = {};
 	};
 	class unlock
 	{
 		name = "unlock";
-		sound[] = {"\sounds\unlock.ogg", 1.0, 1};
+		sound[] = {"\sounds\unlock.ogg", 0.5, 1};
 		titles[] = {};
 	};
 	class cuff
@@ -153,9 +153,9 @@ class CfgDebriefing
 {
 	class NotWhitelisted
 	{
-		title = "Mission Fehlgeschlagen";
-		subtitle = "Du wurdest vom Dienst suspendiert";
-		description = "You are not allowed to use this slot because you do not have the appropriate permissions, try another slot.";
+		title = "Missão Fracassada";
+		subtitle = "Você foi suspenso das suas funções";
+		description = "Você não tem permissão para usar esse slot porque você não tem as permissões apropriadas, tente outro slot.";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -163,9 +163,9 @@ class CfgDebriefing
 
 	class Blacklisted
 	{
-		title = "Mission Fehlgeschlagen";
-		subtitle = "Du stehst auf der Polizei Blacklist";
-		description = "You are not allowed to be a cop due to previous actions and the admins have removed you from being a cop.";
+		title = "Missão Fracassada";
+		subtitle = "Você está na lista negra da polícia";
+		description = "Você não tem permissão para ser um policial devido a ações anteriores e os admins ter removido-lo de ser um policial.";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -173,9 +173,9 @@ class CfgDebriefing
 
 	class SpyGlass
 	{
-		title = "SpyGlass hat dich gesehen";
-		subTitle = "You were detected by the SpyGlass";
-		description = "You were detected for cheating and have been reported to the server. Enjoy your day.";
+		title = "SpyGlass te viu";
+		subTitle = "Você foi detectado pelo SpyGlass";
+		description = "Você foi detectado por engano e foi relatado para o servidor. Aproveite seu dia.";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -186,7 +186,7 @@ class CfgNotifications
 {
 	class MedicalRequestEmerg
 	{
-		title = "Notruf";
+		title = "Chamar Samu";
 		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
 		description = "%1";
 		duration = 5;
@@ -195,7 +195,7 @@ class CfgNotifications
 
 	class DeliveryAssigned
 	{
-		title = "Delivery Job Accepted";
+		title = "Trabalho de Entrega Aceito";
 		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
 		description = "%1";
 		duration = 10;
@@ -204,7 +204,7 @@ class CfgNotifications
 
 	class DeliveryFailed
 	{
-		title = "Delivery Job Failed";
+		title = "Trabalho de Entrega Falhou";
 		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskiconfailed_ca.paa";
 		description = "%1";
 		duration = 7;
@@ -213,7 +213,7 @@ class CfgNotifications
 
 	class DeliverySucceeded
 	{
-		title = "Delivery Job Completed";
+		title = "Trabalho de entrega concluido";
 		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
 		description = "%1";
 		duration = 6;
@@ -222,7 +222,7 @@ class CfgNotifications
 
 	class TextMessage
 	{
-		title = "Neue Textnachricht";
+		title = "Nova mensagem de texto";
 		iconPicture = "icons\messagenew.paa";
 		description = "%1";
 		duration = 10;
@@ -231,7 +231,7 @@ class CfgNotifications
 
 	class PoliceDispatch
 	{
-		title = "Polizei Notruf";
+		title = "Chamar Policia";
 		iconPicture = "icons\messagepolice.paa";
 		description = "%1";
 		duration = 10;
@@ -240,7 +240,7 @@ class CfgNotifications
 
 	class AdminDispatch
 	{
-		title = "Admin Nachrichten Center";
+		title = "ADM Central de Notícias";
 		iconPicture = "icons\messageadmin.paa";
 		description = "%1";
 		duration = 10;
@@ -249,7 +249,7 @@ class CfgNotifications
 
 	class AdminMessage
 	{
-		title = "Admin Nachricht";
+		title = "Mensagem do Administrador";
 		iconPicture = "icons\messageadmin.paa";
 		description = "%1";
 		duration = 10;
