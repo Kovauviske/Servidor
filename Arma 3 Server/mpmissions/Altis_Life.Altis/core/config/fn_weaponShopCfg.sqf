@@ -31,7 +31,7 @@ switch(_shop) do
 					[
 						["Rangefinder",nil,5000],
 						["arifle_sdar_F","Taser Rifle",30000],
-                        ["20Rnd_556x45_UW_mag","Munição Taser Rifle",10000],
+						["20Rnd_556x45_UW_mag","Munição Taser Rifle",10000],
 						["hgun_Rook40_F","Taser Pistola",15000],
 						["hgun_Rook40_snds_F","Taser Pistola Silenciador",200],
 						["16Rnd_9x21_Mag","Munição Taser Pistola",100]
