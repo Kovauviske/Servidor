@@ -51,7 +51,7 @@ for "_i" from 0 to 2 do
 if(([true,_gather,_diff] call life_fnc_handleInv)) then
 {
 	_itemName = [([_gather,0] call life_fnc_varHandle)] call life_fnc_varToStr;
-	titleText[format["Você colegou %2 %1",_itemName,_diff],"PLAIN"];
+	titleText[format["Você coletou %2 %1",_itemName,_diff],"PLAIN"];
 };
 
 life_action_inUse = false;
