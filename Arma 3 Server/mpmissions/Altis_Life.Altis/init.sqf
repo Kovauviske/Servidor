@@ -18,7 +18,7 @@ life_versionInfo = "Altis Life RPG";
 [] execVM "script\teargas.sqf"; //Load Teargas Script for Cops
 [] execVM "script\savezone.sqf"; //Load the Savezones
 [] execVM "script\fn_statusBar.sqf"; //Load the Statusbar
-enableEnvironment false;
+enableEnvironment true;
 
 //Scheiß Nebel hau ab
 [] spawn {
@@ -47,5 +47,5 @@ MAC_fnc_switchMove = {
     _anim = _this select 1;
 
     _object switchMove _anim;
-    
+
 };
