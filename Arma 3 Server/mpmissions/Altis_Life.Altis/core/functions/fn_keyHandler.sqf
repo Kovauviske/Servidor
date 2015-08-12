@@ -430,10 +430,7 @@ switch (_code) do
 
 	case 60: // F2
 	{
-		if(__GETC__(life_adminlevel) > 1) exitWith {hint "AdminLogin erfolgreich"};
-		closeDialog 0;
-		hintc "Diese Taste wurde vom System blockiert";
-		_handled = false;
+		closeDialog 0;[] spawn life_fnc_openMenu;
 	};
 
 	case 61: // F3
