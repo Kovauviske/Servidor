@@ -45,7 +45,7 @@ class CfgSounds
 	class SirenLong
 	{
 		name = "SirenLong";
-		sound[] = {"\sounds\Siren_Long.ogg", 1.0, 1};
+		sound[] = {"\sounds\Siren_Long.ogg", 1.2, 1};
 		titles[] = {};
 	};
 
