@@ -307,7 +307,7 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != civilian): {"Você não é um policial"};
+			case (playerSide != civilian): {"Você não é um civil"};
 			case (!license_civ_rebel): {"Você precisa ter licença rebelde"};
 			default
 			{
@@ -332,11 +332,8 @@ switch(_shop) do
 						["10Rnd_762x51_Mag","Munição - Rahlm 7.62mm",5000],
 						["srifle_EBR_F",nil,250000],
 						["20Rnd_762x51_Mag","Munição - MK18 7.62mm",7000],
-						["muzzle_snds_B","Silenciador 7.62mm",50000],
 						["LMG_Zafir_F",nil,300000],
 						["150Rnd_762x54_Box","Munição - Zafir 7.62mm",10000],
-						["srifle_LRR_F",nil,2500000],
-						["7Rnd_408_Mag","Munição - M320 LRR .408",100000],
 						["optic_Holosight",nil,2000],
 						["acc_flashlight",nil,3000],
 						["optic_Hamr",nil,15000],
@@ -360,7 +357,7 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != civilian): {"Você não é um policial"};
+			case (playerSide != civilian): {"Você não é um Civil"};
 			case (!license_civ_gun): {"Você não tem nenhuma licença de arma!"};
 			default
 			{
@@ -578,6 +575,43 @@ switch(_shop) do
 				["Chemlight_red",nil,5000]
 			]
 		];
+	};
+
+case "gang":
+	{
+		switch(true) do
+		{
+			case (playerSide != civilian): {"Você não é um civil"};
+			default
+			{
+				["Loja de armas rebeldes",
+					[
+						["hgun_P07_F",nil,20000],
+						["16Rnd_9x21_Mag","Munição - P07 9mm",25],
+						["hgun_ACPC2_F",nil,25000],
+						["9Rnd_45ACP_Mag","Munição - ACP-C2 .45",45],
+						["hgun_Pistol_heavy_02_F",nil,35000],
+						["6Rnd_45ACP_Cylinder","Munição - Zubr .45",80],
+			    		["arifle_TRG20_F",nil,50000],
+						["30Rnd_556x45_Stanag","Munição - TRG-20 5.56mm",1000],
+						["arifle_SDAR_F",nil,60000],
+						["30Rnd_65x39_caseless_green","Munição - Katiba 6.5mm",2000],
+						["srifle_DMR_01_F",nil,200000],
+						["10Rnd_762x51_Mag","Munição - Rahlm 7.62mm",5000],
+						["optic_Holosight",nil,2000],
+						["acc_flashlight",nil,3000],
+						["optic_Hamr",nil,15000],
+						["optic_Arco",nil,25000],
+						["SmokeShell",nil,5000],
+						["SmokeShellRed",nil,5000],
+						["SmokeShellGreen",nil,5000],
+						["SmokeShellYellow",nil,5000],
+						["SmokeShellPurple",nil,5000],
+						["SmokeShellOrange",nil,5000]
+					]
+				];
+			};
+		};
 	};
 
 	case "uranium":
