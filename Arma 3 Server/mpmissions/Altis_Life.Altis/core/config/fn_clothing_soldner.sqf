@@ -19,10 +19,70 @@ switch (_filter) do
 	//Uniforms
     case 0:
     {
-        if(__GETC__(life_donator) < 1) then
+        if(__GETC__(life_donator) == 1 ) then
         {
 			_ret set[count _ret,["U_I_CombatUniform_tshirt",nil,75000]];
 			_ret set[count _ret,["U_I_pilotCoveralls",nil,50000]];
+			_ret set[count _ret,["U_I_OfficerUniform",nil,35000]];
+			_ret set[count _ret,["U_BG_Guerilla1_1",nil,35000]];
+			_ret set[count _ret,["U_IG_Guerilla1_1",nil,35000]];
+			_ret set[count _ret,["U_B_survival_uniform",nil,35000]];
+			_ret set[count _ret,["U_I_G_resistanceLeader_F",nil,35000]];
+			_ret set[count _ret,["U_O_FullGhillie_sard",nil,35000]];
+			_ret set[count _ret,["U_B_FullGhillie_lsh",nil,35000]];
+			_ret set[count _ret,["U_B_FullGhillie_sard",nil,35000]];
+			_ret set[count _ret,["U_B_FullGhillie_ard",nil,35000]];
+			_ret set[count _ret,["U_O_FullGhillie_sard",nil,35000]];
+			_ret set[count _ret,["U_I_FullGhillie_lsh",nil,35000]];
+			_ret set[count _ret,["U_I_FullGhillie_ard",nil,35000]];
+			_ret set[count _ret,["U_I_OfficerUniform",nil,35000]];
+			_ret set[count _ret,["U_I_GhillieSuit",nil,100000]];
+			_ret set[count _ret,["U_I_Wetsuit",nil,12500]]
+        };
+    };
+
+    case 2:
+    {
+        if(__GETC__(life_donator) == 2) then
+        {
+			_ret set[count _ret,["U_I_CombatUniform_tshirt",nil,75000]];
+			_ret set[count _ret,["U_I_pilotCoveralls",nil,50000]];
+			_ret set[count _ret,["U_I_OfficerUniform",nil,35000]];
+			_ret set[count _ret,["U_BG_Guerilla1_1",nil,35000]];
+			_ret set[count _ret,["U_IG_Guerilla1_1",nil,35000]];
+			_ret set[count _ret,["U_B_survival_uniform",nil,35000]];
+			_ret set[count _ret,["U_I_G_resistanceLeader_F",nil,35000]];
+			_ret set[count _ret,["U_O_FullGhillie_sard",nil,35000]];
+			_ret set[count _ret,["U_B_FullGhillie_lsh",nil,35000]];
+			_ret set[count _ret,["U_B_FullGhillie_sard",nil,35000]];
+			_ret set[count _ret,["U_B_FullGhillie_ard",nil,35000]];
+			_ret set[count _ret,["U_O_FullGhillie_sard",nil,35000]];
+			_ret set[count _ret,["U_I_FullGhillie_lsh",nil,35000]];
+			_ret set[count _ret,["U_I_FullGhillie_ard",nil,35000]];
+			_ret set[count _ret,["U_I_OfficerUniform",nil,35000]];
+			_ret set[count _ret,["U_I_GhillieSuit",nil,100000]];
+			_ret set[count _ret,["U_I_Wetsuit",nil,12500]]
+        };
+    };
+
+    case 3:
+    {
+        if(__GETC__(life_donator) == 3) then
+        {
+			_ret set[count _ret,["U_I_CombatUniform_tshirt",nil,75000]];
+			_ret set[count _ret,["U_I_pilotCoveralls",nil,50000]];
+			_ret set[count _ret,["U_I_OfficerUniform",nil,35000]];
+			_ret set[count _ret,["U_BG_Guerilla1_1",nil,35000]];
+			_ret set[count _ret,["U_IG_Guerilla1_1",nil,35000]];
+			_ret set[count _ret,["U_B_survival_uniform",nil,35000]];
+			_ret set[count _ret,["U_I_G_resistanceLeader_F",nil,35000]];
+			_ret set[count _ret,["U_O_FullGhillie_sard",nil,35000]];
+			_ret set[count _ret,["U_B_FullGhillie_lsh",nil,35000]];
+			_ret set[count _ret,["U_B_FullGhillie_sard",nil,35000]];
+			_ret set[count _ret,["U_B_FullGhillie_ard",nil,35000]];
+			_ret set[count _ret,["U_O_FullGhillie_sard",nil,35000]];
+			_ret set[count _ret,["U_I_FullGhillie_lsh",nil,35000]];
+			_ret set[count _ret,["U_I_FullGhillie_ard",nil,35000]];
 			_ret set[count _ret,["U_I_OfficerUniform",nil,35000]];
 			_ret set[count _ret,["U_I_GhillieSuit",nil,100000]];
 			_ret set[count _ret,["U_I_Wetsuit",nil,12500]]
@@ -30,11 +90,65 @@ switch (_filter) do
     };
 
 	//Hats
-	case 1:
+	case 4:
 	{
-		if(__GETC__(life_donator) < 1) then
+		if(__GETC__(life_donator) == 1) then
 		{
 			_ret set[count _ret,["H_Booniehat_indp",nil,5000]];
+			_ret set[count _ret,["H_HelmetB_camo",nil,5000]];
+			_ret set[count _ret,["H_Booniehat_khk",nil,5000]];
+			_ret set[count _ret,["H_HelmetB_sand",nil,5000]];
+			_ret set[count _ret,["H_HelmetCrew_O",nil,5000]];
+			_ret set[count _ret,["H_PilotHelmetHeli_B",nil,5000]];
+			_ret set[count _ret,["H_HelmetO_ocamo",nil,5000]];
+			_ret set[count _ret,["H_Shemag_khk",nil,5000]];
+			_ret set[count _ret,["H_Shemag_olive",nil,5000]];
+			_ret set[count _ret,["H_ShemagOpen_khk",nil,5000]];
+			_ret set[count _ret,["H_ShemagOpen_tan",nil,5000]];
+			_ret set[count _ret,["H_Hat_camo",nil,5000]];
+			_ret set[count _ret,["H_Bandanna_surfer",nil,5000]];
+			_ret set[count _ret,["H_CrewHelmetHeli_I",nil,15000]]
+		};
+	};
+
+	case 4:
+	{
+		if(__GETC__(life_donator) == 2) then
+		{
+			_ret set[count _ret,["H_Booniehat_indp",nil,5000]];
+			_ret set[count _ret,["H_HelmetB_camo",nil,5000]];
+			_ret set[count _ret,["H_Booniehat_khk",nil,5000]];
+			_ret set[count _ret,["H_HelmetB_sand",nil,5000]];
+			_ret set[count _ret,["H_HelmetCrew_O",nil,5000]];
+			_ret set[count _ret,["H_PilotHelmetHeli_B",nil,5000]];
+			_ret set[count _ret,["H_HelmetO_ocamo",nil,5000]];
+			_ret set[count _ret,["H_Shemag_khk",nil,5000]];
+			_ret set[count _ret,["H_Shemag_olive",nil,5000]];
+			_ret set[count _ret,["H_ShemagOpen_khk",nil,5000]];
+			_ret set[count _ret,["H_ShemagOpen_tan",nil,5000]];
+			_ret set[count _ret,["H_Hat_camo",nil,5000]];
+			_ret set[count _ret,["H_Bandanna_surfer",nil,5000]];
+			_ret set[count _ret,["H_CrewHelmetHeli_I",nil,15000]]
+		};
+	};
+
+	case 4:
+	{
+		if(__GETC__(life_donator) == 3) then
+		{
+			_ret set[count _ret,["H_Booniehat_indp",nil,5000]];
+			_ret set[count _ret,["H_HelmetB_camo",nil,5000]];
+			_ret set[count _ret,["H_Booniehat_khk",nil,5000]];
+			_ret set[count _ret,["H_HelmetB_sand",nil,5000]];
+			_ret set[count _ret,["H_HelmetCrew_O",nil,5000]];
+			_ret set[count _ret,["H_PilotHelmetHeli_B",nil,5000]];
+			_ret set[count _ret,["H_HelmetO_ocamo",nil,5000]];
+			_ret set[count _ret,["H_Shemag_khk",nil,5000]];
+			_ret set[count _ret,["H_Shemag_olive",nil,5000]];
+			_ret set[count _ret,["H_ShemagOpen_khk",nil,5000]];
+			_ret set[count _ret,["H_ShemagOpen_tan",nil,5000]];
+			_ret set[count _ret,["H_Hat_camo",nil,5000]];
+			_ret set[count _ret,["H_Bandanna_surfer",nil,5000]];
 			_ret set[count _ret,["H_CrewHelmetHeli_I",nil,15000]]
 		};
 	};
@@ -63,9 +177,15 @@ switch (_filter) do
 	{
 		if(__GETC__(life_donator) < 1) then
 		{
-			_ret set[count _ret,["V_PlateCarrierIAGL_dgtl",nil,50000]];
 			_ret set[count _ret,["V_PlateCarrierIA2_dgtl",nil,40000]];
-			_ret set[count _ret,["V_PlateCarrierIA1_dgtl",nil,30000]];
+			_ret set[count _ret,["V_PlateCarrier1_rgr",nil,5000]];
+			_ret set[count _ret,["V_Chestrig_khk",nil,5000]];
+			_ret set[count _ret,["V_TacVest_oli",nil,5000]];
+			_ret set[count _ret,["V_TacVestCamo_khk",nil,5000]];
+			_ret set[count _ret,["V_HarnessOGL_brn",nil,5000]];
+			_ret set[count _ret,["V_PlateCarrierIA1_dgtl",nil,5000]];
+			_ret set[count _ret,["V_PlateCarrierIAGL_dgtl",nil,5000]];
+			_ret set[count _ret,["V_I_G_resistanceLeader_F",nil,5000]];
 			_ret set[count _ret,["V_BandollierB_rgr",nil,20000]];
 			_ret set[count _ret,["V_RebreatherIA",nil,7500]]
 		};
