@@ -1818,7 +1818,7 @@
 			<German>%1 wurde von %2 getazert</German>
 			<French>%1 a été tazé par %2</French>
 			<Italian>%1 è stato taserato da %2</Italian>
-			<Portuguese>%1 foi tazed por %2</Portuguese>
+			<Portuguese>%1 foi eletrocutado por %2</Portuguese>
 		</Key>
 		<Key ID="STR_NOTF_VehContraband">
 			<Original>A vehicle was searched and has $%1 worth of drugs / contraband.</Original>
@@ -2283,7 +2283,7 @@
 			<German>%1 hat %3 einen Strafzettel über $%2 ausgestellt</German>
 			<French>%1 a mis une contravention de $%2 à %3</French>
 			<Italian>%1 ha dato una multa di €%2 a %3</Italian>
-			<Portuguese>%1 deu uma multa de R$%2 para %3</Portuguese>
+			<Portuguese>%1 deu uma multa de %2R$ para %3</Portuguese>
 		</Key>	
 		<Key ID="STR_Cop_Ticket_NotEnough">
 			<Original>You don't have enough money in your bank account or on you to pay the ticket.</Original>
@@ -2363,7 +2363,7 @@
 			<German>%1 hat Schmuggelware im Wert von $%2 bei sich.</German>
 			<French>%1 a $%2 de contrebande sur lui.</French>
 			<Italian>%1 ha €%2 in materiali illegali con se.</Italian>
-			<Portuguese>%1 tem R$%1 em contrabando.</Portuguese>
+			<Portuguese>%1 tem %2 R$ em contrabando.</Portuguese>
 		</Key>
 		<Key ID="STR_Cop_IllegalItems">
 			<Original>Illegal Items</Original>
@@ -2467,7 +2467,7 @@
 			<German>Der Tresor ist abgeschlossen?</German>
 			<French>Le coffre est déjà fermé?</French>
 			<Italian>Il Caveau è già bloccato?</Italian>
-			<Portuguese>O Cofre está trancado?</Portuguese>
+			<Portuguese>O Cofre está trancado!</Portuguese>
 		</Key>
 		<Key ID="STR_Cop_VaultUnder1">
 			<Original>You can't enter anything below 1!</Original>
@@ -2571,7 +2571,7 @@
 			<German>Du wurdest von %1 festgenommen</German>
 			<French>Vous avez été menotté par %1</French>
 			<Italian>%1 ti ha tolto le manette</Italian>
-			<Portuguese>Você foi solto por %1</Portuguese>
+			<Portuguese>Você foi preso por %1</Portuguese>
 		</Key>
 	</Package>
 	<Package name="MISC_Strings">
