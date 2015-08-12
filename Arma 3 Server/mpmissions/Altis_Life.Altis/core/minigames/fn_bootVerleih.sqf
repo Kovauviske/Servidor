@@ -18,15 +18,15 @@ _spawnPoint = "bootVerleih_spawn";
 _timeKeeper = 1;
 
 // Error checks
-if(playerSide != civilian) exitWith {hintSilent "Du bist kein Zivilist!"};
+if(playerSide != civilian) exitWith {hintSilent "Você não é um civil!"};
 if(!alive player) exitWith {};
-if(_price > life_cash) exitWith {hintSilent format["Du hast leider nicht genügend Geld bei dir! Dir fehlen: %1 Euro",_price - life_cash]};
-if(license_civ_boat) exitWith {hintSilent "Du besitzt keinen Bootführerschein!"};
-if(life_bootVerleihInUse) exitWith {hintSilent "Du kannst nur ein Boot gleichzeitig Mieten!"};
+if(_price > life_cash) exitWith {hintSilent format["Você tem dinheiro suficiente com você! Está faltando: %1 R$",_price - life_cash]};
+if(license_civ_boat) exitWith {hintSilent "Você não tem uma licença de barco!"};
+if(life_bootVerleihInUse) exitWith {hintSilent "Você só pode alugar um barco por vez"};
 
-_verleihAction = [format["Möchtest du ein Boot für %1 Minuten ausleihen ? Dies kostet dich dann %2",[(_duration),"MM"] call BIS_fnc_secondsToString,_price],"Boot Verleih Altis",localize "STR_Global_YES",localize "STR_Global_NO"] call BIS_fnc_guiMessage;
+_verleihAction = [format["Você quer alugar um barco para %1 minutos? Isso vai te custar %2 R$",[(_duration),"MM"] call BIS_fnc_secondsToString,_price],"Aluguel de Barcos",localize "STR_Global_YES",localize "STR_Global_NO"] call BIS_fnc_guiMessage;
 if(_verleihAction) then {
-  hintSilent "Der Kauf war erfolgreich dein Boot wird nun Bereitgestelt!";
+  hintSilent "O aluguel foi bem-sucedido o seu barco está disponivel agora!";
   life_bootVerleihInUse = true;
   sleep 2;
   // Start Boat spawn
@@ -44,7 +44,7 @@ if(_verleihAction) then {
   _player moveInDriver _vehicle;
   _player allowDamage true; // Can take damage
   _player setDamage 0;
-  hintSilent format["Dein Boot steht nun bereit! Du hast nun %1 Minuten Fahrzeit! Wir wünschen dir Viel Spaß!",[(_duration),"MM"] call BIS_fnc_secondsToString];
+  hintSilent format["Seu barco está pronto! Você tem agora %1 minutos para usar o barco! Esperamos que você goste!",[(_duration),"MM"] call BIS_fnc_secondsToString];
   // Danke an KiloSwiss für den "TimeKeeper" <3
   if(_timeKeeper == 1) then {
     _timeKeeper = 0;
@@ -63,6 +63,6 @@ if(_verleihAction) then {
     sleep 1;
     _player allowDamage true; // Can take damage
     _player setDamage 0; // Just for case
-    hintSilent "Wir hoffen du hattest Spaß mit deinem Boot! Wir freuen uns auf deinen nächsten Besuch!";
+    hintSilent "Esperamos que você se divertiu com o seu barco! Estamos ansiosos para sua próxima visita!";
   };
 };
