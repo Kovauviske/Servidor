@@ -522,7 +522,6 @@ switch(_shop) do
 						["muzzle_snds_B","Silenciador 7.62mm",30000],
 						["LMG_Zafir_F",nil,210000],
 						["150Rnd_762x54_Box","Munição - Zafir 7.62mm",6000],
-						["srifle_LRR_F",nil,1800000],
 						["srifle_DMR_03_multicam_F",nil,500000],
 						["20Rnd_762x51_Mag","Munição - MK1 7.62mm",3500],
 						["muzzle_snds_B","Silenciador 7.62mm",30000],
