@@ -1,6 +1,6 @@
 /*File: fn_drinkmoonshine.sqf author:[midgetgrimm] drinkypoo*/
 closeDialog 0;
-hintSilent parseText format["Your BAC is now<br/> <t size='1.4'><t color='#FF0000'>%1</t></t>",[life_drink] call life_fnc_numberText];
+hintSilent parseText format["Seu teor alcolico é<br/> <t size='1.4'><t color='#FF0000'>%1</t></t>",[life_drink] call life_fnc_numberText];
 sleep 4;
 "chromAbberation" ppEffectEnable true;
 "radialBlur" ppEffectEnable true;
@@ -12,17 +12,17 @@ player setVariable["inDrink",true,true];
 for "_i" from 0 to 89 do
 {
     if(life_drink > 0.15) then {
-		
+
 		//"wetDistortion" ppEffectAdjust [random 5];
 		"chromAberration" ppEffectAdjust [random 0.07,random 0.07,true];
-		"chromAberration" ppEffectCommit 1;   
+		"chromAberration" ppEffectCommit 1;
 		"radialBlur" ppEffectAdjust[0.04, 0.09, 0.25, 0.29];
 		"radialBlur" ppEffectCommit 1;
 		addcamShake[random 4, 2, random 4];
 		sleep 1;
 	} else {
 		"chromAberration" ppEffectAdjust [random 0.03,random 0.03,true];
-		"chromAberration" ppEffectCommit 1;   
+		"chromAberration" ppEffectCommit 1;
 		"radialBlur" ppEffectAdjust  [random 0.03,random 0.03,0.43,0.43];
 		"radialBlur" ppEffectCommit 1;
 		addcamShake[random 4, 2, random 4];
@@ -42,7 +42,7 @@ if (life_drink > 0.22) then {
 			player playMoveNow "amovppnemstpsraswrfldnon";
 			[[0,format[localize "STR_MISC_StPubIntox",profileName]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 			[[getPlayerUID player,profileName,"390"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
-			
+
 };
 //Stop effects
 player setVariable["inDrink",false,true];
