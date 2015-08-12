@@ -35,3 +35,5 @@
 #include "LicensesDialog.hpp"
 #include "craft.hpp"
 #include "jail_time.hpp"
+#include "AS_AdminMenu.hpp"
+#include "AS_Refund.hpp"
