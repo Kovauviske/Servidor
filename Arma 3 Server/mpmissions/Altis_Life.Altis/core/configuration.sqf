@@ -33,7 +33,7 @@ life_action_gathering = false;
 life_smartphoneTarget = ObjNull;
 life_action_gather = false;
 life_drink = 0;
-life_fatigue = 0.2; //Set the max fatigue limit (50%)
+life_fatigue = 0.15; //Set the max fatigue limit (50%)
 life_kw_athira = false;
 life_kw_kavala = false;
 life_kw_sofia = false;
@@ -52,14 +52,14 @@ __CONST__(life_save_yinv,TRUE); //Save Y-Inventory for civs and cops?
 
 //Revive constant variables.
 __CONST__(life_revive_cops,FALSE); //Set to false if you don't want cops to be able to revive downed players.
-__CONST__(life_revive_fee,1000); //Fee for players to pay when revived.
+__CONST__(life_revive_fee,30000); //Fee for players to pay when revived.
 
 //House Limit
 __CONST__(life_houseLimit,3); //Maximum amount of houses a player can buy (TODO: Make Tiered licenses).
 
 //Gang related stuff?
-__CONST__(life_gangPrice,40000); //Price for creating a gang (They're all persistent so keep it high to avoid 345345345 gangs).
-__CONST__(life_gangUpgradeBase,10000); //MASDASDASD
+__CONST__(life_gangPrice,100000); //Price for creating a gang (They're all persistent so keep it high to avoid 345345345 gangs).
+__CONST__(life_gangUpgradeBase,20000); //MASDASDASD
 __CONST__(life_gangUpgradeMultipler,2.5); //BLAH
 
 __CONST__(life_enableFatigue,true); //Enable / Disable the ARMA 3 Fatigue System
@@ -93,9 +93,9 @@ life_hunger = 100;
 life_battery = 50;
 __CONST__(life_paycheck_period,10); //Five minutes
 life_cash = 0;
-__CONST__(life_impound_car,2500);
-__CONST__(life_impound_boat,1000);
-__CONST__(life_impound_air,7500);
+__CONST__(life_impound_car,10000);
+__CONST__(life_impound_boat,15000);
+__CONST__(life_impound_air,20000);
 life_istazed = false;
 life_my_gang = ObjNull;
 life_drugged_cocaine = -1;
@@ -109,18 +109,18 @@ switch (playerSide) do
 {
 	case west:
 	{
-		life_atmcash = 10000; //Starting Bank Money
-		life_paycheck = 2000; //Paycheck Amount
+		life_atmcash = 80000; //Starting Bank Money
+		life_paycheck = 20000; //Paycheck Amount
 	};
 	case civilian:
 	{
-		life_atmcash = 10000; //Starting Bank Money
-		life_paycheck = 850; //Paycheck Amount
+		life_atmcash = 80000; //Starting Bank Money
+		life_paycheck = 10000; //Paycheck Amount
 	};
 
 	case independent: {
-		life_atmcash = 10000;
-		life_paycheck = 1750;
+		life_atmcash = 80000;
+		life_paycheck = 15000;
 	};
 };
 
@@ -467,8 +467,8 @@ life_garage_prices =
 	["B_QuadBike_01_F",500],
 	["C_Hatchback_01_F",1000],
 	["C_Offroad_01_F",3000],
-	["B_G_Offroad_01_F",4000],
-	["C_SUV_01_F",5500],
+	["B_G_Offroad_01_F",10000],
+	["C_SUV_01_F",6000],
 	["C_Van_01_transport_F",8000],
 	["C_Hatchback_01_sport_F",10000],
 	["C_Van_01_fuel_F",5000],
@@ -491,7 +491,7 @@ life_garage_prices =
 	["C_Boat_Civil_01_police_F",8500],
 	["B_Boat_Armed_01_minigun_F",15000],
 	["B_SDV_01_F",30000],
-	["B_MRAP_01_F",15000],
+	["B_MRAP_01_F",50000],
 	["I_MRAP_03_F",60000],
 	["O_Heli_Light_02_F",15000],
 	["I_Heli_light_03_unarmed_F",15000],
@@ -544,6 +544,6 @@ life_garage_sell =
 	["O_Truck_03_device_F",200000],
 	["O_Heli_Transport_04_F",200000],
 	["B_Heli_Transport_03_F",10000],
-	["O_Heli_Transport_04_box_F",100000]
+	["O_Heli_Transport_04_box_F",10000]
 ];
 __CONST__(life_garage_sell,life_garage_sell);
