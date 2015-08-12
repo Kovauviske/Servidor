@@ -5,7 +5,7 @@
 life_firstSpawn = true;
 life_session_completed = false;
 private["_handle","_timeStamp"];
-0 cutText["Setting up client, please wait...","BLACK FADED"];
+0 cutText["Configurando o cliente, por favor, aguarde ...","BLACK FADED"];
 0 cutFadeOut 9999999;
 _timeStamp = diag_tickTime;
 diag_log "------------------------------------------------------------------------------------------------------";
@@ -22,13 +22,13 @@ diag_log "::Life Client:: Setting up Eventhandlers";
 diag_log "::Life Client:: Eventhandlers completed";
 diag_log "::Life Client:: Setting up user actions";
 [] call life_fnc_setupActions;
-diag_log "::Life Client:: User actions completed";
-diag_log "::Life Client:: Waiting for server functions to transfer..";
+diag_log "::Life Client:: Ações do usuário concluída";
+diag_log "::Life Client:: Esperando as funções do servidor carregar ..";
 waitUntil {(!isNil {TON_fnc_clientGangLeader})};
-diag_log "::Life Client:: Received server functions.";
-0 cutText ["Waiting for the server to be ready...","BLACK FADED"];
+diag_log "::Life Client:: As funções do servidor recebidos.";
+0 cutText ["Esperando o servidor estar pronto ...","BLACK FADED"];
 0 cutFadeOut 99999999;
-diag_log "::Life Client:: Waiting for the server to be ready..";
+diag_log "::Life Client:: Esperando o servidor para estar pronto ..";
 waitUntil{!isNil "life_server_isReady"};
 waitUntil{(life_server_isReady OR !isNil "life_server_extDB_notLoaded")};
 if(!isNil "life_server_extDB_notLoaded") exitWith {
@@ -51,14 +51,14 @@ switch (playerSide) do
 		_handle = [] spawn life_fnc_initCop;
 		waitUntil {scriptDone _handle};
 	};
-	
+
 	case civilian:
 	{
 		//Initialize Civilian Settings
 		_handle = [] spawn life_fnc_initCiv;
 		waitUntil {scriptDone _handle};
 	};
-	
+
 	case independent:
 	{
 		//Initialize Medics and blah

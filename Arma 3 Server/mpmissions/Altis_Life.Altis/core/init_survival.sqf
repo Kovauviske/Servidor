@@ -1,55 +1,55 @@
 [] spawn  {
 	private["_fnc_food","_fnc_water","_fnc_battery"];
-	_fnc_food = 
+	_fnc_food =
 	{
-		if(life_hunger < 2) then {player setDamage 1; hint "You have starved to death.";}
+		if(life_hunger < 2) then {player setDamage 1; hint "Você morreu de fome.";}
 		else
 		{
 		life_hunger = life_hunger - 10;
 		[] call life_fnc_hudUpdate;
-		if(life_hunger < 2) then {player setDamage 1; hint "You have starved to death.";};
+		if(life_hunger < 2) then {player setDamage 1; hint "Você morreu de fome.";};
 		switch(life_hunger) do {
-			case 30: {hint "You haven't eaten anything in awhile, You should find something to eat soon!";};
-			case 20: {hint "You are starting to starve, you need to find something to eat otherwise you will die.";};
-			case 10: {hint "You are now starving to death, you will die very soon if you don't eat something";player setFatigue 1;};
+			case 30: {hint "Você não comeu nada em algum tempo, você deve encontrar algo para comer em breve!";};
+			case 20: {hint "Você está começando a morrer de fome, você precisa encontrar algo para comer caso contrário você irá morrer.";};
+			case 10: {hint "Agora você está morrendo de fome, você tem que encontrar logo algo para comer";player setFatigue 1;};
 			};
 		};
 	};
-	
-	_fnc_water = 
+
+	_fnc_water =
 	{
-		if(life_thirst < 2) then {player setDamage 1; hint "You have died from dehydration.";}
+		if(life_thirst < 2) then {player setDamage 1; hint "Você morreu de desidratação.";}
 		else
 		{
 			life_thirst = life_thirst - 10;
 			[] call life_fnc_hudUpdate;
-			if(life_thirst < 2) then {player setDamage 1; hint "You have died from dehydration.";};
-			switch(life_thirst) do 
+			if(life_thirst < 2) then {player setDamage 1; hint "Você morreu de desidratação.";};
+			switch(life_thirst) do
 			{
-				case 30: {hint"You haven't drank anything in awhile, You should find something to drink soon.";};
-				case 20: {hint "You haven't drank anything in along time, you should find something to drink soon or you'll start to die from dehydration"; player setFatigue 1;};
-				case 10: {hint "You are now suffering from severe dehydration find something to drink quickly!"; player setFatigue 1;};
+				case 30: {hint"Você não bebeu faz algum tempo, você deve encontrar algo para beber em breve.";};
+				case 20: {hint "Você não bebeu nada em ao longo do tempo, você deve encontrar algo para beber o mais cedo possivel ou você vai começar a morrer de desidratação"; player setFatigue 1;};
+				case 10: {hint "Você agora está sofrendo de desidratação grave encontre algo para beber rapidamente!"; player setFatigue 1;};
 			};
 		};
 	};
-	
+
 	_fnc_battery =
 	{
-		if(life_battery < 2) then {hint "Deine Telefon Batterie ist leer.";}
+		if(life_battery < 2) then {hint "A bateria do telefone está vazia.";}
 		else
 		{
 			life_battery = life_battery - 5;
 			[] call life_fnc_hudUpdate;
-			if(life_battery < 2) then {hint "Your battery is empty.";};
-			switch(life_battery) do 
+			if(life_battery < 2) then {hint "A bateria do telefone está vazia.";};
+			switch(life_battery) do
 			{
-				case 30: {hint "Deine Handy Batterie hat nurnoch 30%.";};
-				case 20: {hint "Deine Handy Batterie hat nurnoch 20%.";};
-				case 10: {hint "Deine Handy Batterie hat nurnoch 10%.";};
+				case 30: {hint "A bateria do seu telefone tem 30%.";};
+				case 20: {hint "A bateria do seu telefone tem 20%.";};
+				case 10: {hint "A bateria do seu telefone tem 10%.";};
 			};
 		};
 	};
-	
+
 	while{true} do
 	{
 		sleep 600;
@@ -72,7 +72,7 @@
 		_load = round(_cfg / 8);
 		life_maxWeight = life_maxWeightT + _load;
 		waitUntil {backpack player != _bp};
-		if(backpack player == "") then 
+		if(backpack player == "") then
 		{
 			life_maxWeight = life_maxWeightT;
 		};
@@ -87,7 +87,7 @@
 		if(life_carryWeight > life_maxWeight && !isForcedWalk player) then {
 			player forceWalk true;
 			player setFatigue 1;
-			hint "Du tr�gst zu viel mit Dir ! Entferne ein paar Items dann kannst du wieder Rennen...";
+			hint "Você ta muito pesado! Remova alguns itens e vai você poder correr de novo ...";
 		} else {
 			if(isForcedWalk player) then {
 				player forceWalk false;
@@ -96,13 +96,13 @@
 	};
 };
 
-[] spawn  
+[] spawn
 {
 	private["_walkDis","_myLastPos","_MaxWalk","_runHunger","_runDehydrate"];
 	_walkDis = 0;
 	_myLastPos = (getPos player select 0) + (getPos player select 1);
 	_MaxWalk = 1200;
-	while{true} do 
+	while{true} do
 	{
 		sleep 0.5;
 		if(!alive player) then {_walkDis = 0;}
@@ -132,7 +132,7 @@
 	{
 		waitUntil {(life_drink > 0)};
 		while{(life_drink > 0)} do {
-		
+
 			if(life_drink > 0.08) then {
 			"radialBlur" ppEffectEnable true;
 			"radialBlur" ppEffectAdjust[0.08, 0,0.35,0.37];
@@ -147,12 +147,12 @@
 			life_drink = life_drink - 0.02;
 			};
 		};
-		
+
 		"radialBlur" ppEffectAdjust  [0,0,0,0];
 		"radialBlur" ppEffectCommit 5;
 		"radialBlur" ppEffectEnable false;
 		life_drink = 0;
-		
+
 	};
 };
 
@@ -164,7 +164,7 @@
 		if(life_inv_uranium2 != 0) then {
 			player forceWalk true;
 			player setFatigue 1;
-			hint "Das Uran ist so schwer das du dich nur sehr Langsam bewegen kannst !";
+			hint "O urânio é tão pesado que você não esta aguentando o peso!";
 		} else {
 			if(isForcedWalk player) then {
 				player forceWalk false;
@@ -202,11 +202,11 @@
 		{
 			if(uniform player == "U_I_HeliPilotCoveralls") then
 			{
-				hint "!!! ACHTUNG DIE ZONE IST RADIOAKTIV !!! Der Schutz-Anzug Schuetz sie vor der Strahlung !";
+				hint "!!! AVISO A ZONA É RADIOATIVA !!! use a roupa Anti-Radiação !";
 				sleep 5;
 			}else
 			{
-				hint "!!! ACHTUNG DIE ZONE IST RADIOAKTIV !!! Sie werden gleich Sterben wenn sie keinen Strahlungsanzug tragen!";
+				hint "!!! AVISO A ZONA É RADIOATIVA !!! Você vai morrer se não usar a roupa Anti-Radiação!";
 				_damage = damage player;
 				_damage = _damage + 0.1;
 				player setDamage (_damage);
@@ -215,4 +215,4 @@
 			};
 		};
 	};
-}; 
+};
