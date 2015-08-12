@@ -214,8 +214,8 @@ class Mission
 	randomSeed=2004553;
 	class Intel
 	{
-		briefingName="Mizera BR Altis Life RPG";
-		overviewText="Mizera Altis Life";
+		briefingName="F.T.I BR Altis Life RPG";
+		overviewText="F.T.I Altis Life";
 		startWeather=0.1;
 		startWind=0.29999998;
 		startWindDir=20;
