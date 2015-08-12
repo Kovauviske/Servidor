@@ -25,6 +25,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide !=west): {"Você não é um policial"};
+			case (__GETC__(life_coplevel) != 1): {"Você não "};
 			default
 			{
 				["Loja de Soldado",
@@ -127,7 +128,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide !=west): {"Você não é um policial"};
-			case (__GETC__(life_coplevel) == 2): {"Você não é um cabo"};
+			case (__GETC__(life_coplevel) != 2): {"Você não é um Cabo"};
 			default
 			{
 				["Loja de Cabo",
@@ -152,7 +153,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide !=west): {"Você não é um policial"};
-			case (__GETC__(life_coplevel) == 3): {"Você não é sargento"};
+			case (__GETC__(life_coplevel) != 3): {"Você não é Sargento"};
 			default
 			{
 				["Loja de Sargento",
@@ -188,10 +189,10 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide !=west): {"Você não é um policial"};
-			case (__GETC__(life_coplevel) == 4): {"Você não é um Tenente"};
+			case (__GETC__(life_coplevel) != 4): {"Você não é um Tenente"};
 			default
 			{
-				["Loja de tenente",
+				["Loja de Tenente",
 					[
 						["Rangefinder",nil,5000],
 						["arifle_sdar_F","Taser Rifle",30000],
@@ -226,7 +227,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide !=west): {"Você não é um policial"};
-			case (__GETC__(life_coplevel) == 5): {"Você não é um Major"};
+			case (__GETC__(life_coplevel) != 5): {"Você não é um Capitão"};
 			default
 			{
 				["Loja de Capitão",
@@ -265,7 +266,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide !=west): {"Você não é um policial"};
-			case (__GETC__(life_coplevel) == 6): {"Você não é um Caveira"};
+			case (__GETC__(life_coplevel) != 6): {"Você não é um Caveira"};
 			default
 			{
 				["Loja de Major",

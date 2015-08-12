@@ -43,7 +43,7 @@ while {true} do
 {
 	if((round(_time - time)) > 0) then
 	{
-		_countDown = if(round (_time - time) > 60) then {format["%1 minute(s)",round(round(_time - time) / 60)]} else {format["%1 second(s)",round(_time - time)]};
+		_countDown = if(round (_time - time) > 60) then {format["%1 minuto(s)",round(round(_time - time) / 60)]} else {format["%1 Segundo(s)",round(_time - time)]};
 		if(isNil "life_canpay_bail") then
 		{
 			hintSilent format["Tempo Restante:\n %1\n\nPode pagar fiança: %3\nPreço da Fiança: $%2",_countDown,[life_bail_amount] call life_fnc_numberText];
@@ -91,7 +91,7 @@ switch (true) do
 	{
 		life_is_arrested = false;
 		hint localize "STR_Jail_EscapeSelf";
-		[[0,format["%1 has escaped from jail!",profileName]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+		[[0,format["%1 Escapou da prisão!",profileName]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 		[[getPlayerUID player,profileName,"901"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 		[5] call SOCK_fnc_updatePartial;
 	};
