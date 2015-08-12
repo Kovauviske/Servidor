@@ -12,7 +12,7 @@ class RscTitleBackground : Life_RscText
 {
 colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 idc = -1;
-text = "Lizenzamt";
+text = "Licenças";
 x = 0.1;
 y = 0.2;
 w = 0.775;
@@ -48,7 +48,7 @@ h = 0.4;
 class MyLicenses : Life_RscText
 {
 idc = 55130;
-text = "Verfügbar";
+text = "Licenças disponivel";
 x = 0.1875;
 y = 0.24;
 w = 0.1375;
@@ -57,7 +57,7 @@ h = 0.04;
 class ShowLicenses : Life_RscText
 {
 idc = 55129;
-text = "Meine Lizenzen";
+text = "Minhas Licenças";
 x = 0.65;
 y = 0.24;
 w = 0.1480;

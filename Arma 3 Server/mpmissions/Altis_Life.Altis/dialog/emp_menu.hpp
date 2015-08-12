@@ -60,7 +60,7 @@ class nanoEMPConsole {
 
 		class CloseButtonKey : Life_RscButtonMenu {
 			idc = -1;
-			text = "Schliesen";
+			text = "Fechar";
 			onButtonClick = "closeDialog 0;";
 			x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.88 - (1 / 25);
@@ -70,7 +70,7 @@ class nanoEMPConsole {
 		
 		class Refresh : Life_RscButtonMenu {
 			idc = -1;
-			text = "Suchen";
+			text = "Pesquisa";
 			onButtonClick = "[] spawn life_fnc_scanVehicles;";
 			x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.88 - (1 / 25);
@@ -90,7 +90,7 @@ class nanoEMPConsole {
 
 		class ExecEMP : Life_RscButtonMenu {
 			idc = 2070;
-			text = "Auslösen";
+			text = "Lançamento";
 			onButtonClick = "[] spawn life_fnc_empVehicle;";
 			x = 0.58 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.88 - (1 / 25);
@@ -100,7 +100,7 @@ class nanoEMPConsole {
 
 		class WarnEMP : Life_RscButtonMenu {
 			idc = 2060;
-			text = "Warnen";
+			text = "Advertir";
 			onButtonClick = "[] spawn life_fnc_warnVehicle;";
 			x = 0.42 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.88 - (1 / 25);

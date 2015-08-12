@@ -1,9 +1,9 @@
-/* 
+/*
 	Author: TheTotenkopf für SealDrop.de
 */
 
 while {true} do {
 	sleep 1800;
 	[] call SOCK_fnc_updateRequest;
-	hint "Deine Spielerinformationen wurden automatisch zum Server gespeichert.\n\n Nächster AutoSave in: 30 Minuten"
+	hint "Sua informação jogador é salvo automaticamente para o servidor.\n\n Próxima gravação automática em: 30 minutos"
 };

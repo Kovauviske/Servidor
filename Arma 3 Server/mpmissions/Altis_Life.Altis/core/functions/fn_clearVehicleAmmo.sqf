@@ -2,7 +2,7 @@
 
     File: fn_clearVehicleAmmo.sqf
 	Autor: TheTotenkopf™
-	
+
 	Description: Entfernt alle Waffen/Flaires und Repairiert sie noch einmal falls beim Spawnen etwas zerstört wurde.
 
 */
@@ -13,7 +13,7 @@ _vehicle = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 _classname = typeOf _veh;
 
 switch (_classname) do
-{	
+{
 	//Jet A-10
 	case "O_Plane_CAS_02_F":
 	{
@@ -21,9 +21,9 @@ switch (_classname) do
 		_veh setVehicleAmmo 0;
 		_veh setDamage 0;
 		_veh allowDamage true;
-        systemChat "Waffen entfernt und Repariert";
+        systemChat "Armas de distância e Reparos";
     };
-	
+
 	//GhostHawk (Black)
     case "B_Heli_Transport_01_F":
     {
@@ -31,7 +31,7 @@ switch (_classname) do
 		_veh setVehicleAmmo 0;
 		_veh setDamage 0;
 		_veh allowDamage true;
-        systemChat "Waffen entfernt und Repariert";
+        systemChat "Armas de distância e Reparos";
     };
 
 	//GhostHawk (Camo)
@@ -41,7 +41,7 @@ switch (_classname) do
         _veh setVehicleAmmo 0;
 		_veh setDamage 0;
 		_veh allowDamage true;
-        systemChat "Waffen entfernt und Repariert";
+        systemChat "Armas de distância e Reparos";
     };
 
 	//Hellcat (Unarmed)
@@ -51,7 +51,7 @@ switch (_classname) do
         _veh setVehicleAmmo 0;
 		_veh setDamage 0;
 		_veh allowDamage true;
-        systemChat "Waffen entfernt und Repariert";
+        systemChat "Armas de distância e Reparos";
     };
 
 	//Ifrit
@@ -61,7 +61,7 @@ switch (_classname) do
         _veh setVehicleAmmo 0;
 		_veh setDamage 0;
 		_veh allowDamage true;
-        systemChat "Waffen entfernt und Repariert";
+        systemChat "Armas de distância e Reparos";
     };
 
 	//Mohawk
@@ -71,9 +71,9 @@ switch (_classname) do
         _veh setVehicleAmmo 0;
 		_veh setDamage 0;
 		_veh allowDamage true;
-        systemChat "Waffen entfernt und Repariert";
+        systemChat "Armas de distância e Reparos";
     };
-	
+
 	//MiniGun Boat
 	case "B_Boat_Armed_01_minigun_F":
 	{
@@ -90,7 +90,7 @@ switch (_classname) do
 		_veh setVehicleAmmo 0;
 		_veh setDamage 0;
 		_veh allowDamage true;
-		systemChat "Waffen entfernt und Repariert";
+		systemChat "Armas de distância e Reparos";
 	};
 };
 
