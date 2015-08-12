@@ -2,7 +2,7 @@
 /*
 	File: fn_vehicleShopLBChange.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Called when a new selection is made in the list box and
 	displays various bits of information about the vehicle.
@@ -21,7 +21,7 @@ _trunkSpace = [_className] call life_fnc_vehicleWeightCfg;
 
 ctrlShow [2330,true];
 (getControl(2300,2303)) ctrlSetStructuredText parseText format[
-"Rental Price: <t color='#8cff9b'>$%1</t><br/>Ownership Price: <t color='#8cff9b'>$%2</t><br/>Max Speed: %3 km/h<br/>Horse Power: %4<br/>Passenger Seats: %5<br/>Trunk Capacity: %6<br/>Fuel Capacity: %7<br/>Armor Rating: %8",
+"Preço de aluguel: <t color='#8cff9b'>$%1</t><br/>Preço de Compra: <t color='#8cff9b'>$%2</t><br/>Velocidade max: %3 km/h<br/>Potencia: %4 Cavalos<br/>Passageiros: %5<br/>Capacidade de Carga: %6<br/>Capacidade do tanque: %7<br/>Proteção: %8",
 [_basePrice] call life_fnc_numberText,
 [round(_basePrice * 1.5)] call life_fnc_numberText,
 _vehicleInfo select 8,
