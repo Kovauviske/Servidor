@@ -230,7 +230,7 @@ switch (_code) do
 	};
 
 	//Ö Key
-	case 39:
+	case 64:
 	{
 		if(playerSide in [west] && vehicle player != player && !life_siren_active && ((driver vehicle player) == player)) then
 		{
@@ -261,7 +261,7 @@ switch (_code) do
 	};
 
 	//Shift+O Zipties
-	case 24:
+	case 19:
 	{
 		if(_shift) then {_handled = true;};
 		if(playerSide in [west,independent]) exitWith {};
@@ -398,7 +398,7 @@ switch (_code) do
 	};
 
 	// O Schranken öffnen
-    case 40:
+    case 65:
 	{
 		if (!_shift && !_alt && !_ctrlKey && (playerSide in [west,independent]) && (vehicle player != player)) then {
 			[] call life_fnc_copOpener;
@@ -406,7 +406,7 @@ switch (_code) do
 	};
 
 	//Ü Nagelbänder
-	case 26:
+	case 63:
 	{
 		if(vehicle player != player) exitWith {hint "Você não pode colocar o SpikeStrip dentro do carro.."};
 		if(playerSide == west) then {
@@ -441,27 +441,6 @@ switch (_code) do
 	};
 
 	case 62: // F4
-	{
-		if(__GETC__(life_adminlevel) > 1) exitWith {hint "Essa tecla não é permitida"};
-		closeDialog 0;
-		_handled = false;
-	};
-
-	case 63: // F5
-	{
-		if(__GETC__(life_adminlevel) > 1) exitWith {hint "Essa tecla não é permitida"};
-		closeDialog 0;
-		_handled = false;
-	};
-
-	case 64: //F6 key
-	{
-		if(__GETC__(life_adminlevel) > 1) exitWith {hint "Essa tecla não é permitida"};
-		closeDialog 0;
-		_handled = false;
-	};
-
-	case 65: // F7 Key
 	{
 		if(__GETC__(life_adminlevel) > 1) exitWith {hint "Essa tecla não é permitida"};
 		closeDialog 0;
