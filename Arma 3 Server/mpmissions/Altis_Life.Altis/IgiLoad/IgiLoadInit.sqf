@@ -7,7 +7,7 @@ waitUntil { time > 0 };
 IL_EV_Count = 0;
 IL_Veh_Array = [];
 
-cutText ["Abschleppseile werden vorbereitet...","PLAIN",2];
+cutText ["O servidor esta preparando sua entrada... Aguarde","PLAIN",2];
 sleep (random 30);
 
 _null = [Player] execVM "IgiLoad\IgiLoad.sqf";
@@ -24,12 +24,12 @@ sleep (random (IL_Check_Veh_Max - IL_Check_Veh_Min));
 	};
 } forEach (vehicles);
 
-cutText ["Alle Seile und Karabiner sind eingepackt.","PLAIN",2];
+cutText ["Tudo pronto, Bom Trabalho","PLAIN",2];
 
-while {true} do 
+while {true} do
 {
 	sleep (IL_Check_Veh_Min + (random (IL_Check_Veh_Max - IL_Check_Veh_Min)));
-	
+
 	//Delete vehicles from "IL_Veh_Array" if not in "vehicles"
 	{
 		if !(_x in vehicles) then
