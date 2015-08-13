@@ -74,7 +74,7 @@ switch (_var) do
 	case "life_inv_mash": {"Mistura"};
 	case "life_inv_yeast": {"Fermento"};
 	case "life_inv_rye": {"Centeio"};
-	case "life_inv_hops": {"Cordas"};
+	case "life_inv_hops": {"Lúpulo"};
 	case "life_inv_whiskey": {"Uísque destilado"};
 	case "life_inv_beerp": {"Cerveja fermentada"};
 	case "life_inv_bottles": {"Garrafas de vidro"};
