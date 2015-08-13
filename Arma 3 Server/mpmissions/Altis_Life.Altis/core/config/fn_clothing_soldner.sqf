@@ -114,7 +114,7 @@ switch (_filter) do
 			_ret set[count _ret,["B_Bergen_sgg",nil,4500]];
 			_ret set[count _ret,["B_Kitbag_cbr",nil,4500]];
 			_ret set[count _ret,["B_Carryall_oli",nil,5000]];
-			_ret set[count _ret,["B_Carryall_khk",nil,5000]]:
+			_ret set[count _ret,["B_Carryall_khk",nil,5000]];
 			};
 	};
 };
