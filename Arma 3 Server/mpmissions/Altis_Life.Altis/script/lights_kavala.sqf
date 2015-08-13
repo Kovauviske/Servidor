@@ -14,7 +14,7 @@ if(playerSide == civilian) then
 {
 	life_kw_kavala = true;
 	[[getPlayerUID player,profileName,"42"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
-	[[0,format["!!! %1 transformou a estação de energia em Kavala !!!", name player]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+	[[0,format["!!! %1 Desligou a estação de Energia de Kavala!!!", name player]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 	sleep 300;
 	life_kw_kavala = false;
 };
