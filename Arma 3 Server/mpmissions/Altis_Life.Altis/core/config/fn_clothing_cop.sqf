@@ -22,11 +22,11 @@ switch (_filter) do
         _ret set[count _ret,["U_Rangemaster","Recruta",35]];
 		if (__GETC__(life_coplevel) > 1) then
 		{
-			_ret set[count _ret, ["U_B_SpecopsUniform_sgg", "Uniforme Policial", 2000]];
+			_ret set[count _ret, ["U_B_SpecopsUniform_sgg", "Uniforme de Recruta", 2000]];
 		};
 		if(__GETC__(life_coplevel) > 2) then
 		{
-			_ret set[count _ret,["U_B_CombatUniform_mcam_vest","Uniformes",500]];
+			_ret set[count _ret,["U_B_CombatUniform_mcam_vest","Uniforme de Cabo",500]];
 			_ret set[count _ret,["U_B_Wetsuit","Roupas de Mergulho",500]];
 		};
         if(__GETC__(life_coplevel) > 4) then
@@ -35,7 +35,7 @@ switch (_filter) do
         };
 		if(__GETC__(life_coplevel) == 6) then
         {
-			_ret set[count _ret,["U_B_CombatUniform_mcam_worn","BOPE",1750]];
+			_ret set[count _ret,["U_B_CombatUniform_mcam_worn","B.O.P.E",1750]];
         };
     };
 
@@ -74,6 +74,7 @@ switch (_filter) do
 		{
 			_ret set[count _ret,["G_Shades_Black",nil,25]];
 			_ret set[count _ret,["G_Shades_Blue",nil,20]];
+			_ret set[count _ret,["G_B_Diving",nil,100]];
 		};
 		if(__GETC__(life_coplevel) > 2) then
 		{
@@ -118,7 +119,8 @@ switch (_filter) do
 	//Backpacks
 	case 4:
 	{
-		_ret set[count _ret,["B_AssaultPack_cbr",nil,250]];
+			_ret set[count _ret,["B_AssaultPack_cbr",nil,250]];
+			_ret set[count _ret,["B_Kitbag_cbr",nil,500]];
 		if(__GETC__(life_coplevel) > 1) then
 		{
 			_ret set[count _ret,["B_Kitbag_cbr",nil,500]];
