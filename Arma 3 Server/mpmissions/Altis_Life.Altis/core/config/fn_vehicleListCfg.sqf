@@ -16,10 +16,10 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["B_Heli_Light_01_F",10],
-			["O_Heli_Light_02_unarmed_F",10],
-			["I_Heli_Transport_02_F",10],
-			["I_Heli_light_03_unarmed_F",10]
+			["B_Heli_Light_01_F",250000],
+			["O_Heli_Light_02_unarmed_F",350000],
+			["I_Heli_Transport_02_F",380000],
+			["I_Heli_light_03_unarmed_F",400000]
 		];
 	};
 
@@ -27,14 +27,14 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["C_Offroad_01_F",10],
-			["C_Offroad_01_repair_F",10],
-			["C_Van_01_box_F",10],
-			["B_Truck_01_transport_F",10],
-			["I_Truck_02_medical_F",10],
-			["O_Truck_03_medical_F",10],
-			["B_Truck_01_medical_F",10],
-			["C_SUV_01_F",10]
+			["C_Offroad_01_F",40000],
+			["C_Offroad_01_repair_F",60000],
+			["C_Van_01_box_F",120000],
+			["B_Truck_01_transport_F",130000],
+			["I_Truck_02_medical_F",140000],
+			["O_Truck_03_medical_F",150000],
+			["B_Truck_01_medical_F",160000],
+			["C_SUV_01_F",50000]
 		];
 	};
 
