@@ -5809,7 +5809,7 @@ class Mission
 					vehicle="C_man_1";
 					leader=1;
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Garagem"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Procurando veículos....""];   life_garage_sp = ""air_g_11"";  }]; this addAction[""Guardar veículo na garagem"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""There isn't a vehicle near this NPC."";};   [[_nearVehicle,false,(_this select 1)],""TON_fnc_vehicleStore"",false,false] spawn life_fnc_MP;   hint ""The server is trying to store the vehicle please wait...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Garagem"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Procurando veículos....""];   life_garage_sp = ""air_g_11"";  }]; this addAction[""Guardar veículo na garagem"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""Não há um veículo próximo a este NPC."";};   [[_nearVehicle,false,(_this select 1)],""TON_fnc_vehicleStore"",false,false] spawn life_fnc_MP;   hint ""O servidor está tentando armazenar o veículo por favor aguarde ...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
 				};
 			};
 		};
@@ -6066,7 +6066,7 @@ class Mission
 					vehicle="C_man_1";
 					leader=1;
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Mercado"",life_fnc_virt_menu,""donator""]; this setVariable[""realname"",""Mercado""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Mercado"",life_fnc_virt_menu,""rebel""]; this setVariable[""realname"",""Mercado""];";
 				};
 			};
 		};
