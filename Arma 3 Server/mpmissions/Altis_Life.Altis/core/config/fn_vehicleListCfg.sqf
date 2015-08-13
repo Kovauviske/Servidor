@@ -155,8 +155,8 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["B_Heli_Light_01_F",253000],
-			["O_Heli_Light_02_unarmed_F",750000]
+			["B_Heli_Light_01_F",750000],
+			["O_Heli_Light_02_unarmed_F",900000]
 		];
 	};
 
@@ -219,13 +219,15 @@ switch (_shop) do
 		if(__GETC__(life_donator) > 1) then
 		{
 			_return set[count _return,
-			["B_Heli_Light_01_F",100000]];
+			["B_Heli_Light_01_F",250000]];
 			_return set[count _return,
-			["O_Heli_Light_02_unarmed_F",175000]];
+			["O_Heli_Light_02_unarmed_F",350000]];
 			_return set[count _return,
-			["I_Heli_Transport_02_F",650000]];
+			["I_Heli_Transport_02_F",450000]];
 			_return set[count _return,
-			["O_Heli_Transport_04_box_F",1250000]];
+			["O_Heli_Transport_04_box_F",1800000]];
+			_return set[count _return,
+			["B_Heli_Transport_03_unarmed_F",2200000]];
 		};
 	};
 
@@ -236,19 +238,19 @@ switch (_shop) do
 			_return set[count _return,
 			["C_Van_01_fuel_F",7500]];
 			_return set[count _return,
-			["I_Truck_02_transport_F",400000]];
+			["I_Truck_02_transport_F",200000]];
 			_return set[count _return,
-			["I_Truck_02_covered_F",600000]];
+			["I_Truck_02_covered_F",400000]];
 			_return set[count _return,
-			["B_Truck_01_transport_F",800000]];
+			["B_Truck_01_transport_F",600000]];
 			_return set[count _return,
-			["B_Truck_01_covered_F",1000000]];
+			["B_Truck_01_covered_F",700000]];
 			_return set[count _return,
-			["B_Truck_01_ammo_F",1200000]];
+			["B_Truck_01_ammo_F",800000]];
 			_return set[count _return,
-			["B_Truck_01_box_F",1500000]];
+			["B_Truck_01_box_F",900000]];
 			_return set[count _return,
-			["O_Truck_03_device_F",1800000]];
+			["O_Truck_03_device_F",1100000]];
 		};
 	};
 

@@ -98,6 +98,8 @@ switch (_filter) do
 			_ret set[count _ret,["V_I_G_resistanceLeader_F",nil,5000]];
 			_ret set[count _ret,["V_BandollierB_rgr",nil,20000]];
 			_ret set[count _ret,["V_RebreatherIA",nil,7500]];
+			_ret set[count _ret,["V_PlateCarrierL_CTRG
+",nil,7500]];
 		};
 	};
 
