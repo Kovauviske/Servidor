@@ -1,9 +1,9 @@
 /*
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Start playing the siren for medics.
-	
+
 	*NOTE I DO NOT HAVE A SOUND FOR THIS BUT I"M LEAVING THE CODE HERE FOR OTHER PEOPLE TO ADD IT*.
 */
 
@@ -21,6 +21,6 @@ while {true} do
 	if(!alive _vehicle) exitWith {};
 	if(isNull _vehicle) exitWith {};
 	_vehicle say3D "MedicSirenLong";
-	sleep 4.5;
+	sleep 1.0;
 	if(!(_vehicle getVariable "siren")) exitWith {};
 };

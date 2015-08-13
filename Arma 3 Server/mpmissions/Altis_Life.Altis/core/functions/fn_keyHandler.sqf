@@ -261,7 +261,7 @@ switch (_code) do
 	};
 
 	//Shift+O Zipties
-	case 19:
+	case 5:
 	{
 		if(_shift) then {_handled = true;};
 		if(playerSide in [west,independent]) exitWith {};

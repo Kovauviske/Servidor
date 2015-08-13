@@ -25,10 +25,10 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide !=west): {"Você não é um policial"};
-			case (__GETC__(life_coplevel) != 1): {"Você não "};
+			case (__GETC__(life_coplevel) != 1): {"Você não é um Recruta/Soldado "};
 			default
 			{
-				["Loja de Soldado",
+				["Loja de Recruta/Soldado",
 					[
 						["Rangefinder",nil,5000],
 						["arifle_sdar_F","Taser Rifle",30000],
@@ -269,7 +269,7 @@ switch(_shop) do
 			case (__GETC__(life_coplevel) != 6): {"Você não é um Caveira"};
 			default
 			{
-				["Loja de Major",
+				["Loja do B.O.P.E",
 					[
 						["Rangefinder",nil,5000],
 						["arifle_sdar_F","Taser Rifle",30000],
@@ -474,8 +474,8 @@ switch(_shop) do
 						["muzzle_snds_338_black","Silenciador .388",20000],
 						["srifle_DMR_04_Tan_F",nil,500000],
 						["10Rnd_127x54_Mag","Munição - ASP-1 12.7mm",60000],
-						["srifle_LRR_camo_F",nil,500000],
-						["7Rnd_408_Mag","Munição - M320 LRR .408",60000],
+						["srifle_LRR_camo_F",nil,1300000],
+						["7Rnd_408_Mag","Munição - M320 LRR .408",50000],
 						["optic_Holosight",nil,1600],
 						["acc_flashlight",nil,2200],
 						["optic_Hamr",nil,10000],
@@ -540,7 +540,7 @@ switch(_shop) do
 						["srifle_DMR_04_Tan_F",nil,500000],
 						["Rnd_127x54_Mag","Munição - ASP-1 12.7mm",50000],
 						["srifle_LRR_camo_F",nil,800000],
-						["7Rnd_408_Mag","Munição - M320 LRR .408",60000],
+						["7Rnd_408_Mag","Munição - M320 LRR .408",45000],
 						["optic_Holosight",nil,1600],
 						["acc_flashlight",nil,2200],
 						["optic_Hamr",nil,10000],
