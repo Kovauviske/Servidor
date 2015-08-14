@@ -163,11 +163,8 @@ switch (_shop) do
 
 	case "cop_air_1":
 	{
-		if(__GETC__(life_coplevel) > 2) then
-		{
 			_return set[count _return,
 			["B_Heli_Light_01_F",400000]];
-		};
 		if(__GETC__(life_coplevel) > 3) then
 		{
 			_return set[count _return,
