@@ -138,7 +138,6 @@ class CfgFunctions
 			class sellHouse {};
 			class updateHouseContainers {};
 			class updateHouseTrunk {};
-			class houseCleanup {};
 		};
 		
 		class Gangs

@@ -191,7 +191,7 @@ switch (_code) do
 	//Z Player Menu
 	case 21:
 	{
-		if(!_alt && !_ctrlKey && !dialog) then
+		if(!_alt && !_ctrlKey && !dialog) && !(player getVariable "restrained") then
 		{
 			[] call life_fnc_p_openMenu;
 		};
@@ -270,7 +270,8 @@ switch (_code) do
 		{
 			if([false,"zipties",1] call life_fnc_handleInv) then
 			{
-				[] call life_fnc_restrainAction;
+			cursorTarget setVariable ["surrender", false, true];
+			[] call life_fnc_restrainAction;
 				hint "Você algemou ele! Use o Windows para ter mais opções";
 			} else {
 				hint "Você não tem Algemas";
