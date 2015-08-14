@@ -264,7 +264,7 @@ switch (_code) do
 	};
 
 	//Shift+O Zipties
-	case 5:
+	case 24:
 	{
 		if(_shift) then {_handled = true;};
 		if(playerSide in [west,independent]) exitWith {};
@@ -370,7 +370,10 @@ switch (_code) do
 		{
 			if(!_alt && !_ctrlKey && !dialog) then
 			{
+				if!(player getVariable "restrained") then
+				{
 				[] call life_fnc_callCellPhone;
+				};
 			};
 		};
 	};
