@@ -274,6 +274,8 @@ switch (_code) do
 			if([false,"zipties",1] call life_fnc_handleInv) then
 			{
 			cursorTarget setVariable ["surrender", false, true];
+			cursorTarget unassignItem "itemmap";
+			cursorTarget removeItem "itemmap"; 
 			[] call life_fnc_restrainAction;
 				hint "Você algemou ele! Use o Windows para ter mais opções";
 			} else {
