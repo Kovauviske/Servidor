@@ -193,7 +193,7 @@ switch (_code) do
 	{
 		if(!_alt && !_ctrlKey) then
 		{
-			if(!player getVariable "restrained") then
+			if!(player getVariable "restrained") then
 			{
 				[] call life_fnc_p_openMenu;
 			};
