@@ -266,7 +266,7 @@ switch (_code) do
 		if(_shift) then {_handled = true;};
 		if(playerSide in [west,independent]) exitWith {};
 		if !(license_civ_rebel) exitWith { hint "Voce precisa de uma licenca de rebeldes para prender pessoas."; };
-		if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,east]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
+		if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,east]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && (cursorTarget getVariable "surrender") && speed cursorTarget < 1) then
 		{
 			if([false,"zipties",1] call life_fnc_handleInv) then
 			{
