@@ -191,9 +191,12 @@ switch (_code) do
 	//Z Player Menu
 	case 21:
 	{
-		if(!_alt && !_ctrlKey && !dialog) && !(player getVariable "restrained") then
+		if(!_alt && !_ctrlKey) then
 		{
-			[] call life_fnc_p_openMenu;
+			if(player getVariable "restrained") then
+			{
+				[] call life_fnc_p_openMenu;
+			}
 		};
 	};
 
