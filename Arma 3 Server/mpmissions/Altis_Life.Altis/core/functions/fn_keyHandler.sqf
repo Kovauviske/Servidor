@@ -196,7 +196,7 @@ switch (_code) do
 			if(!player getVariable "restrained") then
 			{
 				[] call life_fnc_p_openMenu;
-			}
+			};
 		};
 	};
 
@@ -275,7 +275,7 @@ switch (_code) do
 			{
 			cursorTarget setVariable ["surrender", false, true];
 			cursorTarget unassignItem "itemmap";
-			cursorTarget removeItem "itemmap"; 
+			cursorTarget unassignItem "itemgps"; 
 			[] call life_fnc_restrainAction;
 				hint "Você algemou ele! Use o Windows para ter mais opções";
 			} else {
