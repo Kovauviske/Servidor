@@ -7,7 +7,7 @@ _action = [_this,2] call BIS_fnc_param;//Action name
 if(side _robber != civilian) exitWith { hint "Você não pode roubar a este posto!" };
 if(_robber distance _shop > 5) exitWith { hint "Você precisa estar dentro de 5m da caixa para roubá-lo!" };
 
-if !(_kassa) then { _kassa = 1000; };
+if !(_kassa) then { _kassa = 6000; };
 if (_rip) exitWith { hint "O roubo ja esta em andamento" };
 if (vehicle player != _robber) exitWith { hint "Saia do seu veiculo" };
 
@@ -16,7 +16,7 @@ if (currentWeapon _robber == "") exitWith { hint "Haha, você não me ameaçar! 
 if (_kassa == 0) exitWith { hint "Não há dinheiro no caixa!" };
 
 _rip = true;
-_kassa = 10000 + round(random 40000);
+_kassa = 15000 + round(random 45000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
 _chance = random(100);

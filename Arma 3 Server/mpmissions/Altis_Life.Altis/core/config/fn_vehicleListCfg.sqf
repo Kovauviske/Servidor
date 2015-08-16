@@ -64,15 +64,15 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["C_Van_01_fuel_F",80000],
-			["C_Van_01_transport_F",95000],
+			["C_Van_01_fuel_F",70000],
+			["C_Van_01_transport_F",80000],
 			["C_Van_01_box_F",60000],
-			["I_Truck_02_transport_F",750000],
-			["I_Truck_02_covered_F",850000],
-			["B_Truck_01_transport_F",990000],
-			["B_Truck_01_covered_F",1300000],
-			["B_Truck_01_ammo_F",1450000],
-			["B_Truck_01_box_F",1850000]
+			["I_Truck_02_transport_F",400000],
+			["I_Truck_02_covered_F",500000],
+			["B_Truck_01_transport_F",600000],
+			["B_Truck_01_covered_F",700000],
+			["B_Truck_01_ammo_F",850000],
+			["B_Truck_01_box_F",950000]
 		];
 	};
 
@@ -136,11 +136,6 @@ switch (_shop) do
 			["C_SUV_01_F",30000]];
 		};
 		if(__GETC__(life_coplevel) > 2) then
-		{
-			_return set[count _return,
-			["C_Hatchback_01_F",40000]];
-		};
-		if (__GETC__(life_coplevel) > 3) then
 		{
 			_return set[count _return,
 			["C_Hatchback_01_sport_F",60000]];
@@ -236,15 +231,15 @@ switch (_shop) do
 			_return set[count _return,
 			["C_Van_01_fuel_F",7500]];
 			_return set[count _return,
-			["I_Truck_02_transport_F",200000]];
+			["I_Truck_02_transport_F",150000]];
 			_return set[count _return,
-			["I_Truck_02_covered_F",400000]];
+			["I_Truck_02_covered_F",300000]];
 			_return set[count _return,
-			["B_Truck_01_transport_F",600000]];
+			["B_Truck_01_transport_F",450000]];
 			_return set[count _return,
-			["B_Truck_01_covered_F",700000]];
+			["B_Truck_01_covered_F",600000]];
 			_return set[count _return,
-			["B_Truck_01_ammo_F",800000]];
+			["B_Truck_01_ammo_F",750000]];
 			_return set[count _return,
 			["B_Truck_01_box_F",900000]];
 			_return set[count _return,

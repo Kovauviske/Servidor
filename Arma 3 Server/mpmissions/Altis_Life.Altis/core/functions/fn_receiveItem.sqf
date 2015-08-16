@@ -1,7 +1,7 @@
 /*
 	File: fn_receiveItem.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Receive an item from a player.
 */
@@ -18,7 +18,7 @@ if(_diff != (parseNumber _val)) then
 {
 	if(([true,_item,_diff] call life_fnc_handleInv)) then
 	{
-		hint format["%1 has gave you %2 but you can only hold %3 so %4 was returned back.",_from getVariable["realname",name _from],_val,_diff,((parseNumber _val) - _diff)];
+		hint format["%1 Lhe deu %2 mais não pode pegar %3 e retornou %4.",_from getVariable["realname",name _from],_val,_diff,((parseNumber _val) - _diff)];
 		[[_from,_item,str((parseNumber _val) - _diff),_unit],"life_fnc_giveDiff",_from,false] spawn life_fnc_MP;
 	}
 		else

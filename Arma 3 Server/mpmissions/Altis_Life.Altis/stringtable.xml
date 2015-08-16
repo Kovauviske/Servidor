@@ -342,7 +342,7 @@
 			<German>An die Admins</German>
 			<French>Text Admins</French>
 			<Italian>Msg Admin</Italian>
-			<Portuguese>Text Admin</Portuguese>
+			<Portuguese>Texto do Admin</Portuguese>
 		</Key>
 		<Key ID="STR_CELL_AdminMsg">
 			<Original>Admin Message</Original>
@@ -1562,7 +1562,7 @@
 			<German>Du hast keine $%1, um geheilt zu werden.</German>
 			<French>Vous n'avez pas $%1 pour vous soignez.</French>
 			<Italian>Non hai €$1 per essere curato</Italian>
-			<Portuguese>Você não tem R$%1 para ser tratado</Portuguese>
+			<Portuguese>Você não tem R$ %1 para ser tratado</Portuguese>
 		</Key>
 		<Key ID="STR_NOTF_HS_Healing">
 			<Original>Please stay still</Original>
@@ -4258,7 +4258,7 @@
 			<German>Ins Fahrzeug setzen</German>
 			<French>Embarquer</French>
 			<Italian>Metti nel Veicolo</Italian>
-			<Portuguese>Colocar na Viatura</Portuguese>
+			<Portuguese>Colocar no Veiculo</Portuguese>
 		</Key>
 		<Key ID="STR_pInAct_Unrestrain">
 			<Original>Un-Restrain</Original>
