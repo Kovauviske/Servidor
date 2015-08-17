@@ -19,9 +19,9 @@ class osefStatusBar {
 			w = 1;
 			h = 0.04;
 			shadow = 2;
-			colorBackground[] = { 1, 0.3, 0, 0.0 };  // uncomment and increase 4th number to have a background
+			colorBackground[] = { 255, 255, 255, 0.0 };  // uncomment and increase 4th number to have a background
 			font = "PuristaSemibold";
-			size = 0.03;
+			size = 0.05;
 			type = 13;
 			style = 1;
 			text="Carregando informações do servidor...";

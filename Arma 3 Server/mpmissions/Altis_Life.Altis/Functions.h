@@ -163,6 +163,7 @@ class Life_Client_Core
 		class takeOrgans {};
 		class sitDown {};
 		class robShops {};
+		class robBank {};
 		class craftAction {};
 	};
 

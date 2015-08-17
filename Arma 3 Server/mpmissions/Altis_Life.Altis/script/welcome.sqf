@@ -14,11 +14,11 @@ playSound "welcome";
 _onScreenTime = 2;
 
 _role1 = "Seja bem vindo!";
-_role1names = ["DANTAS Altis Life BRASL"];
-_role2 = "Administradores";
-_role2names = ["Kovauviske e AbsolutZ"];
+_role1names = ["DANTAS ALTIS LIFE BRASIL"];
+_role2 = "Agradecimento Especial";
+_role2names = ["Tonic, Itsyuka e a todos os brasileiros."];
 _role3 = "Map Edit by";
-_role3names = ["AbsolutZ"];
+_role3names = ["AbsoluT, DANTAS e KoVauVisKe"];
 _role4 = "TeamSpeak";
 _role4names = ["dantashost.ts3dns.com"];
 _role8 = "Forum Oficial";
