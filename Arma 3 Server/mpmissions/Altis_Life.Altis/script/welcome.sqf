@@ -14,15 +14,15 @@ playSound "welcome";
 _onScreenTime = 2;
 
 _role1 = "Seja bem vindo!";
-_role1names = ["F.T.I Altis Life BRASL"];
+_role1names = ["DANTAS Altis Life BRASL"];
 _role2 = "Administradores";
 _role2names = ["Kovauviske e AbsolutZ"];
 _role3 = "Map Edit by";
 _role3names = ["AbsolutZ"];
-_role4 = "Raidcall";
-_role4names = ["EM BREVE"];
+_role4 = "TeamSpeak";
+_role4names = ["dantashost.ts3dns.com"];
 _role8 = "Forum Oficial";
-_role8names = ["Em breve"];
+_role8names = ["http://dantasaltislife.forumeiros.com/"];
  _role9 = "Restart do servidor";
 _role9names = ["0,6,9,12,15,18,21"];
 
