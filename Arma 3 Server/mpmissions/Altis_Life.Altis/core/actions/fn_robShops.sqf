@@ -7,7 +7,7 @@ _action = [_this,2] call BIS_fnc_param;//Action name
 if(side _robber != civilian) exitWith { hint "Você não pode roubar a este posto!" };
 if(_robber distance _shop > 5) exitWith { hint "Você precisa estar dentro de 5m da caixa para roubá-lo!" };
 
-if !(_kassa) then { _kassa = 6000; };
+if !(_kassa) then { _kassa = 7000; };
 if (_rip) exitWith { hint "O roubo ja esta em andamento" };
 if (vehicle player != _robber) exitWith { hint "Saia do seu veiculo" };
 
@@ -41,6 +41,7 @@ sleep 0.85;
 _cP = _cP + 0.01;
 _progress progressSetPosition _cP;
 _pgText ctrlSetText format["Roubo em andamento, ficar por perto (10m) (%1%2)...",round(_cP * 100),"%"];
+playSound3D ["A3\Sounds_F\sfx\alarm.wss", player]; //loop that shit
 _Pos = position player; // by ehno: get player pos
 				                _marker = createMarker ["Marker200", _Pos]; //by ehno: Place a Maker on the map
 				                "Marker200" setMarkerColor "ColorRed";
