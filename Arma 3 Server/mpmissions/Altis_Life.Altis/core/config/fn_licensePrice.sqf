@@ -33,7 +33,7 @@ switch (_type) do
 	case "iron": {1500}; //Eisen Lizenz
 	case "copper": {12000}; //Kupfer Lizenz
 	case "cement": {18000}; //Zement Lizenz
-	case "grapes": {30000}; //Trauben Lizenz
+	case "grapes": {10000}; //Trauben Lizenz
 	case "moonshine": {120000}; //Moonshine Lizenz
 	case "meth": {120000}; //Meth Lizenz
 	case "medic": {160000}; //Medic Ausbildung
