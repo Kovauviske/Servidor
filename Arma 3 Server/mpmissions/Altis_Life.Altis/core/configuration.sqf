@@ -120,7 +120,7 @@ switch (playerSide) do
 
 	case independent: {
 		life_atmcash = 80000;
-		life_paycheck = 15000;
+		life_paycheck = 20000;
 	};
 };
 
