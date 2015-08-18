@@ -7,6 +7,13 @@
 	Sells a vehicle from the garage.
 */
 private["_vehicle","_vid","_pid","_unit","_price"];
+
+life_nb_sell = life_nb_sell + 1;
+if (life_nb_sell > 1) exitWith
+	{
+	[[[0,1],format["%1 está tentando dupar um veículo, avise a um admin !!!",name player]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+	};
+
 disableSerialization;
 if(lbCurSel 2802 == -1) exitWith {hint localize "STR_Global_NoSelection"};
 _vehicle = lbData[2802,(lbCurSel 2802)];
