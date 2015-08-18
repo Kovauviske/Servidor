@@ -85,10 +85,8 @@ switch (_shop) do
 			["C_Hatchback_01_F",20000],
 			["B_G_Offroad_01_F",15000],
 			["C_SUV_01_F",42000],
-			["C_Hatchback_01_sport_F",325000],
+			["C_Hatchback_01_sport_F",325000]
 		];
-
-	};
 
 		if(license_civ_rebel) then
 		{
@@ -134,8 +132,7 @@ switch (_shop) do
 
 	case "cop_car_1":
 	{
-
-			_return set[count _return,
+		_return set[count _return,
 			["C_Offroad_01_F",15000]];
 		if(__GETC__(life_coplevel) > 1) then
 		{
