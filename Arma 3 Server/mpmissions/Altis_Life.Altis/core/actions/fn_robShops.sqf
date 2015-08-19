@@ -11,7 +11,7 @@ _shop = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param; //The object that has th
 _robber = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param; //Can you guess? Alright, it's the player, or the "caller". The object is 0, the person activating the object is 1
 _action = [_this,2] call BIS_fnc_param;//Action name
 _pos = GetPos _shop;
-if(playersNumber west < 1) exitWith { hint "Não há 2 policias online para roubar este posto de gasolina!"};
+if(playersNumber west < 2) exitWith { hint "Não há 2 policias online para roubar este posto de gasolina!"};
 if(side _robber != civilian) exitWith { hint "Você não pode roubar este posto!" };
 if (vehicle player != _robber) exitWith { hint "Você precisa sair do veículo!" };
 if !(alive _robber) exitWith {};
