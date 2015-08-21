@@ -10,7 +10,7 @@ _count = (["SELECT COUNT(*) FROM houses WHERE owned='1'",2] call DB_fnc_asyncCal
 
 for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 	waitUntil{!DB_Async_Active};
-	_query = format["SELECT houses.id, houses.pid, houses.pos, spieler.name FROM houses INNER JOIN spieler ON houses.pid=spieler.playerid WHERE houses.owned='1' LIMIT %1,10",_x];
+	_query = format["SELECT houses.id, houses.pid, houses.pos, players.name FROM houses INNER JOIN players ON houses.pid=players.playerid WHERE houses.owned='1' LIMIT %1,10",_x];
 	_queryResult = [_query,2,true] call DB_fnc_asyncCall;
 	if(count _queryResult == 0) exitWith {};
 	
