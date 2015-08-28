@@ -17,5 +17,5 @@ _cMessageHeader = _display displayCtrl 88890;
 
 _data = call compile (_cMessageList lnbData[_index,0]);
 
-_cMessageHeader ctrlSetText format["%1 schrieb:",_data select 3];
+_cMessageHeader ctrlSetText format["%1 Escreveu:",_data select 3];
 _cMessageShow ctrlSetText format["%1",_data select 2];

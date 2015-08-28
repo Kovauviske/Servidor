@@ -322,7 +322,7 @@ class playerSettings {
 		class ButtonWantedAdd : life_RscButtonMenu {
 			idc = 9800;
 			//shortcuts[] = {0x00050000 + 2};
-			text = "Exibição";
+			text = "ADD PRO";
 			onButtonClick = "createDialog ""life_wantedadd2"";";
 			x = 0.42 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.805;

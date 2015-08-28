@@ -14,10 +14,10 @@ closeDialog 0;
 _baseprice = 20000;  //Price for repaint
 _vehicleData = _veh getVariable["vehicle_info_owners",[]];
 _vehOwner = (_vehicleData select 0) select 0;
-if(life_cash < _basePrice) exitWith {hint "You don't have enough cash, to pay me";_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
+if(life_cash < _basePrice) exitWith {hint "Você não tem dinheiro suficiente para me pagar";_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
 
 if(isNil {_vehicleData}) exitWith {hint "Carro de Hacker.";_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
-if ((getPlayerUID player) != _vehOwner) exitWith {hint "You aren't the owner!";_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
+if ((getPlayerUID player) != _vehOwner) exitWith {hint "Você não é o proprietário!";_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
 		life_action_inUse = true;
 		_displayName = getText(configFile >> "CfgVehicles" >> (typeOf _veh) >> "displayName");
 		_upp = format["Loja de pintura %1",_displayName];
@@ -53,7 +53,7 @@ if ((getPlayerUID player) != _vehOwner) exitWith {hint "You aren't the owner!";_
 		life_action_inUse = false;
 		5 cutText ["","PLAIN"];
 		player playActionNow "stop";
-		if(life_interrupted) exitWith {life_interrupted = false; titleText["Abgebrochen","PLAIN"]; life_action_inUse = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
+		if(life_interrupted) exitWith {life_interrupted = false; titleText["Cancelado","PLAIN"]; life_action_inUse = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
 		if(player != vehicle player) exitWith {titleText["Você tem que sair do carro para ele pode ser pintado!","PLAIN"];_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
 
 		life_cash = life_cash - _basePrice;

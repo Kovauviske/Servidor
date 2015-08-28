@@ -2,7 +2,7 @@
 /*
 	File: fn_atmMenu.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Opens and manages the bank menu.
 */
@@ -10,7 +10,7 @@ private["_display","_text","_units","_type"];
 
 if(!life_use_atm) exitWith
 {
-	hint "Because you robbed the bank you can't use the ATM for 5 minutes.";
+	hint "Você roubou o banco e não pode usar o ATM por 5 minutos.";
 };
 
 if(!dialog) then

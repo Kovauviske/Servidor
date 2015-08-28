@@ -33,7 +33,7 @@ life_action_gathering = false;
 life_smartphoneTarget = ObjNull;
 life_action_gather = false;
 life_drink = 0;
-life_fatigue = 0.15; //Set the max fatigue limit (50%)
+life_fatigue = 0.10; //Set the max fatigue limit (50%)
 life_kw_athira = false;
 life_kw_kavala = false;
 life_kw_sofia = false;
@@ -93,9 +93,9 @@ life_hunger = 100;
 life_battery = 50;
 __CONST__(life_paycheck_period,10); //Five minutes
 life_cash = 0;
-__CONST__(life_impound_car,10000);
-__CONST__(life_impound_boat,15000);
-__CONST__(life_impound_air,20000);
+__CONST__(life_impound_car,20000);
+__CONST__(life_impound_boat,30000);
+__CONST__(life_impound_air,40000);
 life_istazed = false;
 life_my_gang = ObjNull;
 life_drugged_cocaine = -1;
@@ -109,8 +109,8 @@ switch (playerSide) do
 {
 	case west:
 	{
-		life_atmcash = 80000; //Starting Bank Money
-		life_paycheck = 20000; //Paycheck Amount
+		life_atmcash = 500000; //Starting Bank Money
+		life_paycheck = 25000; //Paycheck Amount
 	};
 	case civilian:
 	{
@@ -119,7 +119,7 @@ switch (playerSide) do
 	};
 
 	case independent: {
-		life_atmcash = 80000;
+		life_atmcash = 300000;
 		life_paycheck = 20000;
 	};
 };
@@ -128,7 +128,7 @@ switch (playerSide) do
 	Master Array of items?
 */
 life_vShop_rentalOnly = ["I_MRAP_03_hmg_F"];
-__CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can never be bought and only 'rented'. Used as a balancer & money sink. If you want your server to be chaotic then fine.. Remove it..
+__CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly);
 
 life_inv_items =
 [

@@ -30,5 +30,5 @@ ctrlSetText[2404,"Conectado"];
 
 if(((lbSize _list)-1) == -1) then
 {
-	_list lbAdd "Sem anúncios";
+	_list lbAdd "Sem Procurados";
 };

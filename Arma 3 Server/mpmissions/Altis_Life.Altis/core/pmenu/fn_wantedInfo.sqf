@@ -26,7 +26,7 @@ _bounty = _data select 3;
 	if(!(_crime in _mylist)) then
 	{
 		_mylist set[count _mylist,_crime];
-		_list lbAdd format["%1 Quantidade de %2",{_x == _crime} count _crimes,_crime];
+		_list lbAdd format["%1 Crimes: %2",{_x == _crime} count _crimes,_crime];
 	};
 } foreach _crimes;
 
