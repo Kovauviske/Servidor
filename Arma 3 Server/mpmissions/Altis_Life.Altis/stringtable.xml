@@ -532,7 +532,7 @@
 			<German>Du musst erst in einer Gang sein, um einzunehmen zu können!</German>	
 			<French>Vous devez créer un gang avant de le capturer!</French>
 			<Italian>Devi creare una gang prima di catturarla!</Italian>
-			<Portuguese>Você precisa criar uma gangue antes de tentar capturar esse esconderijo!</Portuguese>
+			<Portuguese>Você precisa criar uma gangue antes de tentar capturar esse esconderijo de armas!</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_Controlled">
 			<Original>Your gang already has control over this hideout!</Original>
@@ -540,7 +540,7 @@
 			<German>Deine Gang hat bereits die Kontrolle über dieses Versteck!</German>	
 			<French>Votre bande a déjà le contrôle de cette cachette!</French>
 			<Italian>La tua Gang ha già il controllo di questo Covo</Italian>
-			<Portuguese>Sua gangue já tem controle sobre esse esconderijo!</Portuguese>
+			<Portuguese>Sua gangue já tem controle sobre esse esconderijo de armas!</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_Captured">
 			<Original>Only one person shall capture at once!</Original>
@@ -556,7 +556,7 @@
 			<German>Das Versteck wird durch %1 kontrolliert.&lt;br/&gt;&lt;br/&gt;Bist du sicher, dass du ihr Gang Gebiet übernehmen möchtest?</German>
 			<French>Cette cachette est contrôlée par %1.&lt;br/&gt;&lt;br/&gt;Etes-vous sûr que vous voulez prendre en charge leur zone de gang?</French>
 			<Italian>Questo Covo è controllato da %1.&lt;br/&gt;&lt;br/&gt;Sicuro di voler prendere il controllo della loro area?</Italian>
-			<Portuguese>Esse esconderijo é controlado por %1.&lt;br/&gt;&lt;br/&gt;Você tem certeza que deseja tomar essa área?</Portuguese>
+			<Portuguese>Esse esconderijo de armas é controlado por %1.&lt;br/&gt;&lt;br/&gt;Você tem certeza que deseja tomar essa área?</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_CurrentCapture">
 			<Original>Hideout is currently under control...</Original>
@@ -564,7 +564,7 @@
 			<German>Versteck ist derzeit unter Kontrolle...</German>
 			<French>La cachette est actuellement sous contrôle ...</French>
 			<Italian>Il Covo è già sotto controllo...</Italian>
-			<Portuguese>Esconderijo sobre controle....</Portuguese>
+			<Portuguese>Esconderijo de armas sobre controle....</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_CaptureCancel">
 			<Original>Capturing cancelled</Original>
@@ -580,7 +580,7 @@
 			<German>Versteck einnehmen</German>
 			<French>Capture cachette</French>
 			<Italian>Catturando il Covo</Italian>
-			<Portuguese>Capturando Esconderijo</Portuguese>
+			<Portuguese>Capturando Esconderijo de armas</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_CaptureSuccess">
 			<Original>%1 and his gang: %2 - have taken control of a local hideout!</Original>
@@ -588,7 +588,7 @@
 			<German>%1 und seine Gang: 2% - haben die Kontrolle über ein lokales Versteck übernommen!</German>
 			<French>%1 et sa gang: %2 ont pris le controle de la cachette !</French>
 			<Italian>%1 e la sua Gang: % 2 - hanno preso il controllo di un Covo!</Italian>
-			<Portuguese>%1 e sua gangue: %2 - agora tem o controle de um esconderijo!</Portuguese>
+			<Portuguese>%1 e sua gangue: %2 - agora tem o controle de um esconderijo de armas!</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_Over32">
 			<Original>You can't have a gang name longer then 32 characters.</Original>
