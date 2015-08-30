@@ -9,15 +9,17 @@ if(!isDedicated) then { X_Client = true;};
 enableSaving[false,false];
 
 //Exec Scripts and more...
-life_versionInfo = "Altis Life RPG";
+life_versionInfo = "AltisLife F.T.I Version";
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf"; //Load the Server Strings
 [] execVM "script\fastrope.sqf"; //Load Fastrope
 [] execVM "script\welcome.sqf"; //Load Welcome Intro
 [] execVM "core\civilian\fn_welcome.sqf"; //Load Willkommen
+[] execVM "script\0snake&rabbit.sqf";
 [] execVM "script\teargas.sqf"; //Load Teargas Script for Cops
 [] execVM "script\savezone.sqf"; //Load the Savezones
 [] execVM "script\fn_statusBar.sqf"; //Load the Statusbar
+
 enableEnvironment true;
 
 //Scheiß Nebel hau ab

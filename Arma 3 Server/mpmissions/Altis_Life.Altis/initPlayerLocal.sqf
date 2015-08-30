@@ -1,6 +1,6 @@
 /*
 	File: initPlayerLocal.sqf
-	
+
 	Description:
 	Starts the initialization of the player.
 */
@@ -12,6 +12,7 @@ __CONST__(BIS_fnc_endMission,BIS_fnc_endMission);
 //[] execVM "SpyGlass\fn_initSpy.sqf";
 [] execVM "core\init.sqf";
 [] execVM "core\functions\fn_emptyFuel.sqf";
+[] execVM "script\anti_injection.sqf";
 
 //Execute JIP code.
 if((_this select 1)) then {
