@@ -133,6 +133,20 @@ switch (_code) do
 		};
 	};
 
+//Touche [S] BipBip camion by Fuzz
+    case 31:
+    {
+	    if (!BipBipOn && vehicle player != player && (driver vehicle player) == player && (typeOf vehicle player) in ["C_Van_01_transport_F","C_Van_01_box_F","I_Truck_02_covered_F","I_Truck_02_transport_F","I_Truck_02_ammo_F","I_Truck_02_box_F","I_Truck_02_medical_F","I_Truck_02_fuel_F","B_Truck_01_transport_F","B_Truck_01_box_F","B_Truck_01_covered_F","B_Truck_01_mover_F","B_Truck_01_Repair_F","B_Truck_01_ammo_F","B_Truck_01_fuel_F","B_Truck_01_medical_F","O_Truck_02_covered_F","O_Truck_02_transport_F","O_Truck_03_transport_F","O_Truck_03_covered_F","O_Truck_03_repair_F","O_Truck_03_ammo_F","O_Truck_03_fuel_F","O_Truck_03_medical_F","O_Truck_03_device_F","O_Truck_02_box_F","O_Truck_02_medical_F","O_Truck_02_Ammo_F","O_Truck_02_fuel_F"]) then {
+		    _Automobile = [vehicle player,0] call BIS_fnc_param;
+		    _VitesseX = speed _Automobile;
+
+		    if (_VitesseX < 0) then {
+			    BipBipOn = true;
+			    [_Automobile] call life_fnc_BipBipCamion;
+			};
+		};
+	};
+
 	//Restraining (Shift + R)
 	case 19:
 	{

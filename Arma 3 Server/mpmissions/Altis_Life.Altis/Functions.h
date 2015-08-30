@@ -165,6 +165,8 @@ class Life_Client_Core
 		class robShops {};
 		class robBank {};
 		class craftAction {};
+		//Car Alarm
+		class CarAlarmSound {};
 	};
 
 	class Special
@@ -298,18 +300,17 @@ class Life_Client_Core
 		class inventoryOpened {};
 		class isUIDActive {};
 		class callCellPhone {};
-		class UnlockCarSound {};
-		class LockCarSound {};
 		class stripDownPlayer {};
 		class saveGear {};
 		class loadGear {};
 		class autoSave {};
 		class emptyFuel {};
 		class fatigueReset {};
-		class introCam {};
 		class fadeSound {};
 		//abort
 		class abortAction {};
+		//BipBIP Arriere Camion
+		class BipBipCamion {};
 	};
 
 	class Network

@@ -7,7 +7,7 @@ player createDiarySubject ["Regraspolicia","Regras Gerais 2"];
 player createDiarySubject ["zonasegura","Safe Zones"];
 player createDiarySubject ["areailegal","Áreas Ilegas"];
 player createDiarySubject ["zonasemlei","Zona sem Leis"];
-player createDiarySubject ["farms","PREÇOS DE FARMS"];
+player createDiarySubject ["farms","PREÇOS DE LICENÇAS"];
 player createDiarySubject ["controles","Controles Básicos"];
 player createDiarySubject ["money","Ressarcimentos"];
 player createDiarySubject ["credito","Agradecimentos"];
@@ -554,18 +554,17 @@ player createDiarySubject ["update","Changelogs"];
 				3. Licença de Piloto - R$: 100.000<br/>
 				4. Porte de Armas - R$: 100.000<br/>
 				5. Licença de Mergulho - R$: 10.000<br/>
-				6. Processador de Oleo - R$: 15.000<br/>
-				7. Processador de Heroina - R$: 60.000<br/>
-				8. Processador de Maconha - R$: 50.000<br/>
-				9. Processador de Diamante - R$: 50.000<br/>
-				10. Processador de Sal - R$: 30.000<br/>
-				11. Processador de Cocaina - R$: 120.000<br/>
-				12. Processador de Areia - R$: 20.000<br/>
-				13. Processador de Areia - R$: 1.500<br/>
+				6. Licença Rebelde - R$: 700.000
+				7. Processador de Petroleo - R$: 50.000<br/>
+				8. Processador de Heroina - R$: 60.000<br/>
+				9. Processador de Maconha - R$: 50.000<br/>
+				10. Processador de Diamante - R$: 50.000<br/>
+				11. Processador de Sal - R$: 30.000<br/>
+				12. Processador de Cocaina - R$: 120.000<br/>
+				13. Processador de Areia - R$: 20.000<br/>
 				14. Processador de Cobre - R$: 15.000<br/>
 				15. Processador de Cimento - R$: 15.000<br/>
-				16. Processador de Cimento - R$: 15.000<br/>
-				17. Processador de Uranio - R$: 500.000<br/><br/>
+				16. Processador de Uranio - R$: 500.000<br/><br/>
 				"
 		]
 	];

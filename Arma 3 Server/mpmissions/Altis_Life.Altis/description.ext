@@ -3,9 +3,9 @@ onLoadName = "F.T.I ALTIS LIFE BRASIL";
 onLoadMission = "F.T.I ALTIS LIFE BRASIL - teamspeak.ftialtislife.com.br";
 joinUnassigned = 1;
 respawn = BASE;
-respawndelay = 1;
+respawndelay = 5;
 disabledAI = true;
-disableChannels[]= {0,1,2};
+disableChannels[]={0,1,2};
 enableDebugConsole = 1;
 respawnDialog = 0;
 loadScreen = "logo.jpg";
@@ -34,7 +34,7 @@ class RscTitles
 	#include "dialog\statusBar.hpp"
 	#include "AS_AdminMenu\spectating.hpp"
 
-class wm_disp {
+		class wm_disp {
 		idd = -1;
 		onLoad = "uiNamespace setVariable ['wm_disp', _this select 0]";
 		fadein = 0;
@@ -67,7 +67,6 @@ class wm_disp {
 			};
 		};
 	};
-
 };
 
 class CfgFunctions
@@ -98,17 +97,22 @@ class CfgSounds
 		sound[] = {"\sounds\flashbang.ogg", 0.75, 1};
 		titles[] = {};
 	};
-
-	class car_lock
+	class bipbip_camion
 	{
-		name = "car_lock";
-		sound[] = {"\sounds\car_lock.ogg", 0.45, 1};
+		name = "bipbip_camion";
+		sound[] = {"\sounds\bipbip.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	class car_lock
+    {
+        name = "car_lock";
+		sound[] = {"\sounds\car_locked_bleep.ogg", 0.45, 1};
 		titles[] = {};
 	};
 	class car_unlock
-	{
-		name = "car_unlock";
-		sound[] = {"\sounds\unlock.ogg", 0.45, 1};
+    {
+        name = "car_unlock";
+		sound[] = {"\sounds\car_unlocked.ogg", 0.45, 1};
 		titles[] = {};
 	};
 	class cuff
@@ -207,11 +211,10 @@ class CfgSounds
 		titles[] = {};
 	};
 	class caralarm
-	{
-		name= "caralarm";
-		sound[] = {"sounds\caralarm.ogg", 1.0, 1};
-		titles[] = {};
-	};
+		name = "car_alarm";
+        sound[] = {"\sounds\Sound_Car_alarm.ogg", 1.0, 1};
+	    titles[] = {};
+   };
 };
 
 class CfgDebriefing
