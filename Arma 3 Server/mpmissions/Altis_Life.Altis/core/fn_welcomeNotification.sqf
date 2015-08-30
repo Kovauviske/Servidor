@@ -1,5 +1,6 @@
 /*
 	File: fn_welcomeNotification.sqf
+
 	Description:
 	Called upon first spawn selection and welcomes our player.
 */
@@ -37,28 +38,28 @@ disableUserInput false;
 
 [] spawn {
 	_onScreenTime = 5;
-	_role1 = "Bienvenue sur Linox Life";
-_role1names = ["Serveur Général"];
-_role2 = "Créateurs du Serveur";
-_role2names = ["_Fuzz"];
-_role3 = "Administrateur du serveur";
-_role3names = ["Marvin"];
-_role4 = "Modérateur sénior du Serveur";
-_role4names = ["Sherlock, Jean Muertos, Mike Kalashnikov"];
-_role5 = "Modérateurs du Serveur";
-_role5names = ["Jayce Black, Jackson, Leroux, Wong Tung, FatherWater, Toudy123, Arthur"];
-_role6 = "Développeurs du Serveur";
-_role6names = ["_Fuzz, Jeremy Maxwell"];
+	_role1 = "Bem vindo ao F.T.I ALTIS LIFE";
+_role1names = ["Informações do Servidor"];
+_role2 = "Criadores do Servidor";
+_role2names = ["AbusolutZ & KoVaUvIsKe"];
+_role3 = "Administradores do Servidor";
+_role3names = ["AbusolutZ & KoVaUvIsKe"];
+_role4 = "Moderadores do Servidor";
+_role4names = ["Tsunubaro"];
+_role5 = "Desenvolvedores";
+_role5names = ["AbusolutZ & KoVaUvIsKe"];
+_role6 = "Host by";
+_role6names = ["AbusolutZ & KoVaUvIsKe"];
 _role7 = "TeamSpeak";
-_role7names = ["ts.linox.org"];
+_role7names = ["ts.ftialtislife.com.br"];
 _role8 = "Site/Forum";
-_role8names = ["http://www.linox.org"];
-_role9 = "Règlements Principaux";
-_role9names = ["Pas de troll, Pas de freekill, Pas de Car-kill, Respectez les autres joueurs, Pas d'insultes, Jouer Role Play, ce serveur n'est pas un WasteLand !!!"];
+_role8names = ["http://ftialtislife.forumeiros.com/"];
+_role9 = "Principais Regras";
+_role9names = ["Sem trolagem, Nada de RDM, Nada de Atropelamentos, Respeite os Administradores e Equipe, Siga o RolePlay, você não está em um servidor de WasteLand !!!"];
 _role10 = "Évolution";
-_role10names = ["Le serveur est en constante évolution, il y a donc possibilité d'y trouver des bugs. Merci de les reporter pour le bien du serveur. Ils seront corrigés dans un délai maximal de 48 heures ! :)"];
-_role11 = "Bon jeu à tous!";
-_role11names = ["Le staff vous souhaite une excellente session de jeu!"];
+_role10names = ["O servidor está em constante mudança, para que haja possibilidade de corrigir bugs. Se encontrar algum nos avise. Eles serão corrigidos no prazo máximo de 48 horas! :)"];
+_role11 = "Bom jogo a todos!";
+_role11names = ["A equipe lhe deseja uma excelente jogo!"];
 
 	{
 		sleep 2;
