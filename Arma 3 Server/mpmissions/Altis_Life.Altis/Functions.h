@@ -308,6 +308,8 @@ class Life_Client_Core
 		class fatigueReset {};
 		class introCam {};
 		class fadeSound {};
+		//abort
+		class abortAction {};
 	};
 
 	class Network

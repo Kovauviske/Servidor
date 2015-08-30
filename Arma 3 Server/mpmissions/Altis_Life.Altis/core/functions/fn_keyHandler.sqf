@@ -275,7 +275,7 @@ switch (_code) do
 			{
 			cursorTarget setVariable ["surrender", false, true];
 			cursorTarget unassignItem "itemmap";
-			cursorTarget unassignItem "itemgps"; 
+			cursorTarget unassignItem "itemgps";
 			[] call life_fnc_restrainAction;
 				hint "Você algemou ele! Use o Windows para ter mais opções";
 			} else {
@@ -318,16 +318,16 @@ switch (_code) do
 						} else {
 							[[_veh,0],"life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 						};
-						systemChat "Você destravou o seu veículo.";
-						[[_veh],"life_fnc_LockCarSound",nil,true] spawn life_fnc_MP;
+						hint composeText [ image "icons\unlock.paa", " Veiculo Destravado" ];
+						[[_veh, "car_unlock",10],"life_fnc_playSound",true,false] spawn life_fnc_MP;
 					} else {
 						if(local _veh) then {
 							_veh lock 2;
 						} else {
 							[[_veh,2],"life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 						};
-						systemChat "Você travou seu veículo.";
-						[[_veh],"life_fnc_UnLockCarSound",nil,true] spawn life_fnc_MP;
+						hint composeText [ image "icons\lock.paa", " Veiculo Travado" ];
+						[[_veh, "car_lock",10],"life_fnc_playSound",true,false] spawn life_fnc_MP;
 					};
 				};
 			};

@@ -1,6 +1,6 @@
-author = "Tonic | Editado por Seadrop, Kovauviske e AbsolutZ";
-onLoadName = "[BR] #1 l ALTIS LIFE BRASIL - OFICIAL SERVER l +V.5.0+SAVE+DANTAS";
-onLoadMission = "ALTIS LIFE BRASIL - OFICIAL SERVER l TS3: dantashost.ts3dns.com";
+author = "Tonic | Editado por Kovauviske e AbsolutZ";
+onLoadName = "F.T.I ALTIS LIFE BRASIL";
+onLoadMission = "F.T.I ALTIS LIFE BRASIL - teamspeak.ftialtislife.com.br";
 joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 1;
@@ -33,6 +33,41 @@ class RscTitles
 	#include "dialog\hud_nameTags.h"
 	#include "dialog\statusBar.hpp"
 	#include "AS_AdminMenu\spectating.hpp"
+
+class wm_disp {
+		idd = -1;
+		onLoad = "uiNamespace setVariable ['wm_disp', _this select 0]";
+		fadein = 0;
+		fadeout = 0;
+		duration = 10e10;
+		controlsBackground[] = {};
+		objects[] = {};
+		class controls {
+			class wm_text2 {
+				idc = 1;
+				x = safeZoneX+0.027;//safeZoneW*0.01;
+				y = safeZoneY+safeZoneH-0.16;
+				w = 0.35*safeZoneH;
+				h = 0.057*safeZoneH;
+				shadow = 2;
+				class Attributes
+				{
+					font = "EtelkaNarrowMediumPro";
+					color = "#24FFFFFF";
+					align = "left"; // put "center" here if you want some background
+					valign = "middle";
+					shadow = 2;
+				};
+				colorBackground[] = { 1, 0.3, 0, 0 };  // uncomment and increase 4th number to have a background
+				font = "EtelkaNarrowMediumPro";
+				size = 0.06*safeZoneH;
+				type = 13;
+				style = 0;
+				text="";
+			};
+		};
+	};
+
 };
 
 class CfgFunctions
@@ -67,13 +102,13 @@ class CfgSounds
 	class car_lock
 	{
 		name = "car_lock";
-		sound[] = {"\sounds\car_lock.ogg", 1.0, 1};
+		sound[] = {"\sounds\car_lock.ogg", 0.45, 1};
 		titles[] = {};
 	};
-	class unlock
+	class car_unlock
 	{
-		name = "unlock";
-		sound[] = {"\sounds\unlock.ogg", 1.0, 1};
+		name = "car_unlock";
+		sound[] = {"\sounds\unlock.ogg", 0.45, 1};
 		titles[] = {};
 	};
 	class cuff

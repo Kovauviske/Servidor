@@ -14,20 +14,20 @@ class osefStatusBar {
 	class controls {
 		class statusBarText {
 			idc = 1000;
-			x = safezoneX + safezoneW - 1;
-			y = safezoneY + safezoneH - 0.08;
-			w = 1;
+			x = safezoneX + safezoneW - 1.5;
+			y = safezoneY + safezoneH - 0.04;
+			w = 1.5;
 			h = 0.04;
 			shadow = 2;
-			colorBackground[] = { 255, 255, 255, 0.0 };  // uncomment and increase 4th number to have a background
+			colorBackground[] = { 1, 0.3, 0, 0.0 };
 			font = "PuristaSemibold";
-			size = 0.03;
+			size = 0.04;
 			type = 13;
 			style = 1;
-			text="Carregando informações do servidor...";
+			text="SERVIDOR F.T.I ALTIS LIFE BRASIL - CARREGANDO INFORMAÇÕES...";
 			class Attributes {
 				align="right";
-				color = "#FF0000";
+				color = "#FF4500";
 			};
 		};
 	};

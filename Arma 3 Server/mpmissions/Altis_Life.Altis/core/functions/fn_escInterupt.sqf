@@ -17,8 +17,7 @@ _escSync = {
 		disableSerialization;
 		private["_abortButton","_timeStamp"];
 		_abortButton = (findDisplay 49) displayCtrl 104;
-		_respawnButton = (findDisplay 49) displayCtrl 1010; // LHM
-		_timeStamp = time + 15;
+		_timeStamp = time + 10;
 
 		waitUntil {
 			_abortButton ctrlSetText format[localize "STR_NOTF_AbortESC",[(_timeStamp - time),"SS.MS"] call BIS_fnc_secondsToString];
@@ -37,13 +36,6 @@ _escSync = {
 		_thread = [] spawn _syncManager;
 		waitUntil{scriptDone _thread OR isNull (findDisplay 49)};
 		_abortButton ctrlEnable true;
-
-		if (!isNil "SOCK_fnc_updateRequest") then {
-			[] call SOCK_fnc_updateRequest; //call our silent sync.
-		} else {
-			[true] call life_fnc_sessionUpdate; // Old System
-		};
-
 	};
 };
 
@@ -56,7 +48,10 @@ while {true} do
 {
 	waitUntil{!isNull (findDisplay 49)};
 	_abortButton = (findDisplay 49) displayCtrl 104;
-	_abortButton buttonSetAction "[[player],""TON_fnc_cleanupRequest"",false,false] spawn life_fnc_MP";
+	_abortButton ctrlSetEventHandler [
+		"ButtonClick",
+		"[] spawn life_fnc_abortAction; (findDisplay 49) closeDisplay 2; true"
+	];
 	_respawnButton = (findDisplay 49) displayCtrl 1010;
 	_fieldManual = (findDisplay 49) displayCtrl 122;
 
@@ -64,8 +59,6 @@ while {true} do
 	_abortButton ctrlEnable false;
 	_respawnButton ctrlEnable false;
 	_fieldManual ctrlEnable false; //Never re-enable, blocks an old script executor.
-	_fieldManual ctrlShow false;
-	_respawnButton ctrlSetText "RESSURGIMENTO";
 
 	_usebleCtrl = call _canUseControls;
 	_usebleCtrl spawn _escSync;

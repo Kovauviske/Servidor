@@ -1,7 +1,7 @@
 /*
 	File: fn_initCiv.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Initializes the civilian.
 */
@@ -23,6 +23,9 @@ if(life_is_arrested) then
 	waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 	waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 };
+
+titleText ["", "BLACK FADED", 9];
+titleText ["Servidor F.T.I v4.3", "BLACK IN", 6];
 player addRating 9999999;
 
 //Skins für Zivis
