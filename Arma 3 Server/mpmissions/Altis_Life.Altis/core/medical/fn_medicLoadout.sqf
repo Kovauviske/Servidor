@@ -24,3 +24,5 @@ player addItemToUniform "Chemlight_yellow";
 player addItemToUniform "Chemlight_yellow";
 player addItemToUniform "Chemlight_yellow";
 player addItemToUniform "Chemlight_yellow";
+
+[] call life_fnc_equipGear;

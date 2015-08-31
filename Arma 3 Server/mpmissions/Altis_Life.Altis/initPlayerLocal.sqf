@@ -13,6 +13,7 @@ __CONST__(BIS_fnc_endMission,BIS_fnc_endMission);
 [] execVM "core\init.sqf";
 [] execVM "core\functions\fn_emptyFuel.sqf";
 [] execVM "script\anti_injection.sqf";
+[] execVM "script\autoReskin.sqf";
 
 //Execute JIP code.
 if((_this select 1)) then {

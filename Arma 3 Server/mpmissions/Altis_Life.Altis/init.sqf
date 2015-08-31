@@ -20,26 +20,17 @@ life_versionInfo = "AltisLife F.T.I Version";
 
 enableEnvironment true;
 
-//Scheiß Nebel hau ab
-[] spawn {
-	while{true} do {
-		sleep 10;
-		200 setFog 0;
-		sleep 590;
-	};
-};
-//Scheiß Regen hau ab
-[] spawn {
-	while{true} do {
-		sleep 10;
-		200 setRain 0;
-		sleep 590;
-	};
-};
+
 //Performance
-setTerrainGrid 45;
+setTerrainGrid 25;
 setViewDistance 1000;
 setObjectViewDistance [800,50];
+
+{[] spawn (_this select 1);
+};
+    clientStarted = player;
+
+    publicVariableServer "clientStarted";
 
 MAC_fnc_switchMove = {
     private["_object","_anim"];

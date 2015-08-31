@@ -2,7 +2,7 @@
 	File: fn_civLoadout.sqf
 	Author: Bryan "Tonic" Boardwine
 	Edited: Itsyuka
-	
+
 	Description:
 	Loads the civs out with the default gear.
 */
@@ -24,3 +24,4 @@ player addItem "ItemGPS";
 player assignItem "ItemGPS";
 
 [] call life_fnc_saveGear;
+[] call life_fnc_equipGear;

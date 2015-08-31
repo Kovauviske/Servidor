@@ -1,7 +1,7 @@
 /*
 	File: fn_revived.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	THANK YOU JESUS I WAS SAVED!
 */
@@ -37,3 +37,6 @@ player setVariable["Revive",nil,TRUE];
 player setVariable["name",nil,TRUE];
 player setVariable["Reviving",nil,TRUE];
 [] call life_fnc_hudUpdate; //Request update of hud.
+[] execVM "scripts\statusBar.sqf";
+[] call life_fnc_equipGear;
+[] call SOCK_fnc_updateRequest; //call our silent sync.
