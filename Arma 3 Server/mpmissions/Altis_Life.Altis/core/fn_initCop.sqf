@@ -31,9 +31,6 @@ titleText ["Servidor F.T.I v4.3", "BLACK IN", 6];
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 
-//Introcam
-[] spawn life_fnc_IntroCam;
-
 //Skins und Backpacks f?r Cops
 // CopLevel 1
 [] spawn

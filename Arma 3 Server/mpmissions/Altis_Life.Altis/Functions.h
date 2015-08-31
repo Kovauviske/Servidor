@@ -167,6 +167,8 @@ class Life_Client_Core
 		class craftAction {};
 		//Car Alarm
 		class CarAlarmSound {};
+		//Playsound
+		class playSound {};
 	};
 
 	class Special

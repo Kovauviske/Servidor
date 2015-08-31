@@ -27,6 +27,7 @@ if(life_is_arrested) then
 titleText ["", "BLACK FADED", 9];
 titleText ["Servidor F.T.I v4.3", "BLACK IN", 6];
 player addRating 9999999;
+[player] call life_fnc_updateClothing;
 
 //Skins für Zivis
 [] spawn
@@ -48,7 +49,3 @@ while {true} do
     };
 };
 //Ende für Zivi Skins
-
-
-//Introcam
-[] spawn life_fnc_IntroCam;

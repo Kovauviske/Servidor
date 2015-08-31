@@ -162,12 +162,6 @@ class CfgSounds
 		titles[] = {};
 	};
 
-	class welcome
-	{
-		name = "welcome";
-		sound[] = {"sounds\welcome.ogg", 1.0, 1};
-		titles[] = {};
-	};
 	class knockout
 	{
 		name = "knockout";
@@ -211,6 +205,7 @@ class CfgSounds
 		titles[] = {};
 	};
 	class caralarm
+	{
 		name = "car_alarm";
         sound[] = {"\sounds\Sound_Car_alarm.ogg", 1.0, 1};
 	    titles[] = {};
