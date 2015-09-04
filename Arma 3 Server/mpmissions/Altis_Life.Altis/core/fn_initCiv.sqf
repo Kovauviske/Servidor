@@ -49,3 +49,5 @@ while {true} do
     };
 };
 //Ende für Zivi Skins
+
+[] spawn life_fnc_IntroCam;

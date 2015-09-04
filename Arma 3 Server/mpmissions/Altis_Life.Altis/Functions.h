@@ -13,9 +13,8 @@ class Socket_Reciever
 	};
 };
 
-/*
-class SpyGlass
-{
+
+/* {
 	tag = "SPY";
 	class Functions
 	{

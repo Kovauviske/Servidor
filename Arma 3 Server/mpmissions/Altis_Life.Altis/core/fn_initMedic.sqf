@@ -79,3 +79,5 @@ if((__GETC__(life_medicLevel)) == 2) exitWith {
 	license_med_adac = true;
 	license_med_air = true;
 };
+
+[] spawn life_fnc_IntroCam;
