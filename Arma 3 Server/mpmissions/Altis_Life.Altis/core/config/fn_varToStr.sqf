@@ -102,7 +102,7 @@ switch (_var) do
 	case "license_civ_dive": {"Licença de Mergulho"};
 	case "license_civ_boat": {"Licença de Barco"};
 	case "license_civ_gun": {"Porte de Armas"};
-	case "license_cop_air": {"Licença Policial Aeria"};
+	case "license_cop_air": {"Licença Policial Aerea"};
 	case "license_cop_swat": {"Licença para BOPE"};
 	case "license_cop_cg": {"Guarda Costeira"};
 	case "license_civ_rebel": {"Licença Rebelde"};
