@@ -12,7 +12,7 @@
 	[Shop Name,
 	[ //Array of items to add to the store
 		[classname,Custom Name (set nil for default),price]
-	]]
+]]
 */
 private["_shop"];
 _shop = [_this,0,"",[""]] call BIS_fnc_param;
@@ -268,7 +268,7 @@ switch(_shop) do
 					case (2): {["Loja de Armas - Cabo",_ret]};
 					case (3): {["Loja de Armas - Sargento",_ret]};
 					case (4): {["Loja de Armas - Tenente",_ret]};
-					case (5): {["Loja de Armas - Capital",_ret]};
+					case (5): {["Loja de Armas - Capitão",_ret]};
 					case (6): {["Loja de Armas - B.O.P.E",_ret]};
 					case (7): {["Armurerie Général",_ret]};
 				};

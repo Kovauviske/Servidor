@@ -20,7 +20,7 @@ class Header
 wreckLimit = 3;
 wreckRemovalMinTime = 60;
 wreckRemovalMaxTime = 320;
-corpseLimit = 150;
+corpseLimit = 30;
 corpseRemovalMinTime = 999;
 corpseRemovalMaxTime = 9999;
 
@@ -34,7 +34,7 @@ class RscTitles
 	#include "dialog\statusBar.hpp"
 	#include "AS_AdminMenu\spectating.hpp"
 
-		class wm_disp {
+	class wm_disp {
 		idd = -1;
 		onLoad = "uiNamespace setVariable ['wm_disp', _this select 0]";
 		fadein = 0;

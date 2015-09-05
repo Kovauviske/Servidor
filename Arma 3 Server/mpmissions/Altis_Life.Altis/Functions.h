@@ -463,6 +463,12 @@ class Life_Client_Core
 		class weedSmoke {};
 	};
 
+	class Cam
+	{
+	   file ="core";
+	   class IntroCam {};
+	};
+
 	class Dialog_Controls
 	{
 		file = "dialog\function";

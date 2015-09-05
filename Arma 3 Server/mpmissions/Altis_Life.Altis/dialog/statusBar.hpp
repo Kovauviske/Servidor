@@ -16,10 +16,10 @@ class osefStatusBar {
 			idc = 1000;
 			x = safezoneX + safezoneW - 1.5;
 			y = safezoneY + safezoneH - 0.04;
-			w = 1.5;
+			w = 1;
 			h = 0.04;
 			shadow = 2;
-			colorBackground[] = { 1, 0.3, 0, 0.0 };
+			colorBackground[] = { 255, 255, 255, 0.0 };
 			font = "PuristaSemibold";
 			size = 0.04;
 			type = 13;

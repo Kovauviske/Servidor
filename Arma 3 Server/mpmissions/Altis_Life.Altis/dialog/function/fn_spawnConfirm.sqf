@@ -60,6 +60,8 @@ if(count life_spawn_point == 0) then
 	{
 		player setPos (getMarkerPos (life_spawn_point select 0));
 	};
+
+	[] spawn life_fnc_IntroCam;
 	if(life_firstSpawn) then {
 		life_firstSpawn = false;
 		_script = [] spawn life_fnc_welcomeNotification;
