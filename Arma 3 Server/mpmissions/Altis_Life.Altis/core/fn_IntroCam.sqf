@@ -37,7 +37,7 @@ life_spawnAnimDone = true;
 disableUserInput false;
 
 [] spawn {
-	_onScreenTime = 5;
+	_onScreenTime = 8;
 	_role1 = "Bem vindo ao F.T.I ALTIS LIFE";
 _role1names = ["Informações do Servidor"];
 _role2 = "Criadores do Servidor";
@@ -49,14 +49,14 @@ _role4names = ["Tsunubaro"];
 _role5 = "Desenvolvedores";
 _role5names = ["AbusolutZ & KoVaUvIsKe"];
 _role6 = "Host by";
-_role6names = ["AbusolutZ & KoVaUvIsKe"];
+_role6names = ["GameServer"];
 _role7 = "TeamSpeak";
-_role7names = ["ts.ftialtislife.com.br"];
+_role7names = ["167.114.206.61:8101"];
 _role8 = "Site/Forum";
 _role8names = ["http://ftialtislife.forumeiros.com/"];
 _role9 = "Principais Regras";
 _role9names = ["Sem trolagem, Nada de RDM, Nada de Atropelamentos, Respeite os Administradores e Equipe, Siga o RolePlay, você não está em um servidor de WasteLand !!!"];
-_role10 = "Évolution";
+_role10 = "Atualizações";
 _role10names = ["O servidor está em constante mudança, para que haja possibilidade de corrigir bugs. Se encontrar algum nos avise. Eles serão corrigidos no prazo máximo de 48 horas! :)"];
 _role11 = "Bom jogo a todos!";
 _role11names = ["A equipe lhe deseja uma excelente jogo!"];

@@ -20,7 +20,7 @@ Description: Puts a small bar in the bottom right of screen to display in-game i
 //systemChat format["F.T.I ALTIS LIFE - CARREGANDO INFORMAÇÕES...", _rscLayer];
 
 [] spawn {
-	sleep 5;
+	sleep 1;
 	_fpscolour = '#008000';
 	_counter = 180;
 	_timeSinceLastUpdate = 0;

@@ -18,10 +18,10 @@ class osefStatusBar {
 			y = safezoneY + safezoneH - 0.04;
 			w = 1;
 			h = 0.04;
-			shadow = 2;
+			shadow = 0;
 			colorBackground[] = { 255, 255, 255, 0.0 };
 			font = "PuristaSemibold";
-			size = 0.04;
+			size = 0.02;
 			type = 13;
 			style = 1;
 			text="SERVIDOR F.T.I ALTIS LIFE BRASIL - CARREGANDO INFORMAÇÕES...";
