@@ -463,12 +463,35 @@ switch (_code) do
 		_handled = false;
 	};
 
-	case 62: // F4
-	{
-		if(__GETC__(life_adminlevel) > 1) exitWith {hint "Essa tecla não é permitida"};
-		closeDialog 0;
-		_handled = false;
-	};
+	//report alt + f4
+	case 62:
+    {
+    if(_alt && !_shift) then {
+    diag_log format ["SERVER DIZ: %1 usando ALT+F4 para se desconectar (reporte aos Administradores)",_player getVariable["realname",name _player]];
+    [[1,format["SERVER DIZ: %1 usando ALT+F4 para se desconectar (reporte aos Administradores)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+    };
+    };
+    case 211:
+    {
+    if(_ctrlKey && _alt)  then {
+    diag_log format ["SERVER DIZ: %1 usando CTRL + ALT + DEL provavel disconnect (reporte aos Administradores)",_player getVariable["realname",name _player]];
+    [[1,format["SERVER DIZ: %1 usando CTRL + ALT + DEL  provavel disconnect (reporte aos Administradores)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+    };
+    };
+    case 15:
+    {
+    if( _alt)  then {
+    diag_log format ["SERVER DIZ: %1 usando ALT + TAB  provavel disconnect (reporte aos Administradores)",_player getVariable["realname",name _player]];
+    [[1,format["SERVER DIZ: %1 usando ALT + TAB  provavel disconnect (reporte aos Administradores)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+    };
+    };
+    case 1:
+    {
+    if( _ctrlKey )  then {
+    diag_log format ["SERVER DIZ: %1 usando CTRL + ESC provavel disconnect (reporte aos Administradores)",_player getVariable["realname",name _player]];
+    [[1,format["SERVER DIZ: %1 usando CTRL + ESC provavel disconnect (reporte aos Administradores)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+    };
+    };
 
 	case 66: //F8 key
 	{
