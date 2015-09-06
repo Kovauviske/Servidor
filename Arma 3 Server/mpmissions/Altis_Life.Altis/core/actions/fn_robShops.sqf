@@ -95,7 +95,6 @@ if(life_isTazed) exitWith
 	hint "Você foi eletrocutado, e o roubo falhou!";
 	5 cutText ["","PLAIN"];
 	deletemarker _marker;
-    _ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];
 	[_shop] spawn
 	{
 		private["_shop"];

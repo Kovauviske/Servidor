@@ -129,4 +129,3 @@ life_use_atm = true;
 };
 _shop switchMove "";
 _shop setVariable ["rip",false,true];
-_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];

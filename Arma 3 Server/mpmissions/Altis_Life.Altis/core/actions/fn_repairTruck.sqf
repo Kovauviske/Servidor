@@ -51,4 +51,3 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 		titleText["Você reparou com sucesso o veículo.","PLAIN"];
 	};
 };
-_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];

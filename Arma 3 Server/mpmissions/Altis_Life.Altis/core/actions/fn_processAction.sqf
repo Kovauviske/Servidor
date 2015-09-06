@@ -115,5 +115,4 @@ if(_hasLicense) then
 	titleText[format["Você processou %1 e %2 e criou $%3",_oldVal,_itemName,[_cost] call life_fnc_numberText],"PLAIN"];
 	life_cash = life_cash - _cost;
 	life_is_processing = false;
-	_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];
 };

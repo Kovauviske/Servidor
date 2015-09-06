@@ -2,7 +2,7 @@
 /*
 	File: fn_onPlayerRespawn.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Does something but I won't know till I write it...
 */
@@ -29,4 +29,3 @@ player playMoveNow "amovppnemstpsraswrfldnon";
 [] call life_fnc_setupActions;
 [[_unit,life_sidechat,playerSide],"TON_fnc_managesc",false,false] spawn life_fnc_MP;
 player enableFatigue (__GETC__(life_enableFatigue));
-_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];
