@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<Scheduler>
+    <!-- DEBUT DU SCRIPTS -->
+    <!-- 00.00h RESTART -->
+    <job id="0">
+        <start>23:45:00</start>
+        <runtime>000000</runtime>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop>
+        <cmd>say -1 [INFO] Le serveur restart dans 15 minutes</cmd>
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="1">
+        <start>23:55:00</start>
+        <runtime>000000</runtime>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop>
+        <cmd>say -1 [INFO] Le serveur restart dans 5 minutes</cmd>
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="2">
+        <start>00:00:00</start>
+        <runtime>000000</runtime>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop>
+        <cmd>C:\Users\DidiDev\Desktop\altislife.bat</cmd>
+        <cmdtype>0</cmdtype>            
+    </job>
+    <!-- 06.00h RESTART -->
+    <job id="3">
+        <start>05:45:00</start>
+        <runtime>000000</runtime>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop>
+        <cmd>say -1 [INFO] Le serveur restart dans 15 minutes</cmd>
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="4">
+        <start>05:55:00</start>
+        <runtime>000000</runtime>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop>
+        <cmd>say -1 [INFO] Le serveur restart dans 5 minutes</cmd>
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="5">
+        <start>06:00:00</start>
+        <runtime>000000</runtime>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop>
+        <cmd>C:\Users\DidiDev\Desktop\altislife.bat</cmd>
+        <cmdtype>0</cmdtype>            
+    </job>
+    <!-- 12.00h RESTART -->
+    <job id="6">
+        <start>11:45:00</start>
+        <runtime>000000</runtime>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop>
+        <cmd>say -1 [INFO] Le serveur restart dans 15 minutes</cmd>
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="7">
+        <start>11:55:00</start>
+        <runtime>000000</runtime>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop>
+        <cmd>say -1 [INFO] Le serveur restart dans 5 minutes</cmd>
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="8">
+        <start>12:00:00</start>
+        <runtime>000000</runtime>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop>
+        <cmd>C:\Users\DidiDev\Desktop\altislife.bat</cmd>
+        <cmdtype>0</cmdtype>            
+    </job>
+    <!-- 18.00h RESTART -->
+    <job id="9">
+        <start>17:45:00</start>
+        <runtime>000000</runtime>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop>
+        <cmd>say -1 [INFO] Le serveur restart dans 15 minutes</cmd>
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="10">
+        <start>17:55:00</start>
+        <runtime>000000</runtime>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop>
+        <cmd>say -1 [INFO] Le serveur restart dans 5 minutes</cmd>
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="11">
+        <start>18:00:00</start>
+        <runtime>000000</runtime>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop>
+        <cmd>C:\Users\DidiDev\Desktop\altislife.bat</cmd>
+        <cmdtype>0</cmdtype>            
+    </job>
+    <!-- FIN DU SCRIPIT -->
+</Scheduler>
+
+
