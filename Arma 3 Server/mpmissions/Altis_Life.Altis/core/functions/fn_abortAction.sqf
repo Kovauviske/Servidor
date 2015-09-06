@@ -43,7 +43,7 @@ playSound ( "Transition" + str _effectID );
 sleep 1;
 
 _name = name player;
-[format["<t size='1.3' color='#ff9900'>Ate mais!</t><br/>Esperamos que você volte em breve<br/> %1 <br/><br/><t size='1.1'>ftialtislife.forumeiros.com/"</t>",_name],
+[format["<t size='1.3' color='#ff9900'>Ate mais!</t><br/>Esperamos que você volte em breve<br/> %1 <br/><br/><t size='1.1'>ftialtislife.forumeiros.com/</t>",_name],
 	0,
 	0.2,
 	10,

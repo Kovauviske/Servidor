@@ -14,7 +14,6 @@ _version = _display displayCtrl 1000;
 2 cutRsc ["playerHUD","PLAIN"];
 _version ctrlSetText format["BETA: 0.%1.%2",(productVersion select 2),(productVersion select 3)];
 [] call life_fnc_hudUpdate;
-[] spawn life_fnc_statusBar;
 
 [] spawn
 {

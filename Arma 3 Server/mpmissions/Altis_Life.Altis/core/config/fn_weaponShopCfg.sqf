@@ -140,21 +140,11 @@ switch(_shop) do
 				_ret pushBack ["30Rnd_9x21_Mag","Munição da Pistola Tazer",150];
 				_ret pushBack ["arifle_sdar_F","Tazer Rifre",5000];
 				_ret pushBack ["20Rnd_556x45_UW_mag","Munição  - Tazer Rifre",150];
-				_ret pushBack ["SMG_01_F",nil,20000];								//Vermin SMG .45 ACP
-				_ret pushBack ["30Rnd_45ACP_Mag_SMG_01","Munição - Vermin",150];
-				_ret pushBack ["SMG_02_F",nil,17000];
-				_ret pushBack ["30Rnd_9x21_Mag","Munição - String",150];
 				_ret pushBack ["arifle_MXC_Black_F",nil,35000];
 				_ret pushBack ["30Rnd_65x39_caseless_mag",nil,150];
 
 				if(__GETC__(life_coplevel) > 1) then //Agent
 				{
-					_ret pushBack ["hgun_PDW2000_F",nil,17000];							//PDW2000 9 mm
-					_ret pushBack ["30Rnd_9x21_Mag","Munição - PDW2000",150];							//MAG// 9 mm
-					_ret pushBack ["arifle_MX_RCO_pointer_snds_F",nil,45000];//MX full equip
-					_ret pushBack ["30Rnd_65x39_caseless_mag","Munição - MX",150];
-					_ret pushBack ["arifle_MXC_Black_F",nil,35000];
-					_ret pushBack ["30Rnd_65x39_caseless_mag",nil,150];
 					_ret pushBack ["LMG_Mk200_F",nil,500];
 					_ret pushBack ["200Rnd_65x39_cased_Box",nil,500];
 					_ret pushBack ["optic_Arco",nil,10000];
@@ -162,12 +152,8 @@ switch(_shop) do
 
 				if(__GETC__(life_coplevel) > 2) then //Sergent
 				{
-					//5.56mm
-					_ret pushBack ["muzzle_snds_H","Silenciador 6.5mm",2750];//TRG-20 5.56 mm
-					_ret pushBack ["SMG_02_ACO_F",nil,15000];//TRG-21 EGLM 5.56 mm
-					_ret pushBack ["30Rnd_9x21_Mag","Munição Sting 9mm",150];//TRG-21 5.56 mm
 					//.
-					_ret pushback ["Laserdesignator_03",nil,350];
+					_ret pushback ["Rangefinder",nil,350];
 					if(__GETC__(life_coplevel) > 3) then //Lieutenant
 					{
 						_ret pushBack ["srifle_DMR_06_camo_F",nil,57000];
@@ -205,19 +191,7 @@ switch(_shop) do
 				if(__GETC__(life_coplevel) > 1) then //Agent
 				{
 					_ret pushBack ["optic_Holosight",nil,1000];
-					_ret pushBack ["optic_MRCO",nil,2000];
-					_ret pushBack ["optic_SOS",nil,7500];
 					_ret pushBack ["optic_Arco",nil,750];
-					_ret pushBack ["optic_DMS",nil,4500];
-					_ret pushBack ["optic_NVS",nil,7500];
-					_ret pushBack ["optic_AMS_snd",nil,7500];
-					_ret pushBack ["optic_AMS",nil,7500];
-					_ret pushBack ["optic_AMS_khk",nil,7500];
-					_ret pushBack ["optic_KHS_blk",nil,7500];
-					_ret pushBack ["optic_KHS_hex",nil,7500];
-					_ret pushBack ["optic_KHS_old",nil,7500];
-					_ret pushBack ["optic_KHS_tan",nil,7500];
-					_ret pushBack ["optic_LRPS",nil,7500];
 				};
 
 			//Accessories//////
@@ -227,11 +201,8 @@ switch(_shop) do
 				if(__GETC__(life_coplevel) > 1) then
 				{
 					_ret pushBack ["muzzle_snds_M",nil,2750];
+					_ret pushBack ["Rangefinder",nil,2750];
 					_ret pushBack ["muzzle_snds_acp",nil,2750];
-					_ret pushBack ["muzzle_snds_H",nil,7500];
-					_ret pushBack ["muzzle_snds_93mmg",nil,7500];
-					_ret pushBack ["muzzle_snds_B",nil,2750];
-
 				};
 				if(__GETC__(life_coplevel) > 2) then
 				{
@@ -260,6 +231,24 @@ switch(_shop) do
 					_ret pushBack ["bipod_03_F_oli",nil,250];
 					_ret pushBack ["bipod_01_F_snd",nil,250];
 					_ret pushBack ["bipod_02_F_tan",nil,250];
+				};
+				if(__GETC__(life_coplevel) > 3) then
+				{
+					_ret pushBack ["muzzle_snds_H",nil,7500];
+					_ret pushBack ["muzzle_snds_93mmg",nil,7500];
+					_ret pushBack ["muzzle_snds_B",nil,2750];
+					_ret pushBack ["optic_DMS",nil,4500];
+					_ret pushBack ["optic_NVS",nil,7500];
+					_ret pushBack ["optic_MRCO",nil,2000];
+					_ret pushBack ["optic_SOS",nil,7500];
+					_ret pushBack ["optic_AMS_snd",nil,7500];
+					_ret pushBack ["optic_AMS",nil,7500];
+					_ret pushBack ["optic_AMS_khk",nil,7500];
+					_ret pushBack ["optic_KHS_blk",nil,7500];
+					_ret pushBack ["optic_KHS_hex",nil,7500];
+					_ret pushBack ["optic_KHS_old",nil,7500];
+					_ret pushBack ["optic_KHS_tan",nil,7500];
+					_ret pushBack ["optic_LRPS",nil,7500];
 				};
 				//Sortie
 				switch (__GETC__(life_coplevel)) do
