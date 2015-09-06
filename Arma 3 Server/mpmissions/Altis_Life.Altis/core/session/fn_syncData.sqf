@@ -1,7 +1,7 @@
 /*
 	File: fn_syncData.sqf
 	Author: Bryan "Tonic" Boardwine"
-	
+
 	Description:
 	Used for player manual sync to the server.
 */
@@ -19,13 +19,17 @@ switch (typeName life_fnc_MP_packet) do
 			_exit = true;
 		};
 	};
-	
+
 	default {_exit = true;};
 };
 
 if(!isNil "_exit") exitWith {hint localize "STR_Session_SyncCheater";};
 
 [] call SOCK_fnc_updateRequest;
+
+[] execVM "script\fn_statusBar.sqf";
+[] call life_fnc_hudUpdate;
+
 hint localize "STR_Session_SyncData";
 [] spawn
 {
@@ -33,4 +37,3 @@ hint localize "STR_Session_SyncData";
 	sleep (5 * 60);
 	life_session_time = false;
 };
-	

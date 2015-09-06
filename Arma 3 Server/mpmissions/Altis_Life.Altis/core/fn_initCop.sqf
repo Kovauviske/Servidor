@@ -83,5 +83,3 @@ while {true} do
 	};
 };
 //End CLothes
-
-[] spawn life_fnc_IntroCam;
