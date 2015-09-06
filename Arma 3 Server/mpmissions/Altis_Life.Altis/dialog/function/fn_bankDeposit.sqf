@@ -1,7 +1,7 @@
 /*
 	File: fn_bankDeposit.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Figure it out.
 */
@@ -13,6 +13,7 @@ if(_value > 999999) exitWith {hint localize "STR_ATM_GreaterThan";};
 if(_value < 0) exitWith {};
 if(!([str(_value)] call life_fnc_isnumeric)) exitWith {hint localize "STR_ATM_notnumeric"};
 if(_value > life_cash) exitWith {hint localize "STR_ATM_NotEnoughCash"};
+if(life_atm_last_withdraw + 5 > time) exitWith {hint "Não tão rápido! Você deve esperar 5 segundos antes de Depositar / refile.";};
 
 life_cash = life_cash - _value;
 life_atmcash = life_atmcash + _value;
