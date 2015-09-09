@@ -19,7 +19,7 @@ switch (_filter) do
 	//Uniforms
     case 0:
     {
-        if(__GETC__(life_donator) > 1 ) then
+        if(__GETC__(life_donator) > 0 ) then
         {
 			_ret set[count _ret,["U_I_CombatUniform_tshirt",nil,25000]];
 			_ret set[count _ret,["U_I_pilotCoveralls",nil,25000]];
@@ -44,7 +44,7 @@ switch (_filter) do
 	//Hats
 	case 1:
 	{
-		if(__GETC__(life_donator) > 1) then
+		if(__GETC__(life_donator) > 0) then
 		{
 			_ret set[count _ret,["H_Booniehat_indp",nil,5000]];
 			_ret set[count _ret,["H_HelmetB_camo",nil,5000]];
@@ -66,7 +66,7 @@ switch (_filter) do
 	//Glasses
 	case 2:
 	{
-		if(__GETC__(life_donator) > 1) then
+		if(__GETC__(life_donator) > 0) then
 		{
 			_ret set[count _ret,["G_Shades_Black",nil,20]];
 			_ret set[count _ret,["G_Balaclava_oli",nil,750]];
@@ -85,7 +85,7 @@ switch (_filter) do
 	//Vest
 	case 3:
 	{
-		if(__GETC__(life_donator) > 1) then
+		if(__GETC__(life_donator) > 0) then
 		{
 			_ret set[count _ret,["V_PlateCarrierIA2_dgtl",nil,1500]];
 			_ret set[count _ret,["V_PlateCarrier1_rgr",nil,2500]];
@@ -105,7 +105,7 @@ switch (_filter) do
 	//Backpacks
 	case 4:
 	{
-		if(__GETC__(life_donator) > 1) then
+		if(__GETC__(life_donator) > 0) then
 		{
 			_ret set[count _ret,["B_AssaultPack_dgtl",nil,2500]];
 			_ret set[count _ret,["B_Kitbag_mcamo",nil,4500]];

@@ -2004,7 +2004,7 @@ class Mission
 				};
 				class Item24
 				{
-					position[]={25570.313,19.847267,21320.006};
+					position[]={25574.131,19.777016,21315.51};
 					azimut=-306.11636;
 					offsetY=0.40000001;
 					special="NONE";
@@ -2157,7 +2157,7 @@ class Mission
 				};
 				class Item37
 				{
-					position[]={3047.4434,2.088999,12605.951};
+					position[]={3045.4292,2.0153382,12613.583};
 					azimut=-118.57638;
 					special="NONE";
 					id=108;
@@ -2190,7 +2190,7 @@ class Mission
 				};
 				class Item40
 				{
-					position[]={25662.391,19.394569,21304.605};
+					position[]={25664.201,19.327684,21298.395};
 					azimut=-417.87436;
 					offsetY=0.44999999;
 					special="NONE";
@@ -2202,7 +2202,7 @@ class Mission
 				};
 				class Item41
 				{
-					position[]={25828.023,21.101286,21454.303};
+					position[]={25831.625,20.885479,21445.848};
 					azimut=-81.882874;
 					special="NONE";
 					id=112;
@@ -2261,7 +2261,7 @@ class Mission
 				};
 				class Item46
 				{
-					position[]={25746.621,20.861397,21375.066};
+					position[]={25749.535,20.792957,21367.092};
 					azimut=-225.57735;
 					offsetY=0.1;
 					special="NONE";
@@ -2274,7 +2274,7 @@ class Mission
 				};
 				class Item47
 				{
-					position[]={25751.777,20.884573,21393.289};
+					position[]={25754.605,20.884436,21385.098};
 					azimut=-40.792877;
 					offsetY=0.5;
 					special="NONE";
@@ -2496,7 +2496,7 @@ class Mission
 				};
 				class Item66
 				{
-					position[]={25720.293,18.562252,21285.746};
+					position[]={25723.551,18.274584,21278.432};
 					azimut=220.35065;
 					special="NONE";
 					id=137;
@@ -2529,8 +2529,8 @@ class Mission
 				};
 				class Item69
 				{
-					position[]={23537.094,13.355078,19963.482};
-					azimut=182.02065;
+					position[]={23540.994,13.289424,19956.795};
+					azimut=231.61765;
 					special="NONE";
 					id=140;
 					side="WEST";
@@ -4570,7 +4570,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={23541.115,13.290327,19956.857};
+					position[]={23542.016,13.279109,19955.398};
 					azimut=591.29797;
 					special="NONE";
 					id=245;
@@ -6421,7 +6421,7 @@ class Mission
 					vehicle="C_man_polo_4_F";
 					leader=1;
 					skill=0.5;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Comprador de petróleo"",life_fnc_sellOil];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Comprador de Diesel"",life_fnc_virt_menu,""oil""];";
 				};
 			};
 		};
@@ -84319,7 +84319,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=364;
+		items=366;
 		class Item0
 		{
 			position[]={8471.8662,106.60769,25129.486};
@@ -84487,7 +84487,7 @@ class Mission
 		{
 			position[]={16992.334,16.353863,12868.012};
 			name="car1_2";
-			text="Loja de carros";
+			text="Loja de veículos";
 			type="c_car";
 			colorName="ColorWhite";
 			angle=0.0114816;
@@ -84587,11 +84587,12 @@ class Mission
 		};
 		class Item34
 		{
-			position[]={14032.284,25.46665,18758.639};
+			position[]={14034.086,25.348738,18760.391};
 			name="car1_2_1_1";
+			text="Loja de veículos";
 			type="c_car";
 			colorName="ColorWhite";
-			angle=359.19183;
+			angle=359.19199;
 		};
 		class Item35
 		{
@@ -84907,10 +84908,10 @@ class Mission
 		};
 		class Item72
 		{
-			position[]={25821.314,21.358133,21446.559};
+			position[]={25820.115,21.419489,21459.002};
 			name="civ_car_4";
 			type="Empty";
-			angle=-90.254326;
+			angle=-143.89914;
 		};
 		class Item73
 		{
@@ -85013,7 +85014,7 @@ class Mission
 		};
 		class Item86
 		{
-			position[]={25665.254,19.308283,21296.332};
+			position[]={25664.176,19.328285,21298.516};
 			name="Gen_3_4";
 			text="Loja de roupas";
 			type="c_unknown";
@@ -85021,7 +85022,7 @@ class Mission
 		};
 		class Item87
 		{
-			position[]={25573.17,19.70323,21312.16};
+			position[]={25574.041,19.775141,21315.4};
 			name="Gen_3_1_1_1";
 			text="Mercado";
 			type="c_unknown";
@@ -87361,6 +87362,20 @@ class Mission
 			type="mil_dot";
 			colorName="Color4_FD_F";
 			angle=113.37778;
+		};
+		class Item364
+		{
+			position[]={9132.6631,15.082354,21615.727};
+			name="car_reb";
+			type="c_car";
+			colorName="ColorEAST";
+		};
+		class Item365
+		{
+			position[]={9230.9023,15.869635,21624.15};
+			name="heli_reb";
+			type="c_air";
+			colorName="ColorEAST";
 		};
 	};
 	class Sensors

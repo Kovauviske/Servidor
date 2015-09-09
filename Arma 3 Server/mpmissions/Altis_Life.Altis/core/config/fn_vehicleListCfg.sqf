@@ -198,7 +198,7 @@ switch (_shop) do
 
 	case "donator_car":
 	{
-		if(__GETC__(life_donator) > 1) then
+		if(__GETC__(life_donator) > 0) then
 		{
 			_return set[count _return,
 			["B_Quadbike_01_F",9000]];
@@ -213,7 +213,7 @@ switch (_shop) do
 
 	case "donator_heli":
 	{
-		if(__GETC__(life_donator) > 1) then
+		if(__GETC__(life_donator) > 0) then
 		{
 			_return set[count _return,
 			["B_Heli_Light_01_F",250000]];
@@ -230,7 +230,7 @@ switch (_shop) do
 
 	case "donator_truck":
 	{
-		if(__GETC__(life_donator) > 1) then
+		if(__GETC__(life_donator) > 0) then
 		{
 			_return set[count _return,
 			["C_Van_01_fuel_F",40000]];

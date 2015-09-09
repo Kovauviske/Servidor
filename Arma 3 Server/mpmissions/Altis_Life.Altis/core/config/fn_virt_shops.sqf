@@ -19,6 +19,7 @@ switch (_shop) do
 	case "fishmarket": {["Loja de Peixe",["salema","ornate","mackerel","mullet","tuna","catshark"]]};
 	case "glass": {["Comprador de Vidro",["glass"]]};
 	case "iron": {["Deposito",["iron_r","copper_r"]]};
+	case "oil": {["Comprador de Diesel",["oilp"]]};
 	case "diamond": {["Diamond Dealer",["diamond","diamondc"]]};
 	case "salt": {["Comprador de Sal",["salt_r"]]};
 	case "cop": {["Mercado de Policial",["donuts","coffee","spikeStrip","mauer","battery","painkillers","redgull","defusekit"]]};

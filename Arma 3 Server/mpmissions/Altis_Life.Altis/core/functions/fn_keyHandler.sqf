@@ -6,7 +6,7 @@
 	Description:
 	Main key handler for event 'keyDown'
 */
-private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_mapKey","_interruptionKeys"];
+private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_mapKey","_interruptionKeys","_player"];
 _ctrl = _this select 0;
 _code = _this select 1;
 _shift = _this select 2;
@@ -14,6 +14,7 @@ _ctrlKey = _this select 3;
 _alt = _this select 4;
 _speed = speed cursorTarget;
 _handled = false;
+_player = player;
 
 _interactionKey = if(count (actionKeys "User10") == 0) then {219} else {(actionKeys "User10") select 0};
 _mapKey = actionKeys "ShowMap" select 0;
@@ -476,13 +477,6 @@ switch (_code) do
     if(_ctrlKey && _alt)  then {
     diag_log format ["SERVER DIZ: %1 usando CTRL + ALT + DEL provavel disconnect (reporte aos Administradores)",_player getVariable["realname",name _player]];
     [[1,format["SERVER DIZ: %1 usando CTRL + ALT + DEL  provavel disconnect (reporte aos Administradores)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
-    };
-    };
-    case 15:
-    {
-    if( _alt)  then {
-    diag_log format ["SERVER DIZ: %1 usando ALT + TAB  provavel disconnect (reporte aos Administradores)",_player getVariable["realname",name _player]];
-    [[1,format["SERVER DIZ: %1 usando ALT + TAB  provavel disconnect (reporte aos Administradores)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
     };
     };
     case 1:
